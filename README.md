@@ -1,1 +1,0 @@
-# skills-copilot-codespaces-vscode
