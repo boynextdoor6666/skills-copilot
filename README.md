@@ -1,1 +1,1 @@
-# My Project
+# skills-copilot-codespaces-vscode
