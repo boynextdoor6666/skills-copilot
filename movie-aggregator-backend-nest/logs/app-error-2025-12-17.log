@@ -1,0 +1,3 @@
+{"level":"error","message":"× GET /api/auth/validate 401 user=- reqId=c9210221-b9a5-4048-bba9-04e147c4bd3a msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-12-17T15:22:20.872Z"}
+{"level":"error","message":"× GET /api/auth/validate 401 user=- reqId=21b9f81f-697b-4fd8-87ed-22f29960eecf msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-12-17T15:22:21.399Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=059f6b20-17cc-4b04-88ee-3042585c49c2 msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-12-17T15:28:27.547Z"}

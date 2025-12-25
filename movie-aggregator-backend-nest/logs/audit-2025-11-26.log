@@ -1,0 +1,497 @@
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=fb768aa5-6b6e-49ba-bfd3-5fbaf8b520e7","timestamp":"2025-11-25T18:00:04.594Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 26ms user=13 reqId=fb768aa5-6b6e-49ba-bfd3-5fbaf8b520e7","timestamp":"2025-11-25T18:00:04.614Z"}
+{"level":"info","message":"UsersController {/api/users}:","timestamp":"2025-11-25T18:01:04.126Z"}
+{"level":"info","message":"Mapped {/api/users/me, GET} route","timestamp":"2025-11-25T18:01:04.135Z"}
+{"level":"info","message":"Mapped {/api/users/me, PATCH} route","timestamp":"2025-11-25T18:01:04.142Z"}
+{"level":"info","message":"Mapped {/api/users/me/password, PATCH} route","timestamp":"2025-11-25T18:01:04.146Z"}
+{"level":"info","message":"Mapped {/api/users/by-username/:username, GET} route","timestamp":"2025-11-25T18:01:04.148Z"}
+{"level":"info","message":"Mapped {/api/users/me/level, GET} route","timestamp":"2025-11-25T18:01:04.149Z"}
+{"level":"info","message":"Mapped {/api/users/me/achievements, GET} route","timestamp":"2025-11-25T18:01:04.151Z"}
+{"level":"info","message":"Mapped {/api/users/leaderboard, GET} route","timestamp":"2025-11-25T18:01:04.152Z"}
+{"level":"info","message":"Mapped {/api/users/me/taste-profile, GET} route","timestamp":"2025-11-25T18:01:04.153Z"}
+{"level":"info","message":"Mapped {/api/users/me/recommendations, GET} route","timestamp":"2025-11-25T18:01:04.156Z"}
+{"level":"info","message":"GamificationController {/api/gamification}:","timestamp":"2025-11-25T18:01:04.158Z"}
+{"level":"info","message":"Mapped {/api/gamification/my-achievements, GET} route","timestamp":"2025-11-25T18:01:04.161Z"}
+{"level":"info","message":"Mapped {/api/gamification/user/:id, GET} route","timestamp":"2025-11-25T18:01:04.162Z"}
+{"level":"info","message":"AuthController {/api/auth}:","timestamp":"2025-11-25T18:01:04.163Z"}
+{"level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2025-11-25T18:01:04.164Z"}
+{"level":"info","message":"Mapped {/api/auth/register, POST} route","timestamp":"2025-11-25T18:01:04.165Z"}
+{"level":"info","message":"Mapped {/api/auth/validate, GET} route","timestamp":"2025-11-25T18:01:04.166Z"}
+{"level":"info","message":"AdminController {/api/admin}:","timestamp":"2025-11-25T18:01:04.167Z"}
+{"level":"info","message":"Mapped {/api/admin/stats, GET} route","timestamp":"2025-11-25T18:01:04.168Z"}
+{"level":"info","message":"Mapped {/api/admin/users, GET} route","timestamp":"2025-11-25T18:01:04.169Z"}
+{"level":"info","message":"Mapped {/api/admin/users/top, GET} route","timestamp":"2025-11-25T18:01:04.171Z"}
+{"level":"info","message":"Mapped {/api/admin/users/:id/status, PATCH} route","timestamp":"2025-11-25T18:01:04.177Z"}
+{"level":"info","message":"Mapped {/api/admin/users/:id/role, PATCH} route","timestamp":"2025-11-25T18:01:04.179Z"}
+{"level":"info","message":"Mapped {/api/admin/users/:id, DELETE} route","timestamp":"2025-11-25T18:01:04.181Z"}
+{"level":"info","message":"ContentController {/api/content}:","timestamp":"2025-11-25T18:01:04.181Z"}
+{"level":"info","message":"Mapped {/api/content/search, GET} route","timestamp":"2025-11-25T18:01:04.183Z"}
+{"level":"info","message":"Mapped {/api/content/autocomplete, GET} route","timestamp":"2025-11-25T18:01:04.184Z"}
+{"level":"info","message":"Mapped {/api/content, GET} route","timestamp":"2025-11-25T18:01:04.185Z"}
+{"level":"info","message":"Mapped {/api/content/stats, GET} route","timestamp":"2025-11-25T18:01:04.186Z"}
+{"level":"info","message":"Mapped {/api/content/:id/emotional-cloud, GET} route","timestamp":"2025-11-25T18:01:04.187Z"}
+{"level":"info","message":"Mapped {/api/content/:id/perception-map, GET} route","timestamp":"2025-11-25T18:01:04.187Z"}
+{"level":"info","message":"Mapped {/api/content/:id/dynamics, GET} route","timestamp":"2025-11-25T18:01:04.192Z"}
+{"level":"info","message":"Mapped {/api/content/:id, GET} route","timestamp":"2025-11-25T18:01:04.193Z"}
+{"level":"info","message":"Mapped {/api/content, POST} route","timestamp":"2025-11-25T18:01:04.194Z"}
+{"level":"info","message":"Mapped {/api/content/:id, PUT} route","timestamp":"2025-11-25T18:01:04.195Z"}
+{"level":"info","message":"Mapped {/api/content/:id, DELETE} route","timestamp":"2025-11-25T18:01:04.197Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/active, GET} route","timestamp":"2025-11-25T18:01:04.198Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/all, GET} route","timestamp":"2025-11-25T18:01:04.199Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel, POST} route","timestamp":"2025-11-25T18:01:04.200Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/:id, PUT} route","timestamp":"2025-11-25T18:01:04.201Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/:id, DELETE} route","timestamp":"2025-11-25T18:01:04.202Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/active, GET} route","timestamp":"2025-11-25T18:01:04.203Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/all, GET} route","timestamp":"2025-11-25T18:01:04.204Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon, POST} route","timestamp":"2025-11-25T18:01:04.208Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/:id, PUT} route","timestamp":"2025-11-25T18:01:04.210Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/:id, DELETE} route","timestamp":"2025-11-25T18:01:04.211Z"}
+{"level":"info","message":"ReviewsController {/api/reviews}:","timestamp":"2025-11-25T18:01:04.212Z"}
+{"level":"info","message":"Mapped {/api/reviews, POST} route","timestamp":"2025-11-25T18:01:04.213Z"}
+{"level":"info","message":"Mapped {/api/reviews/pro, POST} route","timestamp":"2025-11-25T18:01:04.214Z"}
+{"level":"info","message":"Mapped {/api/reviews/:id, DELETE} route","timestamp":"2025-11-25T18:01:04.215Z"}
+{"level":"info","message":"Mapped {/api/reviews/content/:contentId, GET} route","timestamp":"2025-11-25T18:01:04.216Z"}
+{"level":"info","message":"Mapped {/api/reviews/user/:userId, GET} route","timestamp":"2025-11-25T18:01:04.217Z"}
+{"level":"info","message":"Mapped {/api/reviews/my, GET} route","timestamp":"2025-11-25T18:01:04.218Z"}
+{"level":"info","message":"CriticsController {/api/critics}:","timestamp":"2025-11-25T18:01:04.219Z"}
+{"level":"info","message":"Mapped {/api/critics, GET} route","timestamp":"2025-11-25T18:01:04.220Z"}
+{"level":"info","message":"Mapped {/api/critics/followed, GET} route","timestamp":"2025-11-25T18:01:04.221Z"}
+{"level":"info","message":"Mapped {/api/critics/:id/follow, POST} route","timestamp":"2025-11-25T18:01:04.222Z"}
+{"level":"info","message":"Mapped {/api/critics/:id/follow, DELETE} route","timestamp":"2025-11-25T18:01:04.224Z"}
+{"level":"info","message":"Mapped {/api/critics/personalized, GET} route","timestamp":"2025-11-25T18:01:04.227Z"}
+{"level":"info","message":"Mapped {/api/critics/personalized/:contentId, GET} route","timestamp":"2025-11-25T18:01:04.228Z"}
+{"level":"info","message":"AnalyticsController {/api/analytics}:","timestamp":"2025-11-25T18:01:04.229Z"}
+{"level":"info","message":"Mapped {/api/analytics/world-ratings, GET} route","timestamp":"2025-11-25T18:01:04.230Z"}
+{"level":"info","message":"Mapped {/api/analytics/anti-rating, GET} route","timestamp":"2025-11-25T18:01:04.231Z"}
+{"level":"info","message":"Mapped {/api/analytics/hype-top, GET} route","timestamp":"2025-11-25T18:01:04.233Z"}
+{"level":"info","message":"ExpectationsController {/api/expectations}:","timestamp":"2025-11-25T18:01:04.235Z"}
+{"level":"info","message":"Mapped {/api/expectations/:contentId, POST} route","timestamp":"2025-11-25T18:01:04.236Z"}
+{"level":"info","message":"Mapped {/api/expectations/:contentId/me, GET} route","timestamp":"2025-11-25T18:01:04.239Z"}
+{"level":"info","message":"Mapped {/api/expectations/:contentId, GET} route","timestamp":"2025-11-25T18:01:04.241Z"}
+{"level":"info","message":"Nest application successfully started","timestamp":"2025-11-25T18:01:04.713Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=188a4456-cd0e-462e-9745-1975548451c4","timestamp":"2025-11-25T18:01:05.581Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 14ms user=13 reqId=188a4456-cd0e-462e-9745-1975548451c4","timestamp":"2025-11-25T18:01:05.594Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=63c9a2b1-07a3-41b2-b368-ca7b5997ebc8","timestamp":"2025-11-25T18:01:30.496Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 9ms user=13 reqId=63c9a2b1-07a3-41b2-b368-ca7b5997ebc8","timestamp":"2025-11-25T18:01:30.505Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=e8868f78-ee63-4b96-9288-190e17d6f11c","timestamp":"2025-11-25T18:01:32.385Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=13 reqId=e8868f78-ee63-4b96-9288-190e17d6f11c","timestamp":"2025-11-25T18:01:32.391Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=35c1964e-b486-43e9-b413-e30acad44b75","timestamp":"2025-11-25T18:01:36.726Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 24ms user=- reqId=35c1964e-b486-43e9-b413-e30acad44b75","timestamp":"2025-11-25T18:01:36.750Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=fba557f6-9912-4c90-aea8-51d19ce318c3","timestamp":"2025-11-25T18:01:36.951Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=df44ea37-8615-41a4-8cfb-ffd067841d7f","timestamp":"2025-11-25T18:01:36.955Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=32c59078-c221-4cc1-abe9-236e647b2235","timestamp":"2025-11-25T18:01:36.963Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=f3628fef-1be3-45e1-a248-89510ecdaec7","timestamp":"2025-11-25T18:01:36.970Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=15e5db98-c3a7-4080-9c85-d73f8b5e7580","timestamp":"2025-11-25T18:01:36.987Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 49ms user=- reqId=fba557f6-9912-4c90-aea8-51d19ce318c3","timestamp":"2025-11-25T18:01:37.002Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 45ms user=- reqId=f3628fef-1be3-45e1-a248-89510ecdaec7","timestamp":"2025-11-25T18:01:37.015Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 37ms user=- reqId=15e5db98-c3a7-4080-9c85-d73f8b5e7580","timestamp":"2025-11-25T18:01:37.024Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 68ms user=- reqId=32c59078-c221-4cc1-abe9-236e647b2235","timestamp":"2025-11-25T18:01:37.031Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 79ms user=- reqId=df44ea37-8615-41a4-8cfb-ffd067841d7f","timestamp":"2025-11-25T18:01:37.035Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=e21ef447-7b58-4edd-acc5-db9ec8de48df","timestamp":"2025-11-25T18:01:37.067Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 10ms user=- reqId=e21ef447-7b58-4edd-acc5-db9ec8de48df","timestamp":"2025-11-25T18:01:37.078Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=c456db0c-58d7-4322-be1f-34a517a52b63","timestamp":"2025-11-25T18:01:37.313Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 5ms user=- reqId=c456db0c-58d7-4322-be1f-34a517a52b63","timestamp":"2025-11-25T18:01:37.318Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=ee8aa639-e229-4948-80dc-b66043e50707","timestamp":"2025-11-25T18:01:37.328Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 9ms user=- reqId=ee8aa639-e229-4948-80dc-b66043e50707","timestamp":"2025-11-25T18:01:37.337Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=20de55ce-e90f-4ced-978d-77537894f9d5","timestamp":"2025-11-25T18:01:37.346Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 8ms user=- reqId=20de55ce-e90f-4ced-978d-77537894f9d5","timestamp":"2025-11-25T18:01:37.354Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=f894eb3f-2e62-43db-934d-e941fcc59059","timestamp":"2025-11-25T18:01:38.528Z"}
+{"level":"info","message":"← GET /api/content/17 200 22ms user=- reqId=f894eb3f-2e62-43db-934d-e941fcc59059","timestamp":"2025-11-25T18:01:38.551Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=f18b8e1d-64e5-4efc-a1ed-826d61f6ae4b","timestamp":"2025-11-25T18:01:38.870Z"}
+{"level":"info","message":"← GET /api/content/17 200 8ms user=- reqId=f18b8e1d-64e5-4efc-a1ed-826d61f6ae4b","timestamp":"2025-11-25T18:01:38.878Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=cff59511-b46a-477e-9e0f-a8490f975b1e","timestamp":"2025-11-25T18:01:39.375Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 5ms user=- reqId=cff59511-b46a-477e-9e0f-a8490f975b1e","timestamp":"2025-11-25T18:01:39.380Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=7c1aa6fd-3227-4ae0-9aba-1689299e484d","timestamp":"2025-11-25T18:01:39.678Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=c9fbcb56-b012-4e1e-9294-514df166b6ac","timestamp":"2025-11-25T18:01:39.681Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 7ms user=- reqId=7c1aa6fd-3227-4ae0-9aba-1689299e484d","timestamp":"2025-11-25T18:01:39.685Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=c253c312-5c26-4f34-8095-fa258d15d81f","timestamp":"2025-11-25T18:01:39.690Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=2985df71-fa5b-4ba1-a311-629d3f4cb3d4","timestamp":"2025-11-25T18:01:39.696Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 23ms user=- reqId=c9fbcb56-b012-4e1e-9294-514df166b6ac","timestamp":"2025-11-25T18:01:39.704Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 18ms user=- reqId=c253c312-5c26-4f34-8095-fa258d15d81f","timestamp":"2025-11-25T18:01:39.708Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 16ms user=13 reqId=2985df71-fa5b-4ba1-a311-629d3f4cb3d4","timestamp":"2025-11-25T18:01:39.712Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=9d7ea0fc-853f-4262-b030-8e1d9afa52d6","timestamp":"2025-11-25T18:01:47.703Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=9d7ea0fc-853f-4262-b030-8e1d9afa52d6","timestamp":"2025-11-25T18:01:47.708Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=ef5fe56d-4be7-4518-a8be-7b9120d9ab15","timestamp":"2025-11-25T18:02:03.628Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=ef5fe56d-4be7-4518-a8be-7b9120d9ab15","timestamp":"2025-11-25T18:02:03.633Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=44f3bd2f-899d-4319-93b5-91a5f6ec6c5b","timestamp":"2025-11-25T18:02:18.558Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=44f3bd2f-899d-4319-93b5-91a5f6ec6c5b","timestamp":"2025-11-25T18:02:18.563Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=354928c0-d62a-42c2-a8ac-d7c6abd6eca4","timestamp":"2025-11-25T18:02:33.556Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=354928c0-d62a-42c2-a8ac-d7c6abd6eca4","timestamp":"2025-11-25T18:02:33.561Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=917a5da8-1fa1-4a4e-912f-ef83364357d2","timestamp":"2025-11-25T18:02:48.564Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=917a5da8-1fa1-4a4e-912f-ef83364357d2","timestamp":"2025-11-25T18:02:48.568Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=ea2f3af4-1321-45a0-b879-396d715c8392","timestamp":"2025-11-25T18:03:14.546Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=ea2f3af4-1321-45a0-b879-396d715c8392","timestamp":"2025-11-25T18:03:14.551Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=2afbfc51-8b4e-4c90-a449-91ba5773d17a","timestamp":"2025-11-25T18:03:40.941Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 12ms user=13 reqId=2afbfc51-8b4e-4c90-a449-91ba5773d17a","timestamp":"2025-11-25T18:03:40.952Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=5024fc2b-befc-4678-8887-bb5175cc8ec0","timestamp":"2025-11-25T18:03:47.691Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=5024fc2b-befc-4678-8887-bb5175cc8ec0","timestamp":"2025-11-25T18:03:47.696Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=955756a2-d5b5-4650-84d0-fa97989f5c24","timestamp":"2025-11-25T18:04:03.567Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 9ms user=13 reqId=955756a2-d5b5-4650-84d0-fa97989f5c24","timestamp":"2025-11-25T18:04:03.575Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=c538076f-e295-4b8f-8612-76b930c4e099","timestamp":"2025-11-25T18:04:08.197Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=8abaaf04-6393-4967-9a45-7961c91bae9c","timestamp":"2025-11-25T18:04:08.212Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 4ms user=13 reqId=8abaaf04-6393-4967-9a45-7961c91bae9c","timestamp":"2025-11-25T18:04:08.216Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=59ad8e7c-4f5b-4e3c-a3c7-da52c1734045","timestamp":"2025-11-25T18:04:08.232Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 2ms user=13 reqId=59ad8e7c-4f5b-4e3c-a3c7-da52c1734045","timestamp":"2025-11-25T18:04:08.233Z"}
+{"level":"info","message":"← GET /api/content/17 200 93ms user=- reqId=c538076f-e295-4b8f-8612-76b930c4e099","timestamp":"2025-11-25T18:04:08.290Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=61567f8a-8cee-4552-9723-01f33968ad19","timestamp":"2025-11-25T18:04:08.297Z"}
+{"level":"info","message":"← GET /api/content/17 200 10ms user=- reqId=61567f8a-8cee-4552-9723-01f33968ad19","timestamp":"2025-11-25T18:04:08.308Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=60e38d5b-5d91-484a-ac02-c98a73c28eed","timestamp":"2025-11-25T18:04:09.193Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=60e38d5b-5d91-484a-ac02-c98a73c28eed","timestamp":"2025-11-25T18:04:09.199Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=dbc03c70-3368-4970-be34-c1e8b1e1e6f5","timestamp":"2025-11-25T18:04:09.213Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=94f619bf-44d7-4478-87dc-a52964ec3999","timestamp":"2025-11-25T18:04:09.217Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=26f91e1c-a991-4346-9a5c-273d84df6d67","timestamp":"2025-11-25T18:04:09.226Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=e79d94de-4495-4ff1-a73d-9132d58e7343","timestamp":"2025-11-25T18:04:09.232Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=978a69a9-8e78-44f0-8b1e-efd20bfad992","timestamp":"2025-11-25T18:04:09.240Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 28ms user=- reqId=94f619bf-44d7-4478-87dc-a52964ec3999","timestamp":"2025-11-25T18:04:09.247Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 37ms user=- reqId=dbc03c70-3368-4970-be34-c1e8b1e1e6f5","timestamp":"2025-11-25T18:04:09.251Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 34ms user=- reqId=26f91e1c-a991-4346-9a5c-273d84df6d67","timestamp":"2025-11-25T18:04:09.261Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 32ms user=- reqId=e79d94de-4495-4ff1-a73d-9132d58e7343","timestamp":"2025-11-25T18:04:09.264Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 29ms user=13 reqId=978a69a9-8e78-44f0-8b1e-efd20bfad992","timestamp":"2025-11-25T18:04:09.270Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=509b6787-a3c1-4625-b62b-1332e77384be","timestamp":"2025-11-25T18:04:55.040Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 146ms user=13 reqId=509b6787-a3c1-4625-b62b-1332e77384be","timestamp":"2025-11-25T18:04:55.173Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=9c80110c-ed8f-49bc-b630-0df4a5faaf2e","timestamp":"2025-11-25T18:04:56.164Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=51df97b9-b878-4f74-a871-11623a409adf","timestamp":"2025-11-25T18:04:56.200Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 23ms user=13 reqId=51df97b9-b878-4f74-a871-11623a409adf","timestamp":"2025-11-25T18:04:56.222Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=82214ad6-ec36-4b3c-a81e-f28f641a1022","timestamp":"2025-11-25T18:04:56.241Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 4ms user=13 reqId=82214ad6-ec36-4b3c-a81e-f28f641a1022","timestamp":"2025-11-25T18:04:56.245Z"}
+{"level":"info","message":"← GET /api/content/17 200 115ms user=- reqId=9c80110c-ed8f-49bc-b630-0df4a5faaf2e","timestamp":"2025-11-25T18:04:56.279Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=75ce25c2-7fa7-444e-9bfc-f789367a8738","timestamp":"2025-11-25T18:04:56.288Z"}
+{"level":"info","message":"← GET /api/content/17 200 8ms user=- reqId=75ce25c2-7fa7-444e-9bfc-f789367a8738","timestamp":"2025-11-25T18:04:56.296Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=fa1c82ff-7921-43a0-adef-b68faa89840a","timestamp":"2025-11-25T18:04:56.708Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=16d48af9-41c3-41b3-848a-80ab98854e38","timestamp":"2025-11-25T18:04:56.714Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=d5d621fe-4293-45bc-800c-4b61ac94c686","timestamp":"2025-11-25T18:04:56.720Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 16ms user=- reqId=16d48af9-41c3-41b3-848a-80ab98854e38","timestamp":"2025-11-25T18:04:56.729Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=7438ccc9-e16b-46df-b11b-09a276709298","timestamp":"2025-11-25T18:04:56.732Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=5299d139-4286-4ff7-8d89-6fc59e84a7f9","timestamp":"2025-11-25T18:04:56.736Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=26959865-a934-4892-8134-821e0b1773c5","timestamp":"2025-11-25T18:04:56.747Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 42ms user=13 reqId=fa1c82ff-7921-43a0-adef-b68faa89840a","timestamp":"2025-11-25T18:04:56.751Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 38ms user=- reqId=7438ccc9-e16b-46df-b11b-09a276709298","timestamp":"2025-11-25T18:04:56.770Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 53ms user=- reqId=d5d621fe-4293-45bc-800c-4b61ac94c686","timestamp":"2025-11-25T18:04:56.773Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 40ms user=- reqId=5299d139-4286-4ff7-8d89-6fc59e84a7f9","timestamp":"2025-11-25T18:04:56.776Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 33ms user=13 reqId=26959865-a934-4892-8134-821e0b1773c5","timestamp":"2025-11-25T18:04:56.780Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=87657207-bc8c-48d4-9b94-de2e1a1446da","timestamp":"2025-11-25T18:04:57.092Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 9ms user=13 reqId=87657207-bc8c-48d4-9b94-de2e1a1446da","timestamp":"2025-11-25T18:04:57.101Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=330df315-0174-47d9-8f0d-9e0d4556b692","timestamp":"2025-11-25T18:05:12.561Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=13 reqId=330df315-0174-47d9-8f0d-9e0d4556b692","timestamp":"2025-11-25T18:05:12.569Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=db9b2040-fa76-433f-9231-ab8fdab90ed8","timestamp":"2025-11-25T18:05:26.335Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 8ms user=13 reqId=db9b2040-fa76-433f-9231-ab8fdab90ed8","timestamp":"2025-11-25T18:05:26.348Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=6be54ec3-594f-438c-a4f8-aa96d86d5eeb","timestamp":"2025-11-25T18:05:56.642Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=13 reqId=6be54ec3-594f-438c-a4f8-aa96d86d5eeb","timestamp":"2025-11-25T18:05:56.648Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=eb5197f9-b3b6-495e-b3cb-9fcfaa849173","timestamp":"2025-11-25T18:06:11.645Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 9ms user=13 reqId=eb5197f9-b3b6-495e-b3cb-9fcfaa849173","timestamp":"2025-11-25T18:06:11.654Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=7fd61176-4486-479d-a363-4bfe4f17bed8","timestamp":"2025-11-25T18:06:27.577Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 13ms user=13 reqId=7fd61176-4486-479d-a363-4bfe4f17bed8","timestamp":"2025-11-25T18:06:27.588Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=fc29a185-9ecb-4fcd-82a1-92936c18e9e3","timestamp":"2025-11-25T18:06:47.731Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 19ms user=13 reqId=fc29a185-9ecb-4fcd-82a1-92936c18e9e3","timestamp":"2025-11-25T18:06:47.750Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=cee06dc9-b1d8-4b06-9e16-d883bf177371","timestamp":"2025-11-25T18:07:10.474Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=496b4361-40ae-4e9e-8444-91cedcc92c7b","timestamp":"2025-11-25T18:07:10.490Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=357d5e56-5954-47a2-9027-b2890b25c4eb","timestamp":"2025-11-25T18:07:10.709Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=7e31cf56-3aa8-49dd-bab2-800baf3fcecc","timestamp":"2025-11-25T18:07:10.729Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=129f2dc0-b046-4a1d-8bb9-861afb34d5ef","timestamp":"2025-11-25T18:07:10.753Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 295ms user=- reqId=cee06dc9-b1d8-4b06-9e16-d883bf177371","timestamp":"2025-11-25T18:07:10.775Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 99ms user=- reqId=357d5e56-5954-47a2-9027-b2890b25c4eb","timestamp":"2025-11-25T18:07:10.807Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 64ms user=- reqId=129f2dc0-b046-4a1d-8bb9-861afb34d5ef","timestamp":"2025-11-25T18:07:10.813Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 106ms user=- reqId=7e31cf56-3aa8-49dd-bab2-800baf3fcecc","timestamp":"2025-11-25T18:07:10.841Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=35b5df38-9bfe-447b-abdf-377cf24874b6","timestamp":"2025-11-25T18:07:10.882Z"}
+{"level":"info","message":"← GET /api/content/17 200 457ms user=- reqId=496b4361-40ae-4e9e-8444-91cedcc92c7b","timestamp":"2025-11-25T18:07:10.948Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 73ms user=13 reqId=35b5df38-9bfe-447b-abdf-377cf24874b6","timestamp":"2025-11-25T18:07:10.956Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=20022b03-b73f-4b6f-8601-4e178c7b7e07","timestamp":"2025-11-25T18:07:11.718Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=4c01ec7b-1a98-4eba-822d-d77d17b2f426","timestamp":"2025-11-25T18:07:11.741Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=5942b708-8dc9-409e-9906-74926a732b30","timestamp":"2025-11-25T18:07:11.762Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=1c9b6521-e78b-4e17-b6bf-b1e34a08b754","timestamp":"2025-11-25T18:07:11.771Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=6454cae3-651b-4de6-8041-8674ad3a13b4","timestamp":"2025-11-25T18:07:11.821Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=ea9a5236-2453-4c88-82a5-a23a1449bcf9","timestamp":"2025-11-25T18:07:11.826Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 259ms user=- reqId=20022b03-b73f-4b6f-8601-4e178c7b7e07","timestamp":"2025-11-25T18:07:11.977Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 245ms user=- reqId=4c01ec7b-1a98-4eba-822d-d77d17b2f426","timestamp":"2025-11-25T18:07:11.981Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 227ms user=- reqId=5942b708-8dc9-409e-9906-74926a732b30","timestamp":"2025-11-25T18:07:11.988Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 225ms user=- reqId=1c9b6521-e78b-4e17-b6bf-b1e34a08b754","timestamp":"2025-11-25T18:07:11.993Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 214ms user=13 reqId=6454cae3-651b-4de6-8041-8674ad3a13b4","timestamp":"2025-11-25T18:07:12.032Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 761ms user=13 reqId=ea9a5236-2453-4c88-82a5-a23a1449bcf9","timestamp":"2025-11-25T18:07:12.639Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=56aa67c7-7d87-43fc-9cef-1f8418f79dc0","timestamp":"2025-11-25T18:07:24.349Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=b832a391-584f-4b01-87c2-7e8973324e36","timestamp":"2025-11-25T18:07:24.355Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=88d4d212-aa97-4eec-a605-ad52a9ee6a98","timestamp":"2025-11-25T18:07:24.357Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 7ms user=- reqId=b832a391-584f-4b01-87c2-7e8973324e36","timestamp":"2025-11-25T18:07:24.362Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 7ms user=- reqId=88d4d212-aa97-4eec-a605-ad52a9ee6a98","timestamp":"2025-11-25T18:07:24.365Z"}
+{"level":"info","message":"← GET /api/content/17 200 26ms user=- reqId=56aa67c7-7d87-43fc-9cef-1f8418f79dc0","timestamp":"2025-11-25T18:07:24.374Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=cd43ab6c-ca25-4bd1-9eeb-fb9f4315ac71","timestamp":"2025-11-25T18:07:24.666Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=99ea1dd1-487a-472d-a00a-d33283b335a7","timestamp":"2025-11-25T18:07:24.669Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=09c28a20-5f78-478b-a3f1-15fcd7741e7e","timestamp":"2025-11-25T18:07:24.673Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 10ms user=- reqId=cd43ab6c-ca25-4bd1-9eeb-fb9f4315ac71","timestamp":"2025-11-25T18:07:24.675Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 4ms user=13 reqId=09c28a20-5f78-478b-a3f1-15fcd7741e7e","timestamp":"2025-11-25T18:07:24.677Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 11ms user=- reqId=99ea1dd1-487a-472d-a00a-d33283b335a7","timestamp":"2025-11-25T18:07:24.679Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=723d7c9c-1399-4f75-a9d0-ddf58c339c6f","timestamp":"2025-11-25T18:07:24.801Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=bdefac3d-69b1-4ce2-8098-5c4cfa85e6d5","timestamp":"2025-11-25T18:07:24.803Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 5ms user=- reqId=723d7c9c-1399-4f75-a9d0-ddf58c339c6f","timestamp":"2025-11-25T18:07:24.805Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 4ms user=- reqId=bdefac3d-69b1-4ce2-8098-5c4cfa85e6d5","timestamp":"2025-11-25T18:07:24.808Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=8dcb2940-ca59-45cc-9bb0-617e2ad8f008","timestamp":"2025-11-25T18:07:24.991Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=ba101473-2dc8-4bf2-8eb3-c1149838d3bd","timestamp":"2025-11-25T18:07:24.997Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=1067712c-d2b6-4753-8698-49e2e7f8c061","timestamp":"2025-11-25T18:07:24.999Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 11ms user=- reqId=8dcb2940-ca59-45cc-9bb0-617e2ad8f008","timestamp":"2025-11-25T18:07:25.002Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 7ms user=13 reqId=ba101473-2dc8-4bf2-8eb3-c1149838d3bd","timestamp":"2025-11-25T18:07:25.004Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 8ms user=- reqId=1067712c-d2b6-4753-8698-49e2e7f8c061","timestamp":"2025-11-25T18:07:25.007Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=e65c3b3b-2a33-4277-9443-7e2d6219ef40","timestamp":"2025-11-25T18:07:27.558Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=e65c3b3b-2a33-4277-9443-7e2d6219ef40","timestamp":"2025-11-25T18:07:27.564Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=14b5d780-cfc9-4b82-bea1-5a9fdd90cd2c","timestamp":"2025-11-25T18:07:53.459Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 8ms user=13 reqId=14b5d780-cfc9-4b82-bea1-5a9fdd90cd2c","timestamp":"2025-11-25T18:07:53.468Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=8d2713da-4cd1-4373-b8ca-14c29f030e01","timestamp":"2025-11-25T18:08:04.499Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 9ms user=13 reqId=8d2713da-4cd1-4373-b8ca-14c29f030e01","timestamp":"2025-11-25T18:08:04.510Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=b36cb4ef-6921-4e57-a9ea-b0ddcbf3b441","timestamp":"2025-11-25T18:08:09.034Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=0c07ed4c-2edc-4be1-a1ef-b2ec558db037","timestamp":"2025-11-25T18:08:09.049Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 5ms user=13 reqId=0c07ed4c-2edc-4be1-a1ef-b2ec558db037","timestamp":"2025-11-25T18:08:09.054Z"}
+{"level":"info","message":"← GET /api/content/17 200 31ms user=- reqId=b36cb4ef-6921-4e57-a9ea-b0ddcbf3b441","timestamp":"2025-11-25T18:08:09.066Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=6c6bd20e-7080-40d7-8b80-5aa63aa4ffa1","timestamp":"2025-11-25T18:08:09.373Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 2ms user=13 reqId=6c6bd20e-7080-40d7-8b80-5aa63aa4ffa1","timestamp":"2025-11-25T18:08:09.374Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=f535684c-bab8-41c4-86be-bc720a39e1e9","timestamp":"2025-11-25T18:08:09.397Z"}
+{"level":"info","message":"← GET /api/content/17 200 20ms user=- reqId=f535684c-bab8-41c4-86be-bc720a39e1e9","timestamp":"2025-11-25T18:08:09.417Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=b79210cd-11f5-4902-a4dc-5fed3e08707c","timestamp":"2025-11-25T18:08:09.804Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=b79210cd-11f5-4902-a4dc-5fed3e08707c","timestamp":"2025-11-25T18:08:09.809Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=8e3dfd09-b56e-4ce2-b5c8-71e632a6c38d","timestamp":"2025-11-25T18:08:09.970Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=6b7c7cf5-cddf-43ba-b36c-503d92f8a25b","timestamp":"2025-11-25T18:08:09.975Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=87f9aa59-519c-4838-8251-28a9840abd90","timestamp":"2025-11-25T18:08:09.979Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=fbfa77c3-f6d1-4c9a-a520-221f14843376","timestamp":"2025-11-25T18:08:09.987Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 16ms user=- reqId=6b7c7cf5-cddf-43ba-b36c-503d92f8a25b","timestamp":"2025-11-25T18:08:09.990Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 23ms user=- reqId=8e3dfd09-b56e-4ce2-b5c8-71e632a6c38d","timestamp":"2025-11-25T18:08:09.992Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 17ms user=- reqId=87f9aa59-519c-4838-8251-28a9840abd90","timestamp":"2025-11-25T18:08:09.996Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 12ms user=13 reqId=fbfa77c3-f6d1-4c9a-a520-221f14843376","timestamp":"2025-11-25T18:08:10.000Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=7ff15e41-8474-491a-83e5-94bba5c3f58f","timestamp":"2025-11-25T18:08:10.004Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 3ms user=- reqId=7ff15e41-8474-491a-83e5-94bba5c3f58f","timestamp":"2025-11-25T18:08:10.008Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=f533296f-d078-492c-add5-be0a9cc22965","timestamp":"2025-11-25T18:08:10.129Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=f533296f-d078-492c-add5-be0a9cc22965","timestamp":"2025-11-25T18:08:10.136Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=a1b16dfa-c1a4-4f62-8f76-48d70b8a9e90","timestamp":"2025-11-25T18:08:25.561Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 13ms user=13 reqId=a1b16dfa-c1a4-4f62-8f76-48d70b8a9e90","timestamp":"2025-11-25T18:08:25.573Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=a464458f-2861-4b3b-95c9-dd19aebe23b6","timestamp":"2025-11-25T18:08:40.554Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=13 reqId=a464458f-2861-4b3b-95c9-dd19aebe23b6","timestamp":"2025-11-25T18:08:40.561Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=31ad5177-a950-4bad-8784-06ac3258e07a","timestamp":"2025-11-25T18:09:10.563Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=31ad5177-a950-4bad-8784-06ac3258e07a","timestamp":"2025-11-25T18:09:10.569Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=cb1fd6de-fd5f-49a2-b13b-ead1a74f42df","timestamp":"2025-11-25T18:09:20.704Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=13a284b8-5e36-451d-a911-af3fa3d1ac8d","timestamp":"2025-11-25T18:09:20.711Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 2ms user=13 reqId=13a284b8-5e36-451d-a911-af3fa3d1ac8d","timestamp":"2025-11-25T18:09:20.712Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=c4e48d48-fc7f-4152-a600-91c5850b75fe","timestamp":"2025-11-25T18:09:20.723Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 1ms user=13 reqId=c4e48d48-fc7f-4152-a600-91c5850b75fe","timestamp":"2025-11-25T18:09:20.724Z"}
+{"level":"info","message":"← GET /api/content/17 200 26ms user=- reqId=cb1fd6de-fd5f-49a2-b13b-ead1a74f42df","timestamp":"2025-11-25T18:09:20.729Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=2c6b2a29-1312-4744-b49c-9b21619b4d58","timestamp":"2025-11-25T18:09:21.047Z"}
+{"level":"info","message":"← GET /api/content/17 200 7ms user=- reqId=2c6b2a29-1312-4744-b49c-9b21619b4d58","timestamp":"2025-11-25T18:09:21.054Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=371e5a77-6886-443c-9708-a0d562a338fa","timestamp":"2025-11-25T18:09:21.288Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=371e5a77-6886-443c-9708-a0d562a338fa","timestamp":"2025-11-25T18:09:21.293Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=aadaaa66-21f5-4eba-8d0f-9a0a1afcba22","timestamp":"2025-11-25T18:09:21.303Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 4ms user=- reqId=aadaaa66-21f5-4eba-8d0f-9a0a1afcba22","timestamp":"2025-11-25T18:09:21.306Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=6243c58e-b0b2-460d-a08a-d78af9e44256","timestamp":"2025-11-25T18:09:21.460Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=c13695b3-a9bd-4f76-af22-9c61fa8d6d25","timestamp":"2025-11-25T18:09:21.463Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=d5a87fa6-c6f0-43b6-a27a-b3f87af8af8b","timestamp":"2025-11-25T18:09:21.469Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=b067f851-0584-468b-b9a0-27d753c3944b","timestamp":"2025-11-25T18:09:21.475Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 20ms user=- reqId=6243c58e-b0b2-460d-a08a-d78af9e44256","timestamp":"2025-11-25T18:09:21.480Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 20ms user=- reqId=c13695b3-a9bd-4f76-af22-9c61fa8d6d25","timestamp":"2025-11-25T18:09:21.483Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 13ms user=- reqId=b067f851-0584-468b-b9a0-27d753c3944b","timestamp":"2025-11-25T18:09:21.487Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 21ms user=13 reqId=d5a87fa6-c6f0-43b6-a27a-b3f87af8af8b","timestamp":"2025-11-25T18:09:21.491Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=4fccc02c-a871-41f1-bd18-0a15c727d338","timestamp":"2025-11-25T18:09:25.317Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=dcd7c28f-40a3-4b64-877f-77be63e37785","timestamp":"2025-11-25T18:09:25.322Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 1ms user=13 reqId=dcd7c28f-40a3-4b64-877f-77be63e37785","timestamp":"2025-11-25T18:09:25.323Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=6b844e48-7d32-485c-9d74-eb0fa20d6b0c","timestamp":"2025-11-25T18:09:25.332Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 2ms user=13 reqId=6b844e48-7d32-485c-9d74-eb0fa20d6b0c","timestamp":"2025-11-25T18:09:25.334Z"}
+{"level":"info","message":"← GET /api/content/17 200 22ms user=- reqId=4fccc02c-a871-41f1-bd18-0a15c727d338","timestamp":"2025-11-25T18:09:25.340Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=39b8b3b5-80e7-4cde-9133-9e7473a54507","timestamp":"2025-11-25T18:09:25.649Z"}
+{"level":"info","message":"← GET /api/content/17 200 9ms user=- reqId=39b8b3b5-80e7-4cde-9133-9e7473a54507","timestamp":"2025-11-25T18:09:25.658Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=89882ea5-0003-407a-8c84-b1bda5cab6e3","timestamp":"2025-11-25T18:09:25.748Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=89882ea5-0003-407a-8c84-b1bda5cab6e3","timestamp":"2025-11-25T18:09:25.754Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=c098bfa0-e36d-44b6-858e-ff8e6e76e9db","timestamp":"2025-11-25T18:09:25.904Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 4ms user=- reqId=c098bfa0-e36d-44b6-858e-ff8e6e76e9db","timestamp":"2025-11-25T18:09:25.908Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=2ee4cc39-3940-48fe-9769-2752c6caf458","timestamp":"2025-11-25T18:09:26.045Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=c1b9e415-95e5-46c1-b910-4de6eb769010","timestamp":"2025-11-25T18:09:26.048Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=71fe1e7f-5826-4006-8f1b-018106de99da","timestamp":"2025-11-25T18:09:26.049Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=e8db876f-7995-41b3-b182-347e513ce53c","timestamp":"2025-11-25T18:09:26.053Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 13ms user=- reqId=2ee4cc39-3940-48fe-9769-2752c6caf458","timestamp":"2025-11-25T18:09:26.057Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 10ms user=- reqId=71fe1e7f-5826-4006-8f1b-018106de99da","timestamp":"2025-11-25T18:09:26.059Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 13ms user=- reqId=c1b9e415-95e5-46c1-b910-4de6eb769010","timestamp":"2025-11-25T18:09:26.061Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 11ms user=13 reqId=e8db876f-7995-41b3-b182-347e513ce53c","timestamp":"2025-11-25T18:09:26.063Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=c5ef5011-1939-4e3e-b3a1-d75ce5149b3e","timestamp":"2025-11-25T18:09:27.360Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=aebc0392-0463-4dc1-946c-adb841bcac44","timestamp":"2025-11-25T18:09:27.365Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 1ms user=13 reqId=aebc0392-0463-4dc1-946c-adb841bcac44","timestamp":"2025-11-25T18:09:27.366Z"}
+{"level":"info","message":"← GET /api/content/17 200 15ms user=- reqId=c5ef5011-1939-4e3e-b3a1-d75ce5149b3e","timestamp":"2025-11-25T18:09:27.376Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=b3a3abaa-9ecc-4a63-bbbc-26214a03eed2","timestamp":"2025-11-25T18:09:27.381Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 1ms user=13 reqId=b3a3abaa-9ecc-4a63-bbbc-26214a03eed2","timestamp":"2025-11-25T18:09:27.382Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=df35f29c-c812-41f1-9c60-1d5a8113861b","timestamp":"2025-11-25T18:09:27.692Z"}
+{"level":"info","message":"← GET /api/content/17 200 6ms user=- reqId=df35f29c-c812-41f1-9c60-1d5a8113861b","timestamp":"2025-11-25T18:09:27.698Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=90d6ed1c-68f3-422a-b9c3-1cb1d7924ec3","timestamp":"2025-11-25T18:09:27.777Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=13 reqId=90d6ed1c-68f3-422a-b9c3-1cb1d7924ec3","timestamp":"2025-11-25T18:09:27.783Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=6f5c62d8-2714-4641-94b9-4d163818795f","timestamp":"2025-11-25T18:09:28.100Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=91f062b1-349f-47c2-8cf8-caafc837ab91","timestamp":"2025-11-25T18:09:28.103Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=5b469d14-f8be-4e26-b597-98884d1ff8da","timestamp":"2025-11-25T18:09:28.106Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=b884b986-7156-4e52-938e-596db1469fd0","timestamp":"2025-11-25T18:09:28.108Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=2e777935-c9ee-4c73-a683-4c43dc055f51","timestamp":"2025-11-25T18:09:28.112Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=f411a610-6e97-417e-a5bc-26eb0220e827","timestamp":"2025-11-25T18:09:28.125Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 28ms user=- reqId=6f5c62d8-2714-4641-94b9-4d163818795f","timestamp":"2025-11-25T18:09:28.129Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 28ms user=- reqId=91f062b1-349f-47c2-8cf8-caafc837ab91","timestamp":"2025-11-25T18:09:28.131Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 27ms user=- reqId=5b469d14-f8be-4e26-b597-98884d1ff8da","timestamp":"2025-11-25T18:09:28.133Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 27ms user=- reqId=b884b986-7156-4e52-938e-596db1469fd0","timestamp":"2025-11-25T18:09:28.135Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 26ms user=13 reqId=2e777935-c9ee-4c73-a683-4c43dc055f51","timestamp":"2025-11-25T18:09:28.143Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 24ms user=13 reqId=f411a610-6e97-417e-a5bc-26eb0220e827","timestamp":"2025-11-25T18:09:28.150Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=2ba0a186-aeff-455b-a42a-2ec5d1b6963d","timestamp":"2025-11-25T18:09:42.782Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=2ba0a186-aeff-455b-a42a-2ec5d1b6963d","timestamp":"2025-11-25T18:09:42.788Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=04ea7af2-b547-431d-8430-270b97a57d1d","timestamp":"2025-11-25T18:10:03.209Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=2ce251e1-7d8a-48f9-8a9f-db18250ce7f9","timestamp":"2025-11-25T18:10:03.220Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 1ms user=13 reqId=2ce251e1-7d8a-48f9-8a9f-db18250ce7f9","timestamp":"2025-11-25T18:10:03.221Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=fe7a7a22-e1b5-409c-9921-5990a8757a88","timestamp":"2025-11-25T18:10:03.230Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 1ms user=13 reqId=fe7a7a22-e1b5-409c-9921-5990a8757a88","timestamp":"2025-11-25T18:10:03.232Z"}
+{"level":"info","message":"← GET /api/content/17 200 33ms user=- reqId=04ea7af2-b547-431d-8430-270b97a57d1d","timestamp":"2025-11-25T18:10:03.242Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=3c4e785a-e25a-4285-9021-03224aee912d","timestamp":"2025-11-25T18:10:03.252Z"}
+{"level":"info","message":"← GET /api/content/17 200 14ms user=- reqId=3c4e785a-e25a-4285-9021-03224aee912d","timestamp":"2025-11-25T18:10:03.266Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=464c057a-2bbd-45e7-b663-51f082e8fd93","timestamp":"2025-11-25T18:10:03.335Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=464c057a-2bbd-45e7-b663-51f082e8fd93","timestamp":"2025-11-25T18:10:03.340Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=0fbddc3c-19d8-4d99-a757-909ce7173c66","timestamp":"2025-11-25T18:10:03.417Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=0fbddc3c-19d8-4d99-a757-909ce7173c66","timestamp":"2025-11-25T18:10:03.422Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=42f0e687-3ef8-46eb-aa60-bea61e9bfdce","timestamp":"2025-11-25T18:10:03.731Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=b2251be2-d5af-4899-8706-eeee23cae54f","timestamp":"2025-11-25T18:10:03.734Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=cc5e5510-df2a-452b-bedf-96f5af7d4277","timestamp":"2025-11-25T18:10:03.738Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=c393f04b-317e-41c7-a2b0-f14279ba9cad","timestamp":"2025-11-25T18:10:03.741Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=2c85da9a-4342-4000-86ef-4c29c440eba8","timestamp":"2025-11-25T18:10:03.744Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 15ms user=- reqId=42f0e687-3ef8-46eb-aa60-bea61e9bfdce","timestamp":"2025-11-25T18:10:03.747Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 14ms user=- reqId=b2251be2-d5af-4899-8706-eeee23cae54f","timestamp":"2025-11-25T18:10:03.749Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 13ms user=13 reqId=cc5e5510-df2a-452b-bedf-96f5af7d4277","timestamp":"2025-11-25T18:10:03.751Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 13ms user=- reqId=c393f04b-317e-41c7-a2b0-f14279ba9cad","timestamp":"2025-11-25T18:10:03.754Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 13ms user=- reqId=2c85da9a-4342-4000-86ef-4c29c440eba8","timestamp":"2025-11-25T18:10:03.758Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=755e27f4-8027-4c7a-ae14-e7a3dea35615","timestamp":"2025-11-25T18:10:19.564Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 11ms user=13 reqId=755e27f4-8027-4c7a-ae14-e7a3dea35615","timestamp":"2025-11-25T18:10:19.575Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=b2a14269-645a-4697-84e3-d7eb4e8b722d","timestamp":"2025-11-25T18:10:34.261Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=b2a14269-645a-4697-84e3-d7eb4e8b722d","timestamp":"2025-11-25T18:10:34.266Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=2af7ef1b-d4b3-4012-9bff-f3d5eaf67d0b","timestamp":"2025-11-25T18:10:49.559Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=2af7ef1b-d4b3-4012-9bff-f3d5eaf67d0b","timestamp":"2025-11-25T18:10:49.564Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=4ec790d0-c2d2-4980-ae15-37f47b56e42d","timestamp":"2025-11-25T18:11:04.549Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=4ec790d0-c2d2-4980-ae15-37f47b56e42d","timestamp":"2025-11-25T18:11:04.551Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=ef70bbdd-4ed3-4ec1-8c41-baed13c8f9d6","timestamp":"2025-11-25T18:11:39.486Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 10ms user=13 reqId=ef70bbdd-4ed3-4ec1-8c41-baed13c8f9d6","timestamp":"2025-11-25T18:11:39.495Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=c0453d8d-500d-4c9f-8395-428038e06924","timestamp":"2025-11-25T18:12:14.575Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 8ms user=13 reqId=c0453d8d-500d-4c9f-8395-428038e06924","timestamp":"2025-11-25T18:12:14.583Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=07dcee92-9118-4d22-b58d-76cf1cdd2223","timestamp":"2025-11-25T18:13:14.555Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=07dcee92-9118-4d22-b58d-76cf1cdd2223","timestamp":"2025-11-25T18:13:14.560Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=98343f09-9783-4ed7-98c0-97c8a9ec7d41","timestamp":"2025-11-25T18:14:14.560Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=98343f09-9783-4ed7-98c0-97c8a9ec7d41","timestamp":"2025-11-25T18:14:14.567Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=5abbd3f0-96cd-4220-a554-689d660b4044","timestamp":"2025-11-25T18:15:14.570Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 29ms user=13 reqId=5abbd3f0-96cd-4220-a554-689d660b4044","timestamp":"2025-11-25T18:15:14.598Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=5f0ebb55-5ac1-4012-b276-e4e593a74d9f","timestamp":"2025-11-25T18:15:36.866Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 9ms user=13 reqId=5f0ebb55-5ac1-4012-b276-e4e593a74d9f","timestamp":"2025-11-25T18:15:36.876Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=19e220fb-dbea-40be-8e69-c64e5575edbd","timestamp":"2025-11-25T18:15:49.561Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=13 reqId=19e220fb-dbea-40be-8e69-c64e5575edbd","timestamp":"2025-11-25T18:15:49.567Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=33b0b838-a087-43b2-b20e-2b38e6077441","timestamp":"2025-11-25T18:16:04.553Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 14ms user=13 reqId=33b0b838-a087-43b2-b20e-2b38e6077441","timestamp":"2025-11-25T18:16:04.566Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=8515eb8f-c2ea-4daf-a1fe-1b0054876df3","timestamp":"2025-11-25T18:16:23.029Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 12ms user=13 reqId=8515eb8f-c2ea-4daf-a1fe-1b0054876df3","timestamp":"2025-11-25T18:16:23.040Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=9e94ffcc-96c5-4504-8e72-3cae53413e96","timestamp":"2025-11-25T18:16:41.250Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=9e94ffcc-96c5-4504-8e72-3cae53413e96","timestamp":"2025-11-25T18:16:41.256Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=35503b35-f655-47f5-96c9-2c55260efcfe","timestamp":"2025-11-25T18:17:14.578Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 50ms user=13 reqId=35503b35-f655-47f5-96c9-2c55260efcfe","timestamp":"2025-11-25T18:17:14.644Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=42211c14-0557-4bec-ad1f-a8f5da62f805","timestamp":"2025-11-25T18:17:52.622Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=e6db3201-8f6a-419f-9ef8-08a5e38f7c35","timestamp":"2025-11-25T18:17:52.696Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=7f9b2fca-19ab-4303-8168-d2cc72517518","timestamp":"2025-11-25T18:17:52.712Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=a69e50b4-eada-4264-8b48-dfc62b29d3a5","timestamp":"2025-11-25T18:17:52.746Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 109ms user=- reqId=e6db3201-8f6a-419f-9ef8-08a5e38f7c35","timestamp":"2025-11-25T18:17:52.805Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 138ms user=- reqId=7f9b2fca-19ab-4303-8168-d2cc72517518","timestamp":"2025-11-25T18:17:52.850Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 115ms user=- reqId=a69e50b4-eada-4264-8b48-dfc62b29d3a5","timestamp":"2025-11-25T18:17:52.861Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=b4f90f45-46b2-4f3b-8341-8b0096df8d78","timestamp":"2025-11-25T18:17:52.896Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=99ada806-bf14-4dc7-9344-eb774e7d8e88","timestamp":"2025-11-25T18:17:53.231Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 892ms user=- reqId=b4f90f45-46b2-4f3b-8341-8b0096df8d78","timestamp":"2025-11-25T18:17:53.792Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 573ms user=13 reqId=99ada806-bf14-4dc7-9344-eb774e7d8e88","timestamp":"2025-11-25T18:17:53.804Z"}
+{"level":"info","message":"← GET /api/content/17 200 1208ms user=- reqId=42211c14-0557-4bec-ad1f-a8f5da62f805","timestamp":"2025-11-25T18:17:53.809Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=e79d9288-3c91-47f9-9d09-60f352e9845d","timestamp":"2025-11-25T18:17:54.701Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=a8f632e6-7158-4d4c-bdf2-8031f3e9064d","timestamp":"2025-11-25T18:17:54.705Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=d2b30723-8c29-46b2-abfd-a78e9780805c","timestamp":"2025-11-25T18:17:54.712Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=3849d6de-ccdc-45bf-9eeb-103dba0c0345","timestamp":"2025-11-25T18:17:54.724Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=88f814f8-bc76-4d86-b15b-26c4e0b5da74","timestamp":"2025-11-25T18:17:54.741Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 1045ms user=- reqId=e79d9288-3c91-47f9-9d09-60f352e9845d","timestamp":"2025-11-25T18:17:55.745Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 1042ms user=- reqId=a8f632e6-7158-4d4c-bdf2-8031f3e9064d","timestamp":"2025-11-25T18:17:55.747Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 1042ms user=- reqId=d2b30723-8c29-46b2-abfd-a78e9780805c","timestamp":"2025-11-25T18:17:55.754Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 1035ms user=- reqId=3849d6de-ccdc-45bf-9eeb-103dba0c0345","timestamp":"2025-11-25T18:17:55.756Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 1376ms user=13 reqId=88f814f8-bc76-4d86-b15b-26c4e0b5da74","timestamp":"2025-11-25T18:17:56.115Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=d246317e-e27f-4c51-b662-7cf1ca4ae20e","timestamp":"2025-11-25T18:18:02.335Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=c9c446e6-8236-4b7a-927d-12887bd09d15","timestamp":"2025-11-25T18:18:02.339Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=f27da65f-f860-4bb6-881b-adcadbd2dd99","timestamp":"2025-11-25T18:18:02.341Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 5ms user=- reqId=c9c446e6-8236-4b7a-927d-12887bd09d15","timestamp":"2025-11-25T18:18:02.344Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 14ms user=- reqId=f27da65f-f860-4bb6-881b-adcadbd2dd99","timestamp":"2025-11-25T18:18:02.356Z"}
+{"level":"info","message":"← GET /api/content/17 200 30ms user=- reqId=d246317e-e27f-4c51-b662-7cf1ca4ae20e","timestamp":"2025-11-25T18:18:02.364Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=b3d0530c-94ea-4866-a8f2-d764094e85d0","timestamp":"2025-11-25T18:18:02.648Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=659f8d41-ab19-42d0-ac2c-25b78eda495a","timestamp":"2025-11-25T18:18:02.650Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=b72c1088-44a5-4ad5-82dc-91e9287d2cdb","timestamp":"2025-11-25T18:18:02.661Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 12ms user=- reqId=659f8d41-ab19-42d0-ac2c-25b78eda495a","timestamp":"2025-11-25T18:18:02.663Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 17ms user=- reqId=b3d0530c-94ea-4866-a8f2-d764094e85d0","timestamp":"2025-11-25T18:18:02.666Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 8ms user=13 reqId=b72c1088-44a5-4ad5-82dc-91e9287d2cdb","timestamp":"2025-11-25T18:18:02.669Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=33921c02-1ef3-4611-80b6-f46ebd2baee6","timestamp":"2025-11-25T18:18:02.814Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=8b1f8b2a-e3cf-4398-85b8-a779f7354e9d","timestamp":"2025-11-25T18:18:02.819Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 7ms user=- reqId=33921c02-1ef3-4611-80b6-f46ebd2baee6","timestamp":"2025-11-25T18:18:02.820Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 3ms user=- reqId=8b1f8b2a-e3cf-4398-85b8-a779f7354e9d","timestamp":"2025-11-25T18:18:02.822Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=c164436a-89cd-48df-9422-05a6d27c2b61","timestamp":"2025-11-25T18:18:02.980Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=d87324da-29a7-4224-bdc8-94bcd3e4d1ca","timestamp":"2025-11-25T18:18:02.983Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=ea880d87-cea7-4036-ac63-30fcfc469eb4","timestamp":"2025-11-25T18:18:02.986Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 9ms user=- reqId=c164436a-89cd-48df-9422-05a6d27c2b61","timestamp":"2025-11-25T18:18:02.989Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 14ms user=- reqId=d87324da-29a7-4224-bdc8-94bcd3e4d1ca","timestamp":"2025-11-25T18:18:02.997Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 14ms user=13 reqId=ea880d87-cea7-4036-ac63-30fcfc469eb4","timestamp":"2025-11-25T18:18:02.999Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=c0eda7f7-f1e8-405e-8647-4a6a0d78fff7","timestamp":"2025-11-25T18:18:14.552Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 18ms user=13 reqId=c0eda7f7-f1e8-405e-8647-4a6a0d78fff7","timestamp":"2025-11-25T18:18:14.570Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=6f897f8c-b1d3-4e6c-8baf-d58d8d8ff266","timestamp":"2025-11-25T18:19:14.564Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=6f897f8c-b1d3-4e6c-8baf-d58d8d8ff266","timestamp":"2025-11-25T18:19:14.567Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=064f357a-d4a3-46b3-b22a-7e712faa3c80","timestamp":"2025-11-25T18:20:13.937Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=064f357a-d4a3-46b3-b22a-7e712faa3c80","timestamp":"2025-11-25T18:20:13.940Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=612c0ca3-c68c-4d52-9024-48251b940268","timestamp":"2025-11-25T18:20:18.839Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 166ms user=13 reqId=612c0ca3-c68c-4d52-9024-48251b940268","timestamp":"2025-11-25T18:20:18.978Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=d816d935-138f-4d37-925a-69388507ee83","timestamp":"2025-11-25T18:20:33.639Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=d816d935-138f-4d37-925a-69388507ee83","timestamp":"2025-11-25T18:20:33.643Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=417c5f17-096d-4beb-a861-5f3c1a5d0c5a","timestamp":"2025-11-25T18:20:48.326Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=417c5f17-096d-4beb-a861-5f3c1a5d0c5a","timestamp":"2025-11-25T18:20:48.331Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=eafb413a-5fab-4b92-8dcd-780dd95f8698","timestamp":"2025-11-25T18:21:04.543Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=13 reqId=eafb413a-5fab-4b92-8dcd-780dd95f8698","timestamp":"2025-11-25T18:21:04.550Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=f999f53d-5335-4428-aec7-7ddcd6cfb07e","timestamp":"2025-11-25T18:21:19.547Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=f999f53d-5335-4428-aec7-7ddcd6cfb07e","timestamp":"2025-11-25T18:21:19.551Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=6736dc66-ce75-4f9d-9133-ea59eb72fd12","timestamp":"2025-11-25T18:21:34.558Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=6736dc66-ce75-4f9d-9133-ea59eb72fd12","timestamp":"2025-11-25T18:21:34.564Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=f4ba6009-cc96-4d93-ad63-af9cf46298e7","timestamp":"2025-11-25T18:22:14.552Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=13 reqId=f4ba6009-cc96-4d93-ad63-af9cf46298e7","timestamp":"2025-11-25T18:22:14.560Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=e7963047-3265-4c25-9914-53eeb1fa526b","timestamp":"2025-11-25T18:23:14.586Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 26ms user=13 reqId=e7963047-3265-4c25-9914-53eeb1fa526b","timestamp":"2025-11-25T18:23:14.608Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=4ce79475-93e4-4a0c-9ac9-4be57b2675a7","timestamp":"2025-11-25T18:23:40.452Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=1ea5c9e0-01ef-4484-bffb-57f5aa17b3a6","timestamp":"2025-11-25T18:23:40.467Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=5d32a179-b609-447e-9006-d428058318af","timestamp":"2025-11-25T18:23:40.487Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=a7beae58-f305-4c87-b490-1fdcdcac3cac","timestamp":"2025-11-25T18:23:40.499Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 79ms user=- reqId=5d32a179-b609-447e-9006-d428058318af","timestamp":"2025-11-25T18:23:40.567Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 138ms user=- reqId=4ce79475-93e4-4a0c-9ac9-4be57b2675a7","timestamp":"2025-11-25T18:23:40.588Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 93ms user=- reqId=a7beae58-f305-4c87-b490-1fdcdcac3cac","timestamp":"2025-11-25T18:23:40.592Z"}
+{"level":"info","message":"← GET /api/content/17 200 153ms user=- reqId=1ea5c9e0-01ef-4484-bffb-57f5aa17b3a6","timestamp":"2025-11-25T18:23:40.620Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=662f0fb9-12a7-4339-887e-8b0eb41a2810","timestamp":"2025-11-25T18:23:40.738Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=78de2727-f171-46b5-86e3-4893b371fdd0","timestamp":"2025-11-25T18:23:40.772Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 40ms user=- reqId=662f0fb9-12a7-4339-887e-8b0eb41a2810","timestamp":"2025-11-25T18:23:40.778Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 14ms user=13 reqId=78de2727-f171-46b5-86e3-4893b371fdd0","timestamp":"2025-11-25T18:23:40.786Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=b476031b-b069-43b0-a5e8-20d5e779ad10","timestamp":"2025-11-25T18:23:41.221Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=227d4cd7-c1e5-4605-8341-bbde4b0bf725","timestamp":"2025-11-25T18:23:41.223Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=953c34df-64bc-4f3e-b157-afc9411e16d0","timestamp":"2025-11-25T18:23:41.225Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=6a83d000-b299-4e49-887c-c9fee2bddc6e","timestamp":"2025-11-25T18:23:41.232Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=72f741b6-4caa-4d95-9d0c-0f0d24a80047","timestamp":"2025-11-25T18:23:41.235Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 19ms user=- reqId=b476031b-b069-43b0-a5e8-20d5e779ad10","timestamp":"2025-11-25T18:23:41.240Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 18ms user=- reqId=227d4cd7-c1e5-4605-8341-bbde4b0bf725","timestamp":"2025-11-25T18:23:41.241Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 18ms user=- reqId=953c34df-64bc-4f3e-b157-afc9411e16d0","timestamp":"2025-11-25T18:23:41.243Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 14ms user=- reqId=6a83d000-b299-4e49-887c-c9fee2bddc6e","timestamp":"2025-11-25T18:23:41.247Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 30ms user=13 reqId=72f741b6-4caa-4d95-9d0c-0f0d24a80047","timestamp":"2025-11-25T18:23:41.267Z"}
+{"level":"info","message":"→ GET /api/content/17 user=- reqId=1d0d9e63-68ab-4882-ba00-d4c950efbbce","timestamp":"2025-11-25T18:23:50.309Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=87e90e05-da10-4cdc-afc3-22c28026b3e0","timestamp":"2025-11-25T18:23:50.313Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=24acb060-8a24-4d26-89bb-b3657177caf5","timestamp":"2025-11-25T18:23:50.323Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 14ms user=- reqId=87e90e05-da10-4cdc-afc3-22c28026b3e0","timestamp":"2025-11-25T18:23:50.326Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 4ms user=- reqId=24acb060-8a24-4d26-89bb-b3657177caf5","timestamp":"2025-11-25T18:23:50.328Z"}
+{"level":"info","message":"← GET /api/content/17 200 22ms user=- reqId=1d0d9e63-68ab-4882-ba00-d4c950efbbce","timestamp":"2025-11-25T18:23:50.332Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=f8c477d7-a699-4c98-8a66-6bb816a005a2","timestamp":"2025-11-25T18:23:50.626Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=9ffb3df3-798a-4f34-8b42-4903dc83e520","timestamp":"2025-11-25T18:23:50.630Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=28cd9fa4-894f-4c64-8dbb-6d189c1b1069","timestamp":"2025-11-25T18:23:50.636Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 17ms user=- reqId=f8c477d7-a699-4c98-8a66-6bb816a005a2","timestamp":"2025-11-25T18:23:50.640Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 25ms user=- reqId=9ffb3df3-798a-4f34-8b42-4903dc83e520","timestamp":"2025-11-25T18:23:50.655Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 21ms user=13 reqId=28cd9fa4-894f-4c64-8dbb-6d189c1b1069","timestamp":"2025-11-25T18:23:50.657Z"}
+{"level":"info","message":"→ GET /api/content/17/emotional-cloud user=- reqId=4f1a8ea6-fc06-4907-9959-fe51baab9687","timestamp":"2025-11-25T18:23:50.717Z"}
+{"level":"info","message":"→ GET /api/content/17/dynamics user=- reqId=9d39c399-54a3-40ef-8a72-cf84864f7aec","timestamp":"2025-11-25T18:23:50.725Z"}
+{"level":"info","message":"← GET /api/content/17/emotional-cloud 200 14ms user=- reqId=4f1a8ea6-fc06-4907-9959-fe51baab9687","timestamp":"2025-11-25T18:23:50.731Z"}
+{"level":"info","message":"← GET /api/content/17/dynamics 200 14ms user=- reqId=9d39c399-54a3-40ef-8a72-cf84864f7aec","timestamp":"2025-11-25T18:23:50.734Z"}
+{"level":"info","message":"→ GET /api/reviews/content/17 user=- reqId=bbb5575a-0882-437f-b8a0-bc5f06ffb4b2","timestamp":"2025-11-25T18:23:50.960Z"}
+{"level":"info","message":"← GET /api/reviews/content/17 200 10ms user=- reqId=bbb5575a-0882-437f-b8a0-bc5f06ffb4b2","timestamp":"2025-11-25T18:23:50.969Z"}
+{"level":"info","message":"→ GET /api/content/17/perception-map user=- reqId=c77ce55c-76c8-4784-9929-9f4ff1b53cf8","timestamp":"2025-11-25T18:23:50.980Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/17 user=13 reqId=a37f5ee2-404c-4a47-8f83-6f4c3121111d","timestamp":"2025-11-25T18:23:50.987Z"}
+{"level":"info","message":"← GET /api/content/17/perception-map 200 10ms user=- reqId=c77ce55c-76c8-4784-9929-9f4ff1b53cf8","timestamp":"2025-11-25T18:23:50.989Z"}
+{"level":"info","message":"← GET /api/critics/personalized/17 200 22ms user=13 reqId=a37f5ee2-404c-4a47-8f83-6f4c3121111d","timestamp":"2025-11-25T18:23:51.008Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=2542f5eb-1ac9-4ad9-9001-ca48edda0cbb","timestamp":"2025-11-25T18:24:14.547Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=2542f5eb-1ac9-4ad9-9001-ca48edda0cbb","timestamp":"2025-11-25T18:24:14.552Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=1694e535-dd50-49d1-8aec-f2dea4bcef05","timestamp":"2025-11-25T18:24:18.646Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=1694e535-dd50-49d1-8aec-f2dea4bcef05","timestamp":"2025-11-25T18:24:18.651Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=b1c2ab3c-170d-4492-b01c-bfb7ed6df4cf","timestamp":"2025-11-25T18:24:38.951Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 16ms user=13 reqId=b1c2ab3c-170d-4492-b01c-bfb7ed6df4cf","timestamp":"2025-11-25T18:24:38.967Z"}

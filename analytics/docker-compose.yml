@@ -1,0 +1,130 @@
+services:
+  # ==================== Zookeeper (для Kafka) ====================
+  zookeeper:
+    image: zookeeper:3.9
+    container_name: cinevibe-zookeeper
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_PORT: 2181
+    ports:
+      - "2181:2181"
+    volumes:
+      - zookeeper_data:/data
+      - zookeeper_datalog:/datalog
+    networks:
+      - cinevibe-network
+    healthcheck:
+      test: ["CMD", "zkServer.sh", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ==================== Apache Kafka ====================
+  kafka:
+    image: confluentinc/cp-kafka:7.6.1
+    container_name: cinevibe-kafka
+    depends_on:
+      zookeeper:
+        condition: service_healthy
+    environment:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:29092,PLAINTEXT_HOST://localhost:9092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    ports:
+      - "9092:9092"
+      - "29092:29092"
+    volumes:
+      - kafka_data:/var/lib/kafka/data
+    networks:
+      - cinevibe-network
+    healthcheck:
+      test: ["CMD", "kafka-topics", "--bootstrap-server", "localhost:9092", "--list"]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+
+  # ==================== Kafka UI ====================
+  kafka-ui:
+    image: provectuslabs/kafka-ui:latest
+    container_name: cinevibe-kafka-ui
+    depends_on:
+      kafka:
+        condition: service_healthy
+    environment:
+      - KAFKA_CLUSTERS_0_NAME=cinevibe-local
+      - KAFKA_CLUSTERS_0_BOOTSTRAPSERVERS=kafka:29092
+      - KAFKA_CLUSTERS_0_ZOOKEEPER=zookeeper:2181
+    ports:
+      - "8090:8080"
+    networks:
+      - cinevibe-network
+
+  # ==================== ClickHouse ====================
+  clickhouse:
+    image: clickhouse/clickhouse-server:24.8
+    container_name: cinevibe-clickhouse
+    ports:
+      - "8123:8123"   # HTTP
+      - "9000:9000"   # Native
+    ulimits:
+      nofile:
+        soft: 262144
+        hard: 262144
+    environment:
+      - CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT=1
+      - CLICKHOUSE_DB=analytics
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+      - ./clickhouse/init:/docker-entrypoint-initdb.d
+    networks:
+      - cinevibe-network
+    healthcheck:
+      test: ["CMD", "clickhouse-client", "--query", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ==================== Spark Master ====================
+  spark-master:
+    image: apache/spark:3.5.1
+    container_name: cinevibe-spark-master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+    environment:
+      - SPARK_MASTER_HOST=spark-master
+    ports:
+      - "7077:7077"
+      - "8081:8080"
+    volumes:
+      - ./pyspark:/opt/spark-apps
+      - spark_data:/opt/spark/work-dir
+    networks:
+      - cinevibe-network
+
+  # ==================== Spark Worker ====================
+  spark-worker:
+    image: apache/spark:3.5.1
+    container_name: cinevibe-spark-worker
+    depends_on:
+      - spark-master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+    environment:
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_MEMORY=2G
+    volumes:
+      - ./pyspark:/opt/spark-apps
+    networks:
+      - cinevibe-network
+
+networks:
+  cinevibe-network:
+    driver: bridge
+
+volumes:
+  zookeeper_data:
+  zookeeper_datalog:
+  kafka_data:
+  clickhouse_data:
+  spark_data:

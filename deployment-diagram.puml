@@ -1,0 +1,451 @@
+@startuml CineVibe_Deployment_Diagram
+
+skinparam backgroundColor #FEFEFE
+skinparam shadowing true
+skinparam componentStyle rectangle
+skinparam nodeBackgroundColor #FFFFFF
+skinparam defaultFontName Arial
+
+title Диаграмма развертывания системы CineVibe\nMovie Aggregator Platform
+
+' ========================================
+' КЛИЕНТСКИЕ УСТРОЙСТВА (HARDWARE)
+' ========================================
+
+node "<<device>>\nНастольный ПК" as DesktopPC #E3F2FD {
+  node "<<OS>>\nWindows 10/11" as WinOS #BBDEFB {
+    
+    node "<<browser>>\nGoogle Chrome" as Chrome #4285F4 {
+      component "Chrome V8 Engine" as ChromeV8 #5C9EF5
+    }
+    
+    node "<<browser>>\nOpera" as Opera #FF1B2D {
+      component "Blink Engine" as OperaEngine #FF4B5C
+    }
+    
+    node "<<browser>>\nMicrosoft Edge" as Edge #0078D4 {
+      component "Chromium Engine" as EdgeEngine #1A8CFF
+    }
+  }
+}
+
+node "<<device>>\nНоутбук" as Laptop #E8F5E9 {
+  node "<<OS>>\nmacOS / Linux" as MacOS #C8E6C9 {
+    
+    node "<<browser>>\nSafari / Firefox" as Safari #007AFF {
+      component "WebKit / Gecko" as SafariEngine #33A1FF
+    }
+  }
+}
+
+node "<<device>>\nМобильное устройство" as Mobile #FFF3E0 {
+  node "<<OS>>\niOS / Android" as MobileOS #FFE0B2 {
+    
+    node "<<browser>>\nМобильный браузер" as MobileBrowser #FF9800 {
+      component "Mobile WebView" as MobileEngine #FFB74D
+    }
+  }
+}
+
+' ========================================
+' ИНТЕРНЕТ / СЕТЬ
+' ========================================
+
+cloud "<<network>>\nИнтернет\n(HTTPS / TLS 1.3)" as Internet #E0E0E0 {
+}
+
+' ========================================
+' ВЕБ-СЕРВЕР (FRONTEND)
+' ========================================
+
+node "<<server>>\nВеб-сервер Frontend\nIntel Xeon E-2236 / 16GB RAM" as FrontendServer #E1F5FE {
+  
+  node "<<OS>>\nUbuntu Server 22.04 LTS" as FrontendOS #B3E5FC {
+    
+    node "<<executionEnvironment>>\nNode.js 18 LTS" as NodeEnv #81D4FA {
+      
+      component "<<webServer>>\nVite Dev Server\n(порт 5173)" as ViteServer #29B6F6 {
+        artifact "index.html" as IndexHtml #E3F2FD
+        artifact "vite.config.js" as ViteConfig #E3F2FD
+      }
+      
+      component "<<application>>\nReact 18 SPA" as ReactApp #61DAFB {
+        component "React Router v6" as ReactRouter #4FC3F7
+        component "Axios HTTP Client" as Axios #29B6F6
+        component "AuthContext" as AuthCtx #81D4FA
+        component "Tailwind CSS" as Tailwind #06B6D4
+        component "Lucide Icons" as Lucide #F97316
+      }
+      
+      folder "<<artifact>>\nСтатические файлы" as StaticFiles #E1F5FE {
+        artifact "App.jsx" as AppJsx
+        artifact "main.jsx" as MainJsx
+        artifact "tailwind.config.js" as TailwindCfg
+        artifact "postcss.config.js" as PostCSS
+      }
+      
+      folder "<<artifact>>\nКомпоненты" as Components #E1F5FE {
+        artifact "MetascoreBadge.jsx" as MetascoreBadge
+        artifact "UserScoreBadge.jsx" as UserScoreBadge
+        artifact "ExpectationsWidget.jsx" as ExpectWidget
+        artifact "CriticReviewCard.jsx" as CriticCard
+      }
+      
+      folder "<<artifact>>\nСтраницы" as Pages #E1F5FE {
+        artifact "HomePage.jsx" as HomePage
+        artifact "DetailedContentPage.jsx" as DetailPage
+        artifact "GameDetail.jsx" as GameDetail
+        artifact "SeriesDetail.jsx" as SeriesDetail
+        artifact "ProfilePage.jsx" as ProfilePage
+        artifact "AdminPanel.jsx" as AdminPanel
+      }
+    }
+  }
+}
+
+' ========================================
+' СЕРВЕР ПРИЛОЖЕНИЙ (BACKEND)
+' ========================================
+
+node "<<server>>\nСервер приложений Backend\nIntel Xeon E-2288G / 32GB RAM / SSD 512GB" as BackendServer #E8F5E9 {
+  
+  node "<<OS>>\nUbuntu Server 22.04 LTS" as BackendOS #C8E6C9 {
+    
+    node "<<executionEnvironment>>\nNode.js 18 LTS + TypeScript 5" as NodeBackend #A5D6A7 {
+      
+      component "<<application>>\nNestJS 10 Backend\n(порт 8080)" as NestApp #68A063 {
+        
+        package "<<module>>\nCore Modules" as CoreModules #E8F5E9 {
+          component "AuthModule\n(JWT + bcrypt)" as AuthMod #C8E6C9
+          component "UsersModule" as UsersMod #C8E6C9
+          component "ContentModule" as ContentMod #C8E6C9
+          component "ReviewsModule" as ReviewsMod #C8E6C9
+        }
+        
+        package "<<module>>\nFeature Modules" as FeatureModules #FFF9C4 {
+          component "CriticsModule" as CriticsMod #FFECB3
+          component "AdminModule" as AdminMod #FFECB3
+          component "GamificationModule\n(XP, достижения)" as GamifMod #FFECB3
+          component "ExpectationsModule\n(До/После)" as ExpectMod #FFECB3
+        }
+        
+        package "<<module>>\nIntegration Modules" as IntegrationModules #FFCDD2 {
+          component "AnalyticsModule" as AnalyticsMod #EF9A9A
+          component "ExternalApiModule\n(TMDB, IGDB)" as ExtApiMod #EF9A9A
+          component "KafkaModule\n[планируется]" as KafkaMod #E0E0E0
+        }
+        
+        package "<<middleware>>\nCommon" as CommonMW #E1BEE7 {
+          component "JwtAuthGuard" as JwtGuard #CE93D8
+          component "RolesGuard" as RolesGuard #CE93D8
+          component "LoggingInterceptor" as LogInterceptor #CE93D8
+          component "AllExceptionsFilter" as ExFilter #CE93D8
+        }
+      }
+      
+      interface "<<interface>>\nSwagger UI\n(/swagger)" as SwaggerUI #98FB98
+      interface "<<interface>>\nREST API\n(/api/*)" as RestAPI #98FB98
+    }
+    
+    folder "<<artifact>>\nКонфигурация" as ConfigFiles #FFE0B2 {
+      artifact ".env" as EnvFile
+      artifact "package.json" as PackageJson
+      artifact "tsconfig.json" as TsConfig
+      artifact "nest-cli.json" as NestCli
+    }
+    
+    folder "<<artifact>>\nЛоги (Winston)" as LogsFolder #FFECB3 {
+      artifact "combined.log" as CombinedLog
+      artifact "error.log" as ErrorLog
+      artifact "audit.log" as AuditLog
+    }
+    
+    folder "<<artifact>>\nSQL Scripts" as SQLScripts #E3F2FD {
+      artifact "admin-procedures.sql" as AdminSQL
+      artifact "critic-procedures.sql" as CriticSQL
+      artifact "viewer-user-procedures.sql" as ViewerSQL
+      artifact "triggers-procedures.sql" as TriggersSQL
+    }
+  }
+}
+
+' ========================================
+' СЕРВЕР БАЗЫ ДАННЫХ
+' ========================================
+
+node "<<server>>\nСервер базы данных\nIntel Xeon Silver 4210 / 64GB RAM / SSD 1TB RAID10" as DBServer #FFF8E1 {
+  
+  node "<<OS>>\nUbuntu Server 22.04 LTS" as DBOS #FFECB3 {
+    
+    database "<<database>>\nMySQL 8.0\n(порт 3306)" as MySQL #FFD54F {
+      
+      folder "<<schema>>\nОсновные таблицы" as MainTables #FFF9C4 {
+        storage "users" as TblUsers
+        storage "content" as TblContent
+        storage "reviews" as TblReviews
+        storage "review_votes" as TblVotes
+        storage "user_ratings" as TblRatings
+        storage "watchlist" as TblWatchlist
+      }
+      
+      folder "<<schema>>\nГеймификация" as GamifTables #C8E6C9 {
+        storage "achievements" as TblAchievements
+        storage "user_achievements" as TblUserAchievements
+        storage "user_statistics" as TblUserStats
+        storage "notifications" as TblNotifications
+      }
+      
+      folder "<<schema>>\nКонтент & Медиа" as MediaTables #B3E5FC {
+        storage "hero_carousel" as TblCarousel
+        storage "coming_soon_items" as TblComingSoon
+        storage "publications" as TblPublications
+        storage "expectations" as TblExpectations
+      }
+      
+      folder "<<schema>>\nКритики" as CriticsTables #E1BEE7 {
+        storage "subscriptions" as TblSubscriptions
+        storage "user_follows" as TblFollows
+        storage "user_critic_preferences" as TblCriticPrefs
+      }
+      
+      folder "<<storedProcedure>>\nХранимые процедуры" as StoredProcs #FFCDD2 {
+        component "add_review_viewer()" as ProcAddReview
+        component "publish_pro_review()" as ProcProReview
+        component "admin_delete_review()" as ProcDelReview
+        component "get_content_stats()" as ProcStats
+      }
+      
+      folder "<<trigger>>\nТриггеры" as Triggers #EF9A9A {
+        component "after_review_insert" as TrigReviewIns
+        component "after_rating_update" as TrigRatingUpd
+        component "update_user_stats" as TrigUserStats
+      }
+    }
+  }
+}
+
+' ========================================
+' АНАЛИТИКА (ПЛАНИРУЕТСЯ)
+' ========================================
+
+node "<<server>>\nСервер аналитики\n[ПЛАНИРУЕТСЯ]\nDocker Swarm" as AnalyticsServer #ECEFF1 {
+  
+  node "<<container>>\nDocker" as DockerEnv #CFD8DC {
+    
+    component "<<messageQueue>>\nApache Kafka\n(порт 9092)" as Kafka #B0BEC5
+    
+    component "<<processing>>\nApache Spark\n+ PySpark" as Spark #B0BEC5
+    
+    database "<<database>>\nClickHouse\n(порт 8123)" as ClickHouse #90A4AE {
+      storage "review_events" as ChReviews
+      storage "user_activity" as ChActivity
+      storage "content_metrics" as ChMetrics
+    }
+  }
+}
+
+' ========================================
+' ВНЕШНИЕ СЕРВИСЫ (CLOUD)
+' ========================================
+
+cloud "<<external>>\nВнешние API сервисы" as ExternalServices #E8F5E9 {
+  
+  node "<<service>>\nTMDB API" as TMDB #C8E6C9 {
+    interface "/movie/*" as TMDBMovie
+    interface "/tv/*" as TMDBTV
+    interface "/search/*" as TMDBSearch
+  }
+  
+  node "<<service>>\nIGDB API\n(Twitch)" as IGDB #9C27B0 {
+    interface "/games/*" as IGDBGames
+    interface "/platforms/*" as IGDBPlatforms
+    interface "OAuth 2.0" as IGDBOAuth
+  }
+}
+
+' ========================================
+' СВЯЗИ И ПРОТОКОЛЫ
+' ========================================
+
+' Браузеры -> Интернет
+Chrome --> Internet : HTTPS
+Opera --> Internet : HTTPS
+Edge --> Internet : HTTPS
+Safari --> Internet : HTTPS
+MobileBrowser --> Internet : HTTPS
+
+' Интернет -> Frontend Server
+Internet --> ViteServer : "HTTPS\nпорт 443"
+
+' Frontend внутренние связи
+ViteServer --> ReactApp : "HMR\nWebSocket"
+ReactApp --> ReactRouter : навигация
+ReactApp --> Axios : HTTP запросы
+ReactApp --> AuthCtx : состояние авторизации
+ReactApp --> Tailwind : стилизация
+
+' Frontend -> Backend
+ReactApp --> RestAPI : "HTTP/HTTPS\nREST API\nJWT Bearer Token"
+
+' Backend внутренние связи
+NestApp --> SwaggerUI : "/swagger"
+NestApp --> RestAPI : "/api/*"
+
+' Модули Backend
+AuthMod --> UsersMod : зависимость
+ReviewsMod --> GamifMod : "начисление XP\nдостижения"
+ContentMod --> ExtApiMod : "импорт контента"
+UsersMod --> GamifMod : "проверка достижений"
+
+' Middleware
+JwtGuard --> AuthMod : валидация токена
+RolesGuard --> UsersMod : проверка ролей
+LogInterceptor --> LogsFolder : "Winston\nзапись логов"
+
+' Backend -> MySQL
+NestApp --> MySQL : "TCP/IP\nTypeORM\nпорт 3306"
+SQLScripts --> StoredProcs : "импорт процедур"
+
+' Backend -> Внешние API
+ExtApiMod --> TMDB : "HTTPS\nREST API\nAPI Key"
+ExtApiMod --> IGDB : "HTTPS\nOAuth 2.0\nClient Credentials"
+
+' Backend -> Аналитика (планируется)
+NestApp ..> Kafka : "события\n[планируется]"
+Kafka ..> Spark : "потоковая обработка"
+Spark ..> ClickHouse : "агрегированные данные"
+
+' ========================================
+' ПРИМЕЧАНИЯ
+' ========================================
+
+note top of DesktopPC
+  **Поддерживаемые браузеры:**
+  • Google Chrome 90+
+  • Microsoft Edge 90+
+  • Opera 76+
+  • Mozilla Firefox 88+
+  • Safari 14+
+  
+  **Требования:**
+  JavaScript enabled
+  Cookies enabled
+  WebSocket support
+end note
+
+note right of FrontendServer
+  **Frontend Server**
+  ──────────────────
+  **Hardware:**
+  • CPU: Intel Xeon E-2236
+  • RAM: 16 GB DDR4
+  • SSD: 256 GB NVMe
+  
+  **Software:**
+  • Node.js 18 LTS
+  • Vite 5.x (dev server)
+  • React 18.2
+  
+  **Порт:** 5173 (dev) / 443 (prod)
+end note
+
+note right of BackendServer
+  **Backend Server**
+  ──────────────────
+  **Hardware:**
+  • CPU: Intel Xeon E-2288G
+  • RAM: 32 GB DDR4 ECC
+  • SSD: 512 GB NVMe
+  
+  **Software:**
+  • NestJS 10.x
+  • TypeScript 5.x
+  • TypeORM 0.3.x
+  
+  **Порт:** 8080
+  **API:** /api/*, /swagger
+end note
+
+note right of DBServer
+  **Database Server**
+  ──────────────────
+  **Hardware:**
+  • CPU: Intel Xeon Silver 4210
+  • RAM: 64 GB DDR4 ECC
+  • Storage: 1 TB SSD RAID10
+  
+  **Software:**
+  • MySQL 8.0.35
+  • InnoDB Engine
+  
+  **Порт:** 3306
+  **Charset:** utf8mb4
+end note
+
+note bottom of AnalyticsServer
+  **Статус: ПЛАНИРУЕТСЯ**
+  ────────────────────────
+  Real-time аналитика
+  будет реализована в
+  следующих версиях
+end note
+
+note bottom of ExternalServices
+  **External APIs**
+  ─────────────────
+  **TMDB:** фильмы, сериалы
+  Rate limit: 40 req/10s
+  
+  **IGDB:** игры
+  OAuth 2.0 (Twitch)
+  Rate limit: 4 req/s
+end note
+
+' ========================================
+' ЛЕГЕНДА
+' ========================================
+
+legend right
+  **═══════════════════════════════════════════**
+  **CineVibe - Агрегатор фильмов, сериалов и игр**
+  **═══════════════════════════════════════════**
+  
+  **Архитектура:** 3-уровневая (Presentation - Business - Data)
+  
+  **Клиентский уровень:**
+  ├─ Браузеры: Chrome, Opera, Edge, Safari, Firefox
+  ├─ SPA: React 18 + Vite + Tailwind CSS
+  └─ Протокол: HTTPS (TLS 1.3)
+  
+  **Уровень приложения:**
+  ├─ Framework: NestJS 10 (Node.js + TypeScript)
+  ├─ Auth: JWT + bcrypt (RS256)
+  ├─ ORM: TypeORM 0.3
+  ├─ Docs: Swagger/OpenAPI 3.0
+  └─ Logging: Winston (file + console)
+  
+  **Уровень данных:**
+  ├─ СУБД: MySQL 8.0 (InnoDB)
+  ├─ Хранимые процедуры для бизнес-логики
+  ├─ Триггеры для автоматизации
+  └─ Индексы для оптимизации
+  
+  **Внешние интеграции:**
+  ├─ TMDB API (фильмы, сериалы)
+  └─ IGDB API (игры, Twitch OAuth)
+  
+  **──────────────────────────────────────**
+  **Условные обозначения:**
+  ─────  Реализованная связь
+  ┄┄┄┄   Планируемая связь
+  
+  **Цветовая схема:**
+  🔵 Frontend / UI компоненты
+  🟢 Backend / серверные компоненты  
+  🟡 База данных / хранение
+  ⚪ Планируемые компоненты
+  🟣 Внешние сервисы
+  **──────────────────────────────────────**
+endlegend
+
+@enduml

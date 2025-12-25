@@ -1,0 +1,112 @@
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:07:01.384Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:08:07.969Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:14:34.217Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:18:31.923Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:21:36.900Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:21:40.338Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:22:49.619Z"}
+{"level":"error","message":"× GET /favicon.ico 404 user=- reqId=476b97f2-7c94-44e9-bd4f-4d4658b65a84 msg={\"message\":\"Cannot GET /favicon.ico\",\"error\":\"Not Found\",\"statusCode\":404}","timestamp":"2025-11-30T08:25:12.720Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:28:23.255Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:40:57.159Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=7c2d22a4-c402-4d85-bd14-523b5424ee05 msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T08:41:37.867Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:43:01.134Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: timeout of 10000ms exceeded","timestamp":"2025-11-30T08:43:30.995Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:49:46.797Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:50:58.878Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:52:53.323Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T08:54:25.559Z"}
+{"level":"error","message":"× POST /api/auth/login 200 49ms user=- reqId=d61bc769-c99f-43d6-a20b-4ab96d77d1eb msg=User not found","timestamp":"2025-11-30T12:28:25.469Z"}
+{"level":"error","message":"× POST /api/auth/login 401 user=- reqId=d61bc769-c99f-43d6-a20b-4ab96d77d1eb msg={\"message\":\"User not found\",\"error\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T12:28:25.475Z"}
+{"level":"error","message":"× POST /api/auth/login 200 34ms user=- reqId=cf0271ef-57f3-4239-b587-f10ae67a8328 msg=User not found","timestamp":"2025-11-30T12:28:49.141Z"}
+{"level":"error","message":"× POST /api/auth/login 401 user=- reqId=cf0271ef-57f3-4239-b587-f10ae67a8328 msg={\"message\":\"User not found\",\"error\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T12:28:49.141Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=dca0bbb0-eb05-4f98-9a33-98ce041ed324 msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T12:30:32.494Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=b1241c0c-e4c2-48d9-a598-f10c963bdc4a msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T12:32:16.558Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T12:40:18.634Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T12:44:19.148Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T12:44:29.975Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T12:45:05.010Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T12:45:17.604Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T12:48:04.450Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T12:51:00.120Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T12:51:18.028Z"}
+{"level":"error","message":"× PATCH /api/users/me 200 19ms user=13 reqId=3811646c-593f-449e-a44f-11b5fdc464f7 msg=Bad Request Exception","timestamp":"2025-11-30T12:54:43.208Z"}
+{"level":"error","message":"× PATCH /api/users/me 400 user=13 reqId=3811646c-593f-449e-a44f-11b5fdc464f7 msg={\"message\":[\"email must be an email\"],\"error\":\"Bad Request\",\"statusCode\":400}","timestamp":"2025-11-30T12:54:43.210Z"}
+{"level":"error","message":"× PATCH /api/users/me 200 36ms user=13 reqId=b375b062-a267-4158-ae19-b3c99c5f78cc msg=Bad Request Exception","timestamp":"2025-11-30T13:03:40.649Z"}
+{"level":"error","message":"× PATCH /api/users/me 400 user=13 reqId=b375b062-a267-4158-ae19-b3c99c5f78cc msg={\"message\":[\"email must be an email\"],\"error\":\"Bad Request\",\"statusCode\":400}","timestamp":"2025-11-30T13:03:40.653Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T13:39:52.577Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T13:40:53.514Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T13:43:33.857Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T13:45:42.456Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T13:47:19.353Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T13:54:44.118Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T13:54:52.563Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:16:09.268Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:34:20.969Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=7f2afab6-8f55-4f13-8fc2-538b19b62132 msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T15:35:17.414Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:36:58.563Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 200 51ms user=- reqId=7a61ddfb-1bc0-4e4c-94e8-759a8edd21eb msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:02.456Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 500 user=- reqId=7a61ddfb-1bc0-4e4c-94e8-759a8edd21eb msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:02.457Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 200 34ms user=- reqId=2e31f71c-4235-42ea-b1f4-96ee5ef52ebd msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:11.106Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 500 user=- reqId=2e31f71c-4235-42ea-b1f4-96ee5ef52ebd msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:11.107Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 200 22ms user=- reqId=fc2cb58b-e5b5-4a8d-92d6-40ece5a8c586 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:20.059Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 500 user=- reqId=fc2cb58b-e5b5-4a8d-92d6-40ece5a8c586 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:20.060Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 200 23ms user=- reqId=ae09c8b4-38c0-4aff-a2eb-88cc7c930021 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:27.958Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 500 user=- reqId=ae09c8b4-38c0-4aff-a2eb-88cc7c930021 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:27.959Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 200 17ms user=- reqId=229b7760-ae59-4fda-a31d-e93b7781a1b5 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:43.768Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 500 user=- reqId=229b7760-ae59-4fda-a31d-e93b7781a1b5 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:43.769Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 200 18ms user=- reqId=09350d5d-d883-4c2f-9d3c-22296c9081c5 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:47.663Z"}
+{"level":"error","message":"× GET /api/reviews/content/17 500 user=- reqId=09350d5d-d883-4c2f-9d3c-22296c9081c5 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:37:47.664Z"}
+{"level":"error","message":"× GET /api/reviews/content/16 200 32ms user=- reqId=57506a4e-8df4-4590-b7bb-763825c997f7 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:38:20.833Z"}
+{"level":"error","message":"× GET /api/reviews/content/16 500 user=- reqId=57506a4e-8df4-4590-b7bb-763825c997f7 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:38:20.834Z"}
+{"level":"error","message":"× GET /api/reviews/content/2 200 25ms user=- reqId=e47aae29-62e5-411d-bb86-26c7d7fd9662 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:38:24.896Z"}
+{"level":"error","message":"× GET /api/reviews/content/2 500 user=- reqId=e47aae29-62e5-411d-bb86-26c7d7fd9662 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:38:24.896Z"}
+{"level":"warn","message":"add_review_viewer failed, using fallback insert. code=ER_SP_DOES_NOT_EXIST errno=1305 msg=PROCEDURE warehouse.add_review_viewer does not exist","timestamp":"2025-11-30T15:39:23.787Z"}
+{"level":"error","message":"× GET /api/reviews/content/2 200 15ms user=- reqId=30247903-f4a0-43e4-8d74-be399a5ca4c8 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:39:24.311Z"}
+{"level":"error","message":"× GET /api/reviews/content/2 500 user=- reqId=30247903-f4a0-43e4-8d74-be399a5ca4c8 msg=Unknown column 'rv.vote_type' in 'where clause'","timestamp":"2025-11-30T15:39:24.311Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:40:48.751Z"}
+{"level":"warn","message":"add_review_viewer failed, using fallback insert. code=ER_SP_DOES_NOT_EXIST errno=1305 msg=PROCEDURE warehouse.add_review_viewer does not exist","timestamp":"2025-11-30T15:41:05.683Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:42:51.253Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:48:05.410Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:49:33.204Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:49:42.595Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:52:15.310Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:52:25.455Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:55:59.047Z"}
+{"level":"error","message":"× POST /api/auth/login 200 153ms user=- reqId=924ec308-f3e9-4864-bfd2-94ccfe723939 msg=Invalid credentials","timestamp":"2025-11-30T15:57:15.043Z"}
+{"level":"error","message":"× POST /api/auth/login 401 user=- reqId=924ec308-f3e9-4864-bfd2-94ccfe723939 msg={\"message\":\"Invalid credentials\",\"error\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T15:57:15.045Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=31de70f9-2fb2-40b4-bccd-57f7e6970232 msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T15:57:37.055Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:59:24.819Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T15:59:42.104Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T16:01:00.375Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T16:05:36.091Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T16:12:28.705Z"}
+{"level":"error","message":"× GET /api/expectations/20 200 56ms user=- reqId=711ae9ba-210f-40a9-9c38-822d034b20a6 msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:27:39.813Z"}
+{"level":"error","message":"× GET /api/expectations/20 500 user=- reqId=711ae9ba-210f-40a9-9c38-822d034b20a6 msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:27:39.815Z"}
+{"level":"error","message":"× GET /api/expectations/20 200 14ms user=- reqId=19f16943-26d8-4437-92a4-36f79eb2cfca msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:27:40.153Z"}
+{"level":"error","message":"× GET /api/expectations/20 500 user=- reqId=19f16943-26d8-4437-92a4-36f79eb2cfca msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:27:40.154Z"}
+{"level":"error","message":"× GET /api/expectations/20 200 12ms user=- reqId=35e6445d-f77b-481f-ab51-e3ba67f0a1e4 msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:27:40.488Z"}
+{"level":"error","message":"× GET /api/expectations/20 500 user=- reqId=35e6445d-f77b-481f-ab51-e3ba67f0a1e4 msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:27:40.489Z"}
+{"level":"error","message":"× GET /api/expectations/20 200 38ms user=- reqId=fda83268-9558-4294-815e-f7b403d102ae msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:23.779Z"}
+{"level":"error","message":"× GET /api/expectations/20 500 user=- reqId=fda83268-9558-4294-815e-f7b403d102ae msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:23.780Z"}
+{"level":"error","message":"× GET /api/expectations/20 200 5ms user=- reqId=02937d31-22d9-4e57-9b5e-9c864723ecae msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:24.101Z"}
+{"level":"error","message":"× GET /api/expectations/20 500 user=- reqId=02937d31-22d9-4e57-9b5e-9c864723ecae msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:24.102Z"}
+{"level":"error","message":"× GET /api/expectations/20 200 3ms user=- reqId=64ff3535-9de0-425c-92f5-527a03d71ba3 msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:24.427Z"}
+{"level":"error","message":"× GET /api/expectations/20 500 user=- reqId=64ff3535-9de0-425c-92f5-527a03d71ba3 msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:24.427Z"}
+{"level":"error","message":"× GET /api/expectations/20 200 13ms user=- reqId=502c14f6-9d2a-4bc5-926b-4b3d74fca0ab msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:30.220Z"}
+{"level":"error","message":"× GET /api/expectations/20 500 user=- reqId=502c14f6-9d2a-4bc5-926b-4b3d74fca0ab msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:30.221Z"}
+{"level":"error","message":"× GET /api/expectations/20 200 4ms user=- reqId=2cc963cc-2bf0-4de4-a292-ff6df0aa0991 msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:30.473Z"}
+{"level":"error","message":"× GET /api/expectations/20 500 user=- reqId=2cc963cc-2bf0-4de4-a292-ff6df0aa0991 msg=Table 'warehouse.expectations' doesn't exist","timestamp":"2025-11-30T16:29:30.474Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-11-30T16:33:17.072Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=ee33a69c-fb0d-4441-ab3e-ad58127cc69e msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T16:35:22.305Z"}
+{"level":"error","message":"× POST /api/reviews/28/vote 201 20ms user=13 reqId=f813f5d3-709e-4903-b4f6-d248a1fadb4a msg=Field 'is_helpful' doesn't have a default value","timestamp":"2025-11-30T16:36:32.942Z"}
+{"level":"error","message":"× POST /api/reviews/28/vote 500 user=13 reqId=f813f5d3-709e-4903-b4f6-d248a1fadb4a msg=Field 'is_helpful' doesn't have a default value","timestamp":"2025-11-30T16:36:32.942Z"}
+{"level":"error","message":"× POST /api/reviews/28/vote 201 4ms user=13 reqId=69494312-3526-4643-8b30-072587ce514f msg=Field 'is_helpful' doesn't have a default value","timestamp":"2025-11-30T16:36:35.638Z"}
+{"level":"error","message":"× POST /api/reviews/28/vote 500 user=13 reqId=69494312-3526-4643-8b30-072587ce514f msg=Field 'is_helpful' doesn't have a default value","timestamp":"2025-11-30T16:36:35.639Z"}
+{"level":"warn","message":"add_review_viewer failed, using fallback insert. code=ER_SP_DOES_NOT_EXIST errno=1305 msg=PROCEDURE warehouse.add_review_viewer does not exist","timestamp":"2025-11-30T16:46:27.253Z"}
+{"level":"warn","message":"add_review_viewer failed, using fallback insert. code=ER_SP_DOES_NOT_EXIST errno=1305 msg=PROCEDURE warehouse.add_review_viewer does not exist","timestamp":"2025-11-30T16:48:49.952Z"}
+{"level":"warn","message":"add_review_viewer failed, using fallback insert. code=ER_SP_DOES_NOT_EXIST errno=1305 msg=PROCEDURE warehouse.add_review_viewer does not exist","timestamp":"2025-11-30T16:49:55.834Z"}
+{"level":"error","message":"× POST /api/reviews/47/vote 201 7ms user=13 reqId=7a468748-3467-420f-ace1-ebfa987f2b6f msg=Field 'is_helpful' doesn't have a default value","timestamp":"2025-11-30T16:51:18.734Z"}
+{"level":"error","message":"× POST /api/reviews/47/vote 500 user=13 reqId=7a468748-3467-420f-ace1-ebfa987f2b6f msg=Field 'is_helpful' doesn't have a default value","timestamp":"2025-11-30T16:51:18.740Z"}
+{"level":"warn","message":"add_review_viewer failed, using fallback insert. code=ER_SP_DOES_NOT_EXIST errno=1305 msg=PROCEDURE warehouse.add_review_viewer does not exist","timestamp":"2025-11-30T16:54:01.798Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=71914f42-625f-4e38-809c-e2963ddea930 msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-11-30T16:54:52.725Z"}
+{"level":"warn","message":"publish_pro_review failed, using fallback insert. code=ER_SP_DOES_NOT_EXIST errno=1305 msg=PROCEDURE warehouse.publish_pro_review does not exist","timestamp":"2025-11-30T16:56:01.793Z"}

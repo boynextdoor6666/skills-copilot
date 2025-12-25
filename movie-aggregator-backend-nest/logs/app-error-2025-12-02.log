@@ -1,0 +1,2 @@
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-02T10:11:24.497Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=6f33dac8-8704-4f60-886f-cd118e6f525e msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-12-02T11:59:24.241Z"}

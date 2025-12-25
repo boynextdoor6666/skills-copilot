@@ -1,0 +1,801 @@
+{"level":"info","message":"UsersController {/api/users}:","timestamp":"2025-12-02T10:11:19.911Z"}
+{"level":"info","message":"Mapped {/api/users/me, GET} route","timestamp":"2025-12-02T10:11:19.937Z"}
+{"level":"info","message":"Mapped {/api/users/me, PATCH} route","timestamp":"2025-12-02T10:11:19.944Z"}
+{"level":"info","message":"Mapped {/api/users/me/password, PATCH} route","timestamp":"2025-12-02T10:11:19.954Z"}
+{"level":"info","message":"Mapped {/api/users/by-username/:username, GET} route","timestamp":"2025-12-02T10:11:19.961Z"}
+{"level":"info","message":"Mapped {/api/users/me/level, GET} route","timestamp":"2025-12-02T10:11:19.974Z"}
+{"level":"info","message":"Mapped {/api/users/me/achievements, GET} route","timestamp":"2025-12-02T10:11:19.976Z"}
+{"level":"info","message":"Mapped {/api/users/leaderboard, GET} route","timestamp":"2025-12-02T10:11:19.984Z"}
+{"level":"info","message":"Mapped {/api/users/me/taste-profile, GET} route","timestamp":"2025-12-02T10:11:19.992Z"}
+{"level":"info","message":"Mapped {/api/users/me/recommendations, GET} route","timestamp":"2025-12-02T10:11:19.996Z"}
+{"level":"info","message":"Mapped {/api/users/me/watchlist, GET} route","timestamp":"2025-12-02T10:11:20.000Z"}
+{"level":"info","message":"Mapped {/api/users/me/watchlist/:contentId, POST} route","timestamp":"2025-12-02T10:11:20.003Z"}
+{"level":"info","message":"Mapped {/api/users/me/watchlist/:contentId, DELETE} route","timestamp":"2025-12-02T10:11:20.008Z"}
+{"level":"info","message":"GamificationController {/api/gamification}:","timestamp":"2025-12-02T10:11:20.013Z"}
+{"level":"info","message":"Mapped {/api/gamification/my-achievements, GET} route","timestamp":"2025-12-02T10:11:20.016Z"}
+{"level":"info","message":"Mapped {/api/gamification/user/:id, GET} route","timestamp":"2025-12-02T10:11:20.018Z"}
+{"level":"info","message":"AuthController {/api/auth}:","timestamp":"2025-12-02T10:11:20.019Z"}
+{"level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2025-12-02T10:11:20.025Z"}
+{"level":"info","message":"Mapped {/api/auth/register, POST} route","timestamp":"2025-12-02T10:11:20.036Z"}
+{"level":"info","message":"Mapped {/api/auth/validate, GET} route","timestamp":"2025-12-02T10:11:20.039Z"}
+{"level":"info","message":"AdminController {/api/admin}:","timestamp":"2025-12-02T10:11:20.041Z"}
+{"level":"info","message":"Mapped {/api/admin/stats, GET} route","timestamp":"2025-12-02T10:11:20.044Z"}
+{"level":"info","message":"Mapped {/api/admin/users, GET} route","timestamp":"2025-12-02T10:11:20.051Z"}
+{"level":"info","message":"Mapped {/api/admin/users/top, GET} route","timestamp":"2025-12-02T10:11:20.053Z"}
+{"level":"info","message":"Mapped {/api/admin/reviews, GET} route","timestamp":"2025-12-02T10:11:20.054Z"}
+{"level":"info","message":"Mapped {/api/admin/reviews/:id, DELETE} route","timestamp":"2025-12-02T10:11:20.055Z"}
+{"level":"info","message":"Mapped {/api/admin/users/:id/status, PATCH} route","timestamp":"2025-12-02T10:11:20.057Z"}
+{"level":"info","message":"Mapped {/api/admin/users/:id/role, PATCH} route","timestamp":"2025-12-02T10:11:20.059Z"}
+{"level":"info","message":"Mapped {/api/admin/users/:id, DELETE} route","timestamp":"2025-12-02T10:11:20.060Z"}
+{"level":"info","message":"ContentController {/api/content}:","timestamp":"2025-12-02T10:11:20.061Z"}
+{"level":"info","message":"Mapped {/api/content/search, GET} route","timestamp":"2025-12-02T10:11:20.064Z"}
+{"level":"info","message":"Mapped {/api/content/autocomplete, GET} route","timestamp":"2025-12-02T10:11:20.065Z"}
+{"level":"info","message":"Mapped {/api/content, GET} route","timestamp":"2025-12-02T10:11:20.067Z"}
+{"level":"info","message":"Mapped {/api/content/stats, GET} route","timestamp":"2025-12-02T10:11:20.069Z"}
+{"level":"info","message":"Mapped {/api/content/country-stats/global, GET} route","timestamp":"2025-12-02T10:11:20.070Z"}
+{"level":"info","message":"Mapped {/api/content/country-ratings/stats, GET} route","timestamp":"2025-12-02T10:11:20.072Z"}
+{"level":"info","message":"Mapped {/api/content/:id/emotional-cloud, GET} route","timestamp":"2025-12-02T10:11:20.074Z"}
+{"level":"info","message":"Mapped {/api/content/:id/perception-map, GET} route","timestamp":"2025-12-02T10:11:20.075Z"}
+{"level":"info","message":"Mapped {/api/content/:id/dynamics, GET} route","timestamp":"2025-12-02T10:11:20.076Z"}
+{"level":"info","message":"Mapped {/api/content/:id/country-ratings, GET} route","timestamp":"2025-12-02T10:11:20.077Z"}
+{"level":"info","message":"Mapped {/api/content/:id, GET} route","timestamp":"2025-12-02T10:11:20.079Z"}
+{"level":"info","message":"Mapped {/api/content, POST} route","timestamp":"2025-12-02T10:11:20.080Z"}
+{"level":"info","message":"Mapped {/api/content/:id, PUT} route","timestamp":"2025-12-02T10:11:20.084Z"}
+{"level":"info","message":"Mapped {/api/content/:id, DELETE} route","timestamp":"2025-12-02T10:11:20.085Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/active, GET} route","timestamp":"2025-12-02T10:11:20.087Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/all, GET} route","timestamp":"2025-12-02T10:11:20.088Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel, POST} route","timestamp":"2025-12-02T10:11:20.089Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/:id, PUT} route","timestamp":"2025-12-02T10:11:20.090Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/:id, DELETE} route","timestamp":"2025-12-02T10:11:20.091Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/active, GET} route","timestamp":"2025-12-02T10:11:20.093Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/all, GET} route","timestamp":"2025-12-02T10:11:20.096Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon, POST} route","timestamp":"2025-12-02T10:11:20.101Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/:id, PUT} route","timestamp":"2025-12-02T10:11:20.103Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/:id, DELETE} route","timestamp":"2025-12-02T10:11:20.105Z"}
+{"level":"info","message":"ReviewsController {/api/reviews}:","timestamp":"2025-12-02T10:11:20.105Z"}
+{"level":"info","message":"Mapped {/api/reviews, POST} route","timestamp":"2025-12-02T10:11:20.108Z"}
+{"level":"info","message":"Mapped {/api/reviews/pro, POST} route","timestamp":"2025-12-02T10:11:20.111Z"}
+{"level":"info","message":"Mapped {/api/reviews/:id, DELETE} route","timestamp":"2025-12-02T10:11:20.112Z"}
+{"level":"info","message":"Mapped {/api/reviews/content/:contentId, GET} route","timestamp":"2025-12-02T10:11:20.113Z"}
+{"level":"info","message":"Mapped {/api/reviews/user/:userId, GET} route","timestamp":"2025-12-02T10:11:20.119Z"}
+{"level":"info","message":"Mapped {/api/reviews/my, GET} route","timestamp":"2025-12-02T10:11:20.122Z"}
+{"level":"info","message":"Mapped {/api/reviews/:id/vote, POST} route","timestamp":"2025-12-02T10:11:20.125Z"}
+{"level":"info","message":"CriticsController {/api/critics}:","timestamp":"2025-12-02T10:11:20.126Z"}
+{"level":"info","message":"Mapped {/api/critics, GET} route","timestamp":"2025-12-02T10:11:20.129Z"}
+{"level":"info","message":"Mapped {/api/critics/followed, GET} route","timestamp":"2025-12-02T10:11:20.133Z"}
+{"level":"info","message":"Mapped {/api/critics/:id/follow, POST} route","timestamp":"2025-12-02T10:11:20.136Z"}
+{"level":"info","message":"Mapped {/api/critics/:id/follow, DELETE} route","timestamp":"2025-12-02T10:11:20.137Z"}
+{"level":"info","message":"Mapped {/api/critics/personalized, GET} route","timestamp":"2025-12-02T10:11:20.139Z"}
+{"level":"info","message":"Mapped {/api/critics/personalized/:contentId, GET} route","timestamp":"2025-12-02T10:11:20.141Z"}
+{"level":"info","message":"AnalyticsController {/api/analytics}:","timestamp":"2025-12-02T10:11:20.143Z"}
+{"level":"info","message":"Mapped {/api/analytics/world-ratings, GET} route","timestamp":"2025-12-02T10:11:20.152Z"}
+{"level":"info","message":"Mapped {/api/analytics/anti-rating, GET} route","timestamp":"2025-12-02T10:11:20.156Z"}
+{"level":"info","message":"Mapped {/api/analytics/hype-top, GET} route","timestamp":"2025-12-02T10:11:20.162Z"}
+{"level":"info","message":"Mapped {/api/analytics/realtime/status, GET} route","timestamp":"2025-12-02T10:11:20.170Z"}
+{"level":"info","message":"Mapped {/api/analytics/realtime/content/:contentId, GET} route","timestamp":"2025-12-02T10:11:20.176Z"}
+{"level":"info","message":"Mapped {/api/analytics/realtime/top-content, GET} route","timestamp":"2025-12-02T10:11:20.179Z"}
+{"level":"info","message":"Mapped {/api/analytics/realtime/user/:userId, GET} route","timestamp":"2025-12-02T10:11:20.183Z"}
+{"level":"info","message":"Mapped {/api/analytics/realtime/trends/reviews, GET} route","timestamp":"2025-12-02T10:11:20.185Z"}
+{"level":"info","message":"Mapped {/api/analytics/realtime/distribution/ratings, GET} route","timestamp":"2025-12-02T10:11:20.189Z"}
+{"level":"info","message":"Mapped {/api/analytics/realtime/emotions, GET} route","timestamp":"2025-12-02T10:11:20.196Z"}
+{"level":"info","message":"Mapped {/api/analytics/realtime/activity/hourly, GET} route","timestamp":"2025-12-02T10:11:20.201Z"}
+{"level":"info","message":"ExpectationsController {/api/expectations}:","timestamp":"2025-12-02T10:11:20.205Z"}
+{"level":"info","message":"Mapped {/api/expectations/:contentId, POST} route","timestamp":"2025-12-02T10:11:20.208Z"}
+{"level":"info","message":"Mapped {/api/expectations/:contentId/me, GET} route","timestamp":"2025-12-02T10:11:20.213Z"}
+{"level":"info","message":"Mapped {/api/expectations/:contentId, GET} route","timestamp":"2025-12-02T10:11:20.220Z"}
+{"level":"info","message":"ExternalApiController {/api/external}:","timestamp":"2025-12-02T10:11:20.224Z"}
+{"level":"info","message":"Mapped {/api/external/status, GET} route","timestamp":"2025-12-02T10:11:20.232Z"}
+{"level":"info","message":"Mapped {/api/external/tmdb/search/movies, GET} route","timestamp":"2025-12-02T10:11:20.239Z"}
+{"level":"info","message":"Mapped {/api/external/tmdb/movies/popular, GET} route","timestamp":"2025-12-02T10:11:20.241Z"}
+{"level":"info","message":"Mapped {/api/external/tmdb/movies/top-rated, GET} route","timestamp":"2025-12-02T10:11:20.242Z"}
+{"level":"info","message":"Mapped {/api/external/tmdb/movies/upcoming, GET} route","timestamp":"2025-12-02T10:11:20.243Z"}
+{"level":"info","message":"Mapped {/api/external/tmdb/movies/:id, GET} route","timestamp":"2025-12-02T10:11:20.245Z"}
+{"level":"info","message":"Mapped {/api/external/tmdb/search/tv, GET} route","timestamp":"2025-12-02T10:11:20.247Z"}
+{"level":"info","message":"Mapped {/api/external/tmdb/tv/popular, GET} route","timestamp":"2025-12-02T10:11:20.250Z"}
+{"level":"info","message":"Mapped {/api/external/tmdb/tv/:id, GET} route","timestamp":"2025-12-02T10:11:20.252Z"}
+{"level":"info","message":"Mapped {/api/external/igdb/search, GET} route","timestamp":"2025-12-02T10:11:20.253Z"}
+{"level":"info","message":"Mapped {/api/external/igdb/games/popular, GET} route","timestamp":"2025-12-02T10:11:20.257Z"}
+{"level":"info","message":"Mapped {/api/external/igdb/games/top-rated, GET} route","timestamp":"2025-12-02T10:11:20.259Z"}
+{"level":"info","message":"Mapped {/api/external/igdb/games/upcoming, GET} route","timestamp":"2025-12-02T10:11:20.260Z"}
+{"level":"info","message":"Mapped {/api/external/igdb/games/recent, GET} route","timestamp":"2025-12-02T10:11:20.267Z"}
+{"level":"info","message":"Mapped {/api/external/igdb/games/:id, GET} route","timestamp":"2025-12-02T10:11:20.268Z"}
+{"level":"info","message":"Mapped {/api/external/igdb/platforms, GET} route","timestamp":"2025-12-02T10:11:20.269Z"}
+{"level":"info","message":"Mapped {/api/external/igdb/genres, GET} route","timestamp":"2025-12-02T10:11:20.270Z"}
+{"level":"info","message":"Mapped {/api/external/import/movie/:tmdbId, POST} route","timestamp":"2025-12-02T10:11:20.273Z"}
+{"level":"info","message":"Mapped {/api/external/import/tv/:tmdbId, POST} route","timestamp":"2025-12-02T10:11:20.275Z"}
+{"level":"info","message":"Mapped {/api/external/import/game/:igdbId, POST} route","timestamp":"2025-12-02T10:11:20.276Z"}
+{"level":"info","message":"Mapped {/api/external/import/bulk/movies, POST} route","timestamp":"2025-12-02T10:11:20.277Z"}
+{"level":"info","message":"Mapped {/api/external/import/bulk/games, POST} route","timestamp":"2025-12-02T10:11:20.279Z"}
+{"level":"info","message":"Kafka is disabled. Set KAFKA_ENABLED=true to enable.","timestamp":"2025-12-02T10:11:20.822Z"}
+{"level":"info","message":"ClickHouse is disabled. Set CLICKHOUSE_ENABLED=true to enable.","timestamp":"2025-12-02T10:11:20.823Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-02T10:11:24.497Z"}
+{"level":"info","message":"Nest application successfully started","timestamp":"2025-12-02T10:11:24.503Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=ba88101f-9aa1-4f9c-a75e-f71005df0257","timestamp":"2025-12-02T10:11:43.993Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=62524436-c7f3-4243-9c26-d6a3500a298b","timestamp":"2025-12-02T10:11:44.018Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=82b36fc0-18d6-4835-9097-360b3e197b72","timestamp":"2025-12-02T10:11:44.036Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=fb707a39-e055-4e23-97b0-4ca6939f42fc","timestamp":"2025-12-02T10:11:44.081Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=f3991dc8-7112-49c1-b66e-48b1f1ea888a","timestamp":"2025-12-02T10:11:44.107Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=26 reqId=e03b8713-ee1b-4b46-b9ac-ff07256c5587","timestamp":"2025-12-02T10:11:44.151Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 188ms user=- reqId=ba88101f-9aa1-4f9c-a75e-f71005df0257","timestamp":"2025-12-02T10:11:44.180Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 65ms user=26 reqId=e03b8713-ee1b-4b46-b9ac-ff07256c5587","timestamp":"2025-12-02T10:11:44.217Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 121ms user=- reqId=f3991dc8-7112-49c1-b66e-48b1f1ea888a","timestamp":"2025-12-02T10:11:44.230Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 229ms user=- reqId=62524436-c7f3-4243-9c26-d6a3500a298b","timestamp":"2025-12-02T10:11:44.247Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 225ms user=- reqId=82b36fc0-18d6-4835-9097-360b3e197b72","timestamp":"2025-12-02T10:11:44.255Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 193ms user=- reqId=fb707a39-e055-4e23-97b0-4ca6939f42fc","timestamp":"2025-12-02T10:11:44.269Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=305542f6-b95b-46d4-a264-f5ea6c97cd3d","timestamp":"2025-12-02T10:11:44.518Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 12ms user=- reqId=305542f6-b95b-46d4-a264-f5ea6c97cd3d","timestamp":"2025-12-02T10:11:44.526Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=26 reqId=099d4607-cee6-4532-983c-d43298d0b858","timestamp":"2025-12-02T10:11:44.543Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=f026aa1a-4411-47bb-8289-fa0f14d87c39","timestamp":"2025-12-02T10:11:44.551Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 13ms user=26 reqId=099d4607-cee6-4532-983c-d43298d0b858","timestamp":"2025-12-02T10:11:44.557Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 16ms user=- reqId=f026aa1a-4411-47bb-8289-fa0f14d87c39","timestamp":"2025-12-02T10:11:44.567Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=9b4235a8-7fba-48fb-870b-bc0997782620","timestamp":"2025-12-02T10:11:44.579Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=b761cbcb-3bbd-4757-a732-913d097c4500","timestamp":"2025-12-02T10:11:44.584Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=a1f5c6a9-ba8f-4094-9832-6b8da0a0dbab","timestamp":"2025-12-02T10:11:44.591Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 23ms user=- reqId=9b4235a8-7fba-48fb-870b-bc0997782620","timestamp":"2025-12-02T10:11:44.600Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 31ms user=- reqId=b761cbcb-3bbd-4757-a732-913d097c4500","timestamp":"2025-12-02T10:11:44.617Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 30ms user=- reqId=a1f5c6a9-ba8f-4094-9832-6b8da0a0dbab","timestamp":"2025-12-02T10:11:44.622Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=39cc6549-631c-4d57-a560-b5523079c092","timestamp":"2025-12-02T10:11:44.844Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 29ms user=26 reqId=39cc6549-631c-4d57-a560-b5523079c092","timestamp":"2025-12-02T10:11:44.872Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=92265ae1-5458-4bdb-98ef-4051b1ca28d1","timestamp":"2025-12-02T10:11:45.187Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=92265ae1-5458-4bdb-98ef-4051b1ca28d1","timestamp":"2025-12-02T10:11:45.192Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=090764eb-b019-4f9a-b8dc-9a04b65afde6","timestamp":"2025-12-02T10:11:59.908Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=26 reqId=090764eb-b019-4f9a-b8dc-9a04b65afde6","timestamp":"2025-12-02T10:11:59.915Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a4ae5afd-0864-42ef-a406-c86544f8e894","timestamp":"2025-12-02T10:12:14.917Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=a4ae5afd-0864-42ef-a406-c86544f8e894","timestamp":"2025-12-02T10:12:14.923Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=b2a92fb6-092d-49eb-911a-aacc9f7ad777","timestamp":"2025-12-02T10:12:29.901Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=b2a92fb6-092d-49eb-911a-aacc9f7ad777","timestamp":"2025-12-02T10:12:29.906Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=30674037-5a18-496c-839a-245716a60fc8","timestamp":"2025-12-02T10:12:44.907Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=30674037-5a18-496c-839a-245716a60fc8","timestamp":"2025-12-02T10:12:44.911Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=9ee62957-a4bc-45e1-842f-2ac119fc67e9","timestamp":"2025-12-02T10:12:59.904Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=9ee62957-a4bc-45e1-842f-2ac119fc67e9","timestamp":"2025-12-02T10:12:59.909Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=d1e9a5b2-56a8-43c3-b05f-34f103af0981","timestamp":"2025-12-02T10:13:14.901Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=d1e9a5b2-56a8-43c3-b05f-34f103af0981","timestamp":"2025-12-02T10:13:14.906Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=eb1e9c2b-257b-4d32-af44-864990a24e8d","timestamp":"2025-12-02T10:13:29.594Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=eb1e9c2b-257b-4d32-af44-864990a24e8d","timestamp":"2025-12-02T10:13:29.600Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=dd8f8ede-1fe5-4d7c-a21d-4830402fc9c0","timestamp":"2025-12-02T10:13:44.901Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=dd8f8ede-1fe5-4d7c-a21d-4830402fc9c0","timestamp":"2025-12-02T10:13:44.905Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=4069cf97-9ef0-4530-9a87-bce36075f605","timestamp":"2025-12-02T10:14:00.829Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=4069cf97-9ef0-4530-9a87-bce36075f605","timestamp":"2025-12-02T10:14:00.835Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=23755a5c-182f-4cf5-aa1f-05a2bd07cf8d","timestamp":"2025-12-02T10:14:14.916Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=23755a5c-182f-4cf5-aa1f-05a2bd07cf8d","timestamp":"2025-12-02T10:14:14.921Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=911182ae-2587-44a5-8bfe-6c75b8708171","timestamp":"2025-12-02T10:14:29.595Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=911182ae-2587-44a5-8bfe-6c75b8708171","timestamp":"2025-12-02T10:14:29.600Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=3b6c5319-260c-40da-bdad-ddbf0cbea927","timestamp":"2025-12-02T10:14:44.910Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=26 reqId=3b6c5319-260c-40da-bdad-ddbf0cbea927","timestamp":"2025-12-02T10:14:44.916Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=d6847164-7dc8-4ebc-90af-e4f50c83706d","timestamp":"2025-12-02T10:14:59.910Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 11ms user=26 reqId=d6847164-7dc8-4ebc-90af-e4f50c83706d","timestamp":"2025-12-02T10:14:59.920Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=50a44bda-fddf-4837-bcb5-6f37e5dcbd99","timestamp":"2025-12-02T10:15:14.914Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 8ms user=26 reqId=50a44bda-fddf-4837-bcb5-6f37e5dcbd99","timestamp":"2025-12-02T10:15:14.924Z"}
+{"level":"info","message":"→ GET /api/content/16 user=- reqId=df9eebe1-34a9-4251-b022-b6614e6cc348","timestamp":"2025-12-02T10:15:15.524Z"}
+{"level":"info","message":"← GET /api/content/16 200 65ms user=- reqId=df9eebe1-34a9-4251-b022-b6614e6cc348","timestamp":"2025-12-02T10:15:15.589Z"}
+{"level":"info","message":"→ GET /api/content/16 user=- reqId=26451f4a-c56e-4dd5-a722-51e8db0f7608","timestamp":"2025-12-02T10:15:15.905Z"}
+{"level":"info","message":"← GET /api/content/16 200 8ms user=- reqId=26451f4a-c56e-4dd5-a722-51e8db0f7608","timestamp":"2025-12-02T10:15:15.913Z"}
+{"level":"info","message":"→ GET /api/content/16/emotional-cloud user=- reqId=78f1d036-a6c2-4cb9-bd88-f03a4c106a89","timestamp":"2025-12-02T10:15:16.370Z"}
+{"level":"info","message":"→ GET /api/content/16/perception-map user=- reqId=4b354474-2cd5-45f7-824d-11c948558c73","timestamp":"2025-12-02T10:15:16.375Z"}
+{"level":"info","message":"→ GET /api/content/16/dynamics user=- reqId=0639c326-c584-4f16-a028-55ca662f9863","timestamp":"2025-12-02T10:15:16.379Z"}
+{"level":"info","message":"→ GET /api/reviews/content/16 user=- reqId=73bbb697-3b0c-419f-b9f9-38e80fca3bc9","timestamp":"2025-12-02T10:15:16.385Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/16 user=26 reqId=60db8af7-93e8-48ce-97b7-6ad0c1287637","timestamp":"2025-12-02T10:15:16.396Z"}
+{"level":"info","message":"→ GET /api/users/me/watchlist user=26 reqId=f7123670-d98c-4eb2-8983-6c240bc8fa4d","timestamp":"2025-12-02T10:15:16.402Z"}
+{"level":"info","message":"← GET /api/content/16/emotional-cloud 200 37ms user=- reqId=78f1d036-a6c2-4cb9-bd88-f03a4c106a89","timestamp":"2025-12-02T10:15:16.406Z"}
+{"level":"info","message":"← GET /api/content/16/perception-map 200 35ms user=- reqId=4b354474-2cd5-45f7-824d-11c948558c73","timestamp":"2025-12-02T10:15:16.410Z"}
+{"level":"info","message":"← GET /api/content/16/dynamics 200 36ms user=- reqId=0639c326-c584-4f16-a028-55ca662f9863","timestamp":"2025-12-02T10:15:16.416Z"}
+{"level":"info","message":"← GET /api/users/me/watchlist 200 20ms user=26 reqId=f7123670-d98c-4eb2-8983-6c240bc8fa4d","timestamp":"2025-12-02T10:15:16.425Z"}
+{"level":"info","message":"← GET /api/reviews/content/16 200 44ms user=- reqId=73bbb697-3b0c-419f-b9f9-38e80fca3bc9","timestamp":"2025-12-02T10:15:16.430Z"}
+{"level":"info","message":"← GET /api/critics/personalized/16 200 38ms user=26 reqId=60db8af7-93e8-48ce-97b7-6ad0c1287637","timestamp":"2025-12-02T10:15:16.434Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=a5ba14ae-2389-47f3-a9c4-1a2e819fab74","timestamp":"2025-12-02T10:15:27.957Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=cfc07e5f-75d5-4223-b47b-ff9e1870c48f","timestamp":"2025-12-02T10:15:27.963Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=dd839137-dd0a-442c-961e-ed98440059f0","timestamp":"2025-12-02T10:15:27.965Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=19d99326-ed8e-4a08-833a-4fa423d6ed97","timestamp":"2025-12-02T10:15:27.968Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=a49659a3-c681-4d63-8234-575145ed42d8","timestamp":"2025-12-02T10:15:27.972Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 23ms user=- reqId=a5ba14ae-2389-47f3-a9c4-1a2e819fab74","timestamp":"2025-12-02T10:15:27.980Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 19ms user=- reqId=a49659a3-c681-4d63-8234-575145ed42d8","timestamp":"2025-12-02T10:15:27.990Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 30ms user=- reqId=dd839137-dd0a-442c-961e-ed98440059f0","timestamp":"2025-12-02T10:15:27.996Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 32ms user=- reqId=19d99326-ed8e-4a08-833a-4fa423d6ed97","timestamp":"2025-12-02T10:15:28.000Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 41ms user=- reqId=cfc07e5f-75d5-4223-b47b-ff9e1870c48f","timestamp":"2025-12-02T10:15:28.003Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=449f3b56-4f4e-413a-b084-881661b98dc1","timestamp":"2025-12-02T10:15:28.202Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 11ms user=- reqId=449f3b56-4f4e-413a-b084-881661b98dc1","timestamp":"2025-12-02T10:15:28.214Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=3d610427-e379-4def-852e-71e97614d744","timestamp":"2025-12-02T10:15:28.293Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 3ms user=- reqId=3d610427-e379-4def-852e-71e97614d744","timestamp":"2025-12-02T10:15:28.297Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=f4d62936-89f4-45e0-89f1-f042c89e39dc","timestamp":"2025-12-02T10:15:28.309Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=e1a1fe3c-6937-4dac-a3d3-07b09b2a4f05","timestamp":"2025-12-02T10:15:28.311Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 8ms user=- reqId=f4d62936-89f4-45e0-89f1-f042c89e39dc","timestamp":"2025-12-02T10:15:28.316Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=43d370c7-e7c0-4b58-a7b6-a3e71a1f4286","timestamp":"2025-12-02T10:15:28.320Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 12ms user=- reqId=e1a1fe3c-6937-4dac-a3d3-07b09b2a4f05","timestamp":"2025-12-02T10:15:28.324Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 9ms user=- reqId=43d370c7-e7c0-4b58-a7b6-a3e71a1f4286","timestamp":"2025-12-02T10:15:28.330Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=7d9e68af-8d66-4a5f-b306-239f90f89eef","timestamp":"2025-12-02T10:15:29.589Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=7d9e68af-8d66-4a5f-b306-239f90f89eef","timestamp":"2025-12-02T10:15:29.596Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=180f040a-f7ad-4655-9745-89a2370530fd","timestamp":"2025-12-02T10:15:44.901Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=180f040a-f7ad-4655-9745-89a2370530fd","timestamp":"2025-12-02T10:15:44.906Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=1710307b-d645-490c-ad7d-2ce4a3fdb673","timestamp":"2025-12-02T10:15:59.912Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=1710307b-d645-490c-ad7d-2ce4a3fdb673","timestamp":"2025-12-02T10:15:59.917Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=21efba17-9f9b-4f12-825e-405e4eef855a","timestamp":"2025-12-02T10:16:14.910Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=21efba17-9f9b-4f12-825e-405e4eef855a","timestamp":"2025-12-02T10:16:14.915Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=4c0c9e16-b028-4c64-906c-ee3f7d09c82e","timestamp":"2025-12-02T10:16:29.594Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=4c0c9e16-b028-4c64-906c-ee3f7d09c82e","timestamp":"2025-12-02T10:16:29.599Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ff1ac2dd-c6cf-4073-bddb-c4f25536375b","timestamp":"2025-12-02T10:16:44.914Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=ff1ac2dd-c6cf-4073-bddb-c4f25536375b","timestamp":"2025-12-02T10:16:44.920Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=8cd45a02-25fc-4102-aab6-1d8e862858c1","timestamp":"2025-12-02T10:16:59.598Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=8cd45a02-25fc-4102-aab6-1d8e862858c1","timestamp":"2025-12-02T10:16:59.603Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=8c601a93-ecbe-44da-8001-b8d7802caba3","timestamp":"2025-12-02T10:17:14.906Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=26 reqId=8c601a93-ecbe-44da-8001-b8d7802caba3","timestamp":"2025-12-02T10:17:14.912Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=23f39421-1640-4ffd-a739-6ebc03f2ddf4","timestamp":"2025-12-02T10:17:29.599Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=23f39421-1640-4ffd-a739-6ebc03f2ddf4","timestamp":"2025-12-02T10:17:29.604Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=2680c01a-94f8-4341-8d74-ff4400bbdbd3","timestamp":"2025-12-02T10:17:44.937Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=26 reqId=2680c01a-94f8-4341-8d74-ff4400bbdbd3","timestamp":"2025-12-02T10:17:44.944Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=8aa23ac4-eff3-46d5-a029-c8684e585aa7","timestamp":"2025-12-02T10:17:59.600Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=8aa23ac4-eff3-46d5-a029-c8684e585aa7","timestamp":"2025-12-02T10:17:59.605Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=4942622f-5994-4f44-a276-87584d695fe5","timestamp":"2025-12-02T10:18:14.919Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=4942622f-5994-4f44-a276-87584d695fe5","timestamp":"2025-12-02T10:18:14.923Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=f2358984-bc4d-49d7-8644-ee3b791d02be","timestamp":"2025-12-02T10:18:29.602Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=f2358984-bc4d-49d7-8644-ee3b791d02be","timestamp":"2025-12-02T10:18:29.608Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ed6fc704-27b4-4f67-a54f-cf0bb4dbf77e","timestamp":"2025-12-02T10:18:45.041Z"}
+{"level":"info","message":"→ GET /api/users/me/level user=26 reqId=07bf0ded-af9a-4bdd-900b-7737cf1b5481","timestamp":"2025-12-02T10:18:45.044Z"}
+{"level":"info","message":"→ GET /api/users/leaderboard user=26 reqId=17d392c4-c973-4a34-8e53-09196704ac91","timestamp":"2025-12-02T10:18:45.063Z"}
+{"level":"info","message":"← GET /api/users/me/level 200 28ms user=26 reqId=07bf0ded-af9a-4bdd-900b-7737cf1b5481","timestamp":"2025-12-02T10:18:45.073Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 36ms user=26 reqId=ed6fc704-27b4-4f67-a54f-cf0bb4dbf77e","timestamp":"2025-12-02T10:18:45.076Z"}
+{"level":"info","message":"← GET /api/users/leaderboard 200 18ms user=26 reqId=17d392c4-c973-4a34-8e53-09196704ac91","timestamp":"2025-12-02T10:18:45.081Z"}
+{"level":"info","message":"→ GET /api/users/me/level user=26 reqId=a4794f15-18b6-4167-a15f-db3619d5e2bf","timestamp":"2025-12-02T10:18:45.287Z"}
+{"level":"info","message":"← GET /api/users/me/level 200 3ms user=26 reqId=a4794f15-18b6-4167-a15f-db3619d5e2bf","timestamp":"2025-12-02T10:18:45.290Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=1d74928d-0054-4551-aa1d-d7c3f65908df","timestamp":"2025-12-02T10:18:45.386Z"}
+{"level":"info","message":"→ GET /api/users/leaderboard user=26 reqId=2dac303b-ef57-4a20-adc6-526e3c9b0b05","timestamp":"2025-12-02T10:18:45.390Z"}
+{"level":"info","message":"← GET /api/users/leaderboard 200 4ms user=26 reqId=2dac303b-ef57-4a20-adc6-526e3c9b0b05","timestamp":"2025-12-02T10:18:45.394Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 12ms user=26 reqId=1d74928d-0054-4551-aa1d-d7c3f65908df","timestamp":"2025-12-02T10:18:45.398Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a6d68700-1ac4-4bb4-b953-a19932f5f3f4","timestamp":"2025-12-02T10:18:45.405Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=a6d68700-1ac4-4bb4-b953-a19932f5f3f4","timestamp":"2025-12-02T10:18:45.409Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=1de400e4-4619-46e7-8223-27c224c02384","timestamp":"2025-12-02T10:18:59.906Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=1de400e4-4619-46e7-8223-27c224c02384","timestamp":"2025-12-02T10:18:59.909Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=1da2286c-31af-49f1-97a8-1b66c4dc0b42","timestamp":"2025-12-02T10:19:07.203Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 8ms user=- reqId=1da2286c-31af-49f1-97a8-1b66c4dc0b42","timestamp":"2025-12-02T10:19:07.211Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=08f2e7c8-70ca-447d-b764-40833a007cfe","timestamp":"2025-12-02T10:19:07.509Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=669ef372-0c03-47a5-8810-aa309b793510","timestamp":"2025-12-02T10:19:07.514Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=2ce40f72-8af5-4e6f-b019-52f591c7fe38","timestamp":"2025-12-02T10:19:07.516Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=0f4d60c2-5f8e-49c5-8fd6-4f492866b531","timestamp":"2025-12-02T10:19:07.519Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 16ms user=- reqId=08f2e7c8-70ca-447d-b764-40833a007cfe","timestamp":"2025-12-02T10:19:07.525Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=967acbc2-9b80-457b-8ffa-0ce4c7734aa1","timestamp":"2025-12-02T10:19:07.528Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 13ms user=- reqId=0f4d60c2-5f8e-49c5-8fd6-4f492866b531","timestamp":"2025-12-02T10:19:07.531Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 22ms user=- reqId=669ef372-0c03-47a5-8810-aa309b793510","timestamp":"2025-12-02T10:19:07.536Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 18ms user=- reqId=967acbc2-9b80-457b-8ffa-0ce4c7734aa1","timestamp":"2025-12-02T10:19:07.546Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 35ms user=- reqId=2ce40f72-8af5-4e6f-b019-52f591c7fe38","timestamp":"2025-12-02T10:19:07.552Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=a46181c8-3d5f-41f8-8c8f-1de43ccec8f5","timestamp":"2025-12-02T10:19:07.836Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 7ms user=- reqId=a46181c8-3d5f-41f8-8c8f-1de43ccec8f5","timestamp":"2025-12-02T10:19:07.843Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=152f4660-b325-4a49-a589-719e43acd296","timestamp":"2025-12-02T10:19:07.851Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=449eea47-a85a-4f12-b18a-560f3a127fe8","timestamp":"2025-12-02T10:19:07.854Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 5ms user=- reqId=152f4660-b325-4a49-a589-719e43acd296","timestamp":"2025-12-02T10:19:07.856Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 7ms user=- reqId=449eea47-a85a-4f12-b18a-560f3a127fe8","timestamp":"2025-12-02T10:19:07.861Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=9de85d91-c7e9-4f1d-86f3-719e6aed2a1e","timestamp":"2025-12-02T10:19:07.864Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 8ms user=- reqId=9de85d91-c7e9-4f1d-86f3-719e6aed2a1e","timestamp":"2025-12-02T10:19:07.872Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ef09a677-5fed-4834-bdc8-cba587bb3ebe","timestamp":"2025-12-02T10:19:14.911Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=ef09a677-5fed-4834-bdc8-cba587bb3ebe","timestamp":"2025-12-02T10:19:14.916Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=8e7944c8-aa33-439d-936c-055f3c2dc017","timestamp":"2025-12-02T10:19:29.600Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=8e7944c8-aa33-439d-936c-055f3c2dc017","timestamp":"2025-12-02T10:19:29.605Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=244937c1-64f5-444e-9c8b-1b40866786f7","timestamp":"2025-12-02T10:19:44.904Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=244937c1-64f5-444e-9c8b-1b40866786f7","timestamp":"2025-12-02T10:19:44.908Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=e48f4503-b5dd-4760-8eb5-bca65b417d4d","timestamp":"2025-12-02T10:19:59.597Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 11ms user=26 reqId=e48f4503-b5dd-4760-8eb5-bca65b417d4d","timestamp":"2025-12-02T10:19:59.607Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=e795045b-a812-411c-8422-957a4b2d77cb","timestamp":"2025-12-02T10:20:14.902Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=e795045b-a812-411c-8422-957a4b2d77cb","timestamp":"2025-12-02T10:20:14.906Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a77c9a1c-4ad5-4005-a795-2c02480cf317","timestamp":"2025-12-02T10:20:29.600Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=a77c9a1c-4ad5-4005-a795-2c02480cf317","timestamp":"2025-12-02T10:20:29.604Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=494a22b8-b964-43d2-bf94-91d045fcdab6","timestamp":"2025-12-02T10:20:44.911Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=494a22b8-b964-43d2-bf94-91d045fcdab6","timestamp":"2025-12-02T10:20:44.914Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=159bd0dc-76ba-421f-b82d-5d9b18d83650","timestamp":"2025-12-02T10:20:59.612Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=159bd0dc-76ba-421f-b82d-5d9b18d83650","timestamp":"2025-12-02T10:20:59.616Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ecbdd28b-88e8-49f4-a3b6-c4acbaf99e65","timestamp":"2025-12-02T10:21:14.914Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=ecbdd28b-88e8-49f4-a3b6-c4acbaf99e65","timestamp":"2025-12-02T10:21:14.918Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=2e5d6a97-480a-40c3-97e1-83564985772d","timestamp":"2025-12-02T10:21:29.599Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=2e5d6a97-480a-40c3-97e1-83564985772d","timestamp":"2025-12-02T10:21:29.604Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=d06979f3-10cb-4714-a2f4-1fdded9a2524","timestamp":"2025-12-02T10:21:44.906Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=d06979f3-10cb-4714-a2f4-1fdded9a2524","timestamp":"2025-12-02T10:21:44.909Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=aac1409a-026c-4dba-9961-6e9f37f65467","timestamp":"2025-12-02T10:21:59.598Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=aac1409a-026c-4dba-9961-6e9f37f65467","timestamp":"2025-12-02T10:21:59.602Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=81cca2f1-38ce-4b23-a874-36c20ecea770","timestamp":"2025-12-02T10:22:14.921Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=81cca2f1-38ce-4b23-a874-36c20ecea770","timestamp":"2025-12-02T10:22:14.925Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=bf44ee42-7a62-4ac6-a14e-43b236511f98","timestamp":"2025-12-02T10:22:30.518Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=bf44ee42-7a62-4ac6-a14e-43b236511f98","timestamp":"2025-12-02T10:22:30.523Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=cacd8610-b186-47ab-b7fa-31285c3b47ea","timestamp":"2025-12-02T10:22:45.829Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=cacd8610-b186-47ab-b7fa-31285c3b47ea","timestamp":"2025-12-02T10:22:45.832Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=b8870efc-842e-4e5e-bcb3-5dbd403a4d0f","timestamp":"2025-12-02T11:13:52.706Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 28ms user=26 reqId=b8870efc-842e-4e5e-bcb3-5dbd403a4d0f","timestamp":"2025-12-02T11:13:52.728Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a8e77b0d-6ac0-4bd6-89c3-c75e6f3396ff","timestamp":"2025-12-02T11:14:15.176Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=a8e77b0d-6ac0-4bd6-89c3-c75e6f3396ff","timestamp":"2025-12-02T11:14:15.182Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=57fc89e4-a358-43d6-9334-e3b2fc9bc906","timestamp":"2025-12-02T11:14:16.684Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=6e1fc04c-6e75-4cff-9f42-6084ee811871","timestamp":"2025-12-02T11:14:16.695Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=42da4193-488b-4b3c-b258-192647e32025","timestamp":"2025-12-02T11:14:16.699Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=778cd2a7-31f2-42fa-8e33-044b7b712b40","timestamp":"2025-12-02T11:14:16.712Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=78ce7b5a-86e2-4e39-a4e4-87b36a6b34af","timestamp":"2025-12-02T11:14:16.715Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=26 reqId=779510f1-501b-494a-8db8-fbcf81d98772","timestamp":"2025-12-02T11:14:16.725Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 55ms user=- reqId=57fc89e4-a358-43d6-9334-e3b2fc9bc906","timestamp":"2025-12-02T11:14:16.739Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 28ms user=- reqId=78ce7b5a-86e2-4e39-a4e4-87b36a6b34af","timestamp":"2025-12-02T11:14:16.744Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 24ms user=26 reqId=779510f1-501b-494a-8db8-fbcf81d98772","timestamp":"2025-12-02T11:14:16.750Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 66ms user=- reqId=6e1fc04c-6e75-4cff-9f42-6084ee811871","timestamp":"2025-12-02T11:14:16.761Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 65ms user=- reqId=42da4193-488b-4b3c-b258-192647e32025","timestamp":"2025-12-02T11:14:16.764Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 55ms user=- reqId=778cd2a7-31f2-42fa-8e33-044b7b712b40","timestamp":"2025-12-02T11:14:16.768Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=fe17e8da-a11a-4b2e-b2e6-6c5122abd34b","timestamp":"2025-12-02T11:14:17.059Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=6c84c98c-cd46-42a5-b731-14f94ab91941","timestamp":"2025-12-02T11:14:17.063Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 15ms user=- reqId=fe17e8da-a11a-4b2e-b2e6-6c5122abd34b","timestamp":"2025-12-02T11:14:17.071Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 12ms user=- reqId=6c84c98c-cd46-42a5-b731-14f94ab91941","timestamp":"2025-12-02T11:14:17.075Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=26 reqId=465986c7-ff9d-45d0-a6e0-a33b8280f53d","timestamp":"2025-12-02T11:14:17.080Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=f24f1f2b-6fe8-41bb-9485-52fabe6de4d2","timestamp":"2025-12-02T11:14:17.083Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 6ms user=26 reqId=465986c7-ff9d-45d0-a6e0-a33b8280f53d","timestamp":"2025-12-02T11:14:17.086Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=f1ab11e6-fe23-4272-8701-62116a2d1532","timestamp":"2025-12-02T11:14:17.088Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=8f58067e-d6a8-44cc-9c5c-55cd2ea85ced","timestamp":"2025-12-02T11:14:17.090Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 13ms user=- reqId=f24f1f2b-6fe8-41bb-9485-52fabe6de4d2","timestamp":"2025-12-02T11:14:17.096Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 12ms user=- reqId=f1ab11e6-fe23-4272-8701-62116a2d1532","timestamp":"2025-12-02T11:14:17.100Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 13ms user=- reqId=8f58067e-d6a8-44cc-9c5c-55cd2ea85ced","timestamp":"2025-12-02T11:14:17.104Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=912cd4e9-75c1-4028-87ab-e8e940835193","timestamp":"2025-12-02T11:14:17.387Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 21ms user=26 reqId=912cd4e9-75c1-4028-87ab-e8e940835193","timestamp":"2025-12-02T11:14:17.408Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=57ea072a-29b5-4050-9781-5f4de8d2354f","timestamp":"2025-12-02T11:14:17.725Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=57ea072a-29b5-4050-9781-5f4de8d2354f","timestamp":"2025-12-02T11:14:17.729Z"}
+{"level":"info","message":"→ GET /api/content/20 user=- reqId=4e4c4f53-b6c4-4a8e-883a-ef4b755a61b1","timestamp":"2025-12-02T11:14:23.855Z"}
+{"level":"info","message":"← GET /api/content/20 200 41ms user=- reqId=4e4c4f53-b6c4-4a8e-883a-ef4b755a61b1","timestamp":"2025-12-02T11:14:23.895Z"}
+{"level":"info","message":"→ GET /api/users/me/watchlist user=26 reqId=0fc3f213-8b9b-48bc-bbda-ad3b4b6b06ee","timestamp":"2025-12-02T11:14:24.157Z"}
+{"level":"info","message":"→ GET /api/reviews/content/20 user=- reqId=3d51b4f4-7658-41dc-baa8-cec71aacefbb","timestamp":"2025-12-02T11:14:24.162Z"}
+{"level":"info","message":"← GET /api/users/me/watchlist 200 9ms user=26 reqId=0fc3f213-8b9b-48bc-bbda-ad3b4b6b06ee","timestamp":"2025-12-02T11:14:24.165Z"}
+{"level":"info","message":"← GET /api/reviews/content/20 200 11ms user=- reqId=3d51b4f4-7658-41dc-baa8-cec71aacefbb","timestamp":"2025-12-02T11:14:24.172Z"}
+{"level":"info","message":"→ GET /api/content/20 user=- reqId=2242b4c9-9217-4dff-9ef6-97e6ae9c8062","timestamp":"2025-12-02T11:14:24.210Z"}
+{"level":"info","message":"← GET /api/content/20 200 14ms user=- reqId=2242b4c9-9217-4dff-9ef6-97e6ae9c8062","timestamp":"2025-12-02T11:14:24.225Z"}
+{"level":"info","message":"→ GET /api/expectations/20 user=- reqId=912ecfe1-c738-485e-af06-9f44d748d93d","timestamp":"2025-12-02T11:14:26.778Z"}
+{"level":"info","message":"← GET /api/expectations/20 200 33ms user=- reqId=912ecfe1-c738-485e-af06-9f44d748d93d","timestamp":"2025-12-02T11:14:26.810Z"}
+{"level":"info","message":"→ GET /api/expectations/20 user=- reqId=8b4dc306-b4fd-4d07-9f1b-c408535e4ee9","timestamp":"2025-12-02T11:14:27.022Z"}
+{"level":"info","message":"← GET /api/expectations/20 200 2ms user=- reqId=8b4dc306-b4fd-4d07-9f1b-c408535e4ee9","timestamp":"2025-12-02T11:14:27.024Z"}
+{"level":"info","message":"→ GET /api/expectations/20/me user=26 reqId=423a043d-647e-4570-80a5-70479db2b792","timestamp":"2025-12-02T11:14:27.133Z"}
+{"level":"info","message":"← GET /api/expectations/20/me 200 7ms user=26 reqId=423a043d-647e-4570-80a5-70479db2b792","timestamp":"2025-12-02T11:14:27.139Z"}
+{"level":"info","message":"→ GET /api/expectations/20/me user=26 reqId=275b7db3-5eef-4da3-ab48-8d56d0904a4d","timestamp":"2025-12-02T11:14:27.148Z"}
+{"level":"info","message":"← GET /api/expectations/20/me 200 3ms user=26 reqId=275b7db3-5eef-4da3-ab48-8d56d0904a4d","timestamp":"2025-12-02T11:14:27.151Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=cce893a1-9000-4ebd-997e-ef8a99f1ef47","timestamp":"2025-12-02T11:14:32.428Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=cce893a1-9000-4ebd-997e-ef8a99f1ef47","timestamp":"2025-12-02T11:14:32.433Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=52edea41-4c50-4c5f-b738-9262900aa76f","timestamp":"2025-12-02T11:14:47.930Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 14ms user=26 reqId=52edea41-4c50-4c5f-b738-9262900aa76f","timestamp":"2025-12-02T11:14:47.944Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=cfcb80e9-1d6b-4cbf-8767-b582b2cf9020","timestamp":"2025-12-02T11:15:02.432Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=cfcb80e9-1d6b-4cbf-8767-b582b2cf9020","timestamp":"2025-12-02T11:15:02.436Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=af007094-0992-468c-b819-8249e5abfeb4","timestamp":"2025-12-02T11:15:17.528Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 13ms user=26 reqId=af007094-0992-468c-b819-8249e5abfeb4","timestamp":"2025-12-02T11:15:17.540Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=565ef47a-c0b0-412e-b539-7b69de1d1d10","timestamp":"2025-12-02T11:15:32.821Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=565ef47a-c0b0-412e-b539-7b69de1d1d10","timestamp":"2025-12-02T11:15:32.825Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=2c996759-bacb-4c3e-95a9-77b53a90af0a","timestamp":"2025-12-02T11:15:47.823Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=2c996759-bacb-4c3e-95a9-77b53a90af0a","timestamp":"2025-12-02T11:15:47.828Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=49144792-39b9-4386-9191-4f09f8351dfe","timestamp":"2025-12-02T11:16:02.825Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=49144792-39b9-4386-9191-4f09f8351dfe","timestamp":"2025-12-02T11:16:02.829Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=f6606d5e-0ec9-4bd8-a35b-c5fa7c5bb22d","timestamp":"2025-12-02T11:16:27.812Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=f6606d5e-0ec9-4bd8-a35b-c5fa7c5bb22d","timestamp":"2025-12-02T11:16:27.817Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=cb5895b4-54e1-4aaa-926e-a70a7860d115","timestamp":"2025-12-02T11:16:32.722Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=cb5895b4-54e1-4aaa-926e-a70a7860d115","timestamp":"2025-12-02T11:16:32.724Z"}
+{"level":"info","message":"→ POST /api/expectations/20 user=26 reqId=233c36d7-96f9-4919-ada9-2058166b87c4","timestamp":"2025-12-02T11:16:46.141Z"}
+{"level":"info","message":"← POST /api/expectations/20 201 46ms user=26 reqId=233c36d7-96f9-4919-ada9-2058166b87c4","timestamp":"2025-12-02T11:16:46.187Z"}
+{"level":"info","message":"→ GET /api/expectations/20 user=- reqId=414991c4-6b01-4172-8a3f-063b97eb2a7e","timestamp":"2025-12-02T11:16:48.339Z"}
+{"level":"info","message":"← GET /api/expectations/20 200 4ms user=- reqId=414991c4-6b01-4172-8a3f-063b97eb2a7e","timestamp":"2025-12-02T11:16:48.343Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=71a26a1e-2105-4d19-bdcb-3e4b28c8e780","timestamp":"2025-12-02T11:16:48.662Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=71a26a1e-2105-4d19-bdcb-3e4b28c8e780","timestamp":"2025-12-02T11:16:48.666Z"}
+{"level":"info","message":"→ GET /api/expectations/20/me user=26 reqId=af961f4e-8554-432c-a202-7464721735a8","timestamp":"2025-12-02T11:16:48.672Z"}
+{"level":"info","message":"← GET /api/expectations/20/me 200 3ms user=26 reqId=af961f4e-8554-432c-a202-7464721735a8","timestamp":"2025-12-02T11:16:48.674Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=d60e6237-296d-4c88-940f-55033f0b09a4","timestamp":"2025-12-02T11:17:02.811Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=d60e6237-296d-4c88-940f-55033f0b09a4","timestamp":"2025-12-02T11:17:02.813Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=dd1c4d0b-5bda-42f8-aad1-63748841763e","timestamp":"2025-12-02T11:17:17.506Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 11ms user=26 reqId=dd1c4d0b-5bda-42f8-aad1-63748841763e","timestamp":"2025-12-02T11:17:17.517Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=3569e238-ffba-4db5-bd9c-17e87220269c","timestamp":"2025-12-02T11:17:32.828Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=3569e238-ffba-4db5-bd9c-17e87220269c","timestamp":"2025-12-02T11:17:32.830Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a819bce9-3c46-4bdb-ab2a-c371143c5711","timestamp":"2025-12-02T11:17:47.508Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=a819bce9-3c46-4bdb-ab2a-c371143c5711","timestamp":"2025-12-02T11:17:47.510Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=f08f0f16-e0d1-42ac-a889-1b93385bcace","timestamp":"2025-12-02T11:18:27.830Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=f08f0f16-e0d1-42ac-a889-1b93385bcace","timestamp":"2025-12-02T11:18:27.832Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=78feeec4-fb98-44f3-8d35-7a930edb77aa","timestamp":"2025-12-02T11:19:27.820Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=78feeec4-fb98-44f3-8d35-7a930edb77aa","timestamp":"2025-12-02T11:19:27.822Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=bea27cb7-123b-4990-a6da-f215d095989d","timestamp":"2025-12-02T11:20:07.811Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=bea27cb7-123b-4990-a6da-f215d095989d","timestamp":"2025-12-02T11:20:07.815Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=cffd60bc-9a7a-4c5d-a9fa-d3f3e20b0685","timestamp":"2025-12-02T11:20:17.511Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=cffd60bc-9a7a-4c5d-a9fa-d3f3e20b0685","timestamp":"2025-12-02T11:20:17.513Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=57a6ab7c-4cb2-461e-bd63-6f4faad6abf4","timestamp":"2025-12-02T11:20:32.837Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=57a6ab7c-4cb2-461e-bd63-6f4faad6abf4","timestamp":"2025-12-02T11:20:32.840Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=17f7945e-5254-45da-933c-debb862a0a86","timestamp":"2025-12-02T11:20:47.510Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=17f7945e-5254-45da-933c-debb862a0a86","timestamp":"2025-12-02T11:20:47.514Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ee146a61-398b-4de7-b73b-f38b33c3c0bd","timestamp":"2025-12-02T11:21:02.832Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=ee146a61-398b-4de7-b73b-f38b33c3c0bd","timestamp":"2025-12-02T11:21:02.835Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=fcec6768-42de-4762-b4c6-687005daa8b9","timestamp":"2025-12-02T11:21:27.520Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=fcec6768-42de-4762-b4c6-687005daa8b9","timestamp":"2025-12-02T11:21:27.522Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=96a7ba41-9af7-4a82-9a6a-bb1091e1f994","timestamp":"2025-12-02T11:22:27.830Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=96a7ba41-9af7-4a82-9a6a-bb1091e1f994","timestamp":"2025-12-02T11:22:27.832Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=cd6dcfa8-bd5e-46c4-982d-b44d01bc1065","timestamp":"2025-12-02T11:23:27.810Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=cd6dcfa8-bd5e-46c4-982d-b44d01bc1065","timestamp":"2025-12-02T11:23:27.813Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=58c1def6-d927-4d5f-ad92-83c4f80171c4","timestamp":"2025-12-02T11:24:27.522Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=58c1def6-d927-4d5f-ad92-83c4f80171c4","timestamp":"2025-12-02T11:24:27.526Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=de7b7392-99a6-4707-967a-c273084129e7","timestamp":"2025-12-02T11:25:27.826Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=de7b7392-99a6-4707-967a-c273084129e7","timestamp":"2025-12-02T11:25:27.829Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=30b32225-a3fc-4eb2-b739-66e710624dd3","timestamp":"2025-12-02T11:26:27.514Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=30b32225-a3fc-4eb2-b739-66e710624dd3","timestamp":"2025-12-02T11:26:27.517Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=f99f3d13-1051-4cb0-946f-275452d6a56c","timestamp":"2025-12-02T11:26:33.417Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=f99f3d13-1051-4cb0-946f-275452d6a56c","timestamp":"2025-12-02T11:26:33.419Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=e8dd7b3c-bdd9-4264-a693-e7c4dd18b517","timestamp":"2025-12-02T11:26:47.109Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=e8dd7b3c-bdd9-4264-a693-e7c4dd18b517","timestamp":"2025-12-02T11:26:47.112Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a797a355-3bc6-4ae2-a4ae-03bfbdc885f7","timestamp":"2025-12-02T11:27:02.423Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=a797a355-3bc6-4ae2-a4ae-03bfbdc885f7","timestamp":"2025-12-02T11:27:02.425Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=79751027-54bc-4a74-afe3-49396966fc14","timestamp":"2025-12-02T11:27:17.104Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=79751027-54bc-4a74-afe3-49396966fc14","timestamp":"2025-12-02T11:27:17.107Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=18f5fc1d-914a-4ee5-bf12-e1410e3d5a76","timestamp":"2025-12-02T11:27:32.428Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=18f5fc1d-914a-4ee5-bf12-e1410e3d5a76","timestamp":"2025-12-02T11:27:32.431Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a8ff4ab1-a9bd-40ef-b567-25474b8abb9c","timestamp":"2025-12-02T11:27:47.099Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=a8ff4ab1-a9bd-40ef-b567-25474b8abb9c","timestamp":"2025-12-02T11:27:47.101Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=8eb3e838-30a0-45da-b724-1d8195fd7adf","timestamp":"2025-12-02T11:28:02.416Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 11ms user=26 reqId=8eb3e838-30a0-45da-b724-1d8195fd7adf","timestamp":"2025-12-02T11:28:02.427Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=4653e751-9ac0-4001-be3d-96cb40a0948c","timestamp":"2025-12-02T11:28:17.113Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=4653e751-9ac0-4001-be3d-96cb40a0948c","timestamp":"2025-12-02T11:28:17.116Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=6f384520-ecae-452d-abdb-03a4fedad8cd","timestamp":"2025-12-02T11:28:32.413Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=6f384520-ecae-452d-abdb-03a4fedad8cd","timestamp":"2025-12-02T11:28:32.416Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=b0211273-4126-451e-9ac7-a8133e229d54","timestamp":"2025-12-02T11:28:47.111Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=26 reqId=b0211273-4126-451e-9ac7-a8133e229d54","timestamp":"2025-12-02T11:28:47.118Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=b1b10297-f755-4d81-885a-94dff4be9ba9","timestamp":"2025-12-02T11:29:02.433Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=b1b10297-f755-4d81-885a-94dff4be9ba9","timestamp":"2025-12-02T11:29:02.436Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=c75edd8a-dcc0-4dd9-9e26-69e9d330f78b","timestamp":"2025-12-02T11:29:17.112Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=c75edd8a-dcc0-4dd9-9e26-69e9d330f78b","timestamp":"2025-12-02T11:29:17.114Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=5c3dbb3b-376b-4b00-b644-795811961854","timestamp":"2025-12-02T11:29:32.419Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=5c3dbb3b-376b-4b00-b644-795811961854","timestamp":"2025-12-02T11:29:32.421Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=0d1cb47d-f5be-4565-b9e4-953ab017f0cb","timestamp":"2025-12-02T11:29:47.106Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=0d1cb47d-f5be-4565-b9e4-953ab017f0cb","timestamp":"2025-12-02T11:29:47.108Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=59d5b05e-3d97-47a1-8765-6d599c565468","timestamp":"2025-12-02T11:30:02.426Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=59d5b05e-3d97-47a1-8765-6d599c565468","timestamp":"2025-12-02T11:30:02.430Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=daf71b45-befc-4929-9b92-cfb3d06a2270","timestamp":"2025-12-02T11:30:17.108Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=daf71b45-befc-4929-9b92-cfb3d06a2270","timestamp":"2025-12-02T11:30:17.111Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=fd97077d-806d-4b14-afb3-9dca71a6db3a","timestamp":"2025-12-02T11:30:32.408Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 9ms user=26 reqId=fd97077d-806d-4b14-afb3-9dca71a6db3a","timestamp":"2025-12-02T11:30:32.416Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=08cc071c-1251-4716-a560-7dfbf6c29b30","timestamp":"2025-12-02T11:30:47.112Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 10ms user=26 reqId=08cc071c-1251-4716-a560-7dfbf6c29b30","timestamp":"2025-12-02T11:30:47.121Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ef1ca489-e8f9-4a3d-b135-6126ec837c6d","timestamp":"2025-12-02T11:31:02.433Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=ef1ca489-e8f9-4a3d-b135-6126ec837c6d","timestamp":"2025-12-02T11:31:02.436Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=f8a318b7-e36a-430a-b581-9e7021ba8d6b","timestamp":"2025-12-02T11:31:17.507Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=f8a318b7-e36a-430a-b581-9e7021ba8d6b","timestamp":"2025-12-02T11:31:17.509Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=fe3dee8a-5549-4263-aae3-0227538f191a","timestamp":"2025-12-02T11:31:32.830Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 9ms user=26 reqId=fe3dee8a-5549-4263-aae3-0227538f191a","timestamp":"2025-12-02T11:31:32.839Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=1ad83157-a50b-451c-961c-32510557c2ac","timestamp":"2025-12-02T11:31:47.520Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=1ad83157-a50b-451c-961c-32510557c2ac","timestamp":"2025-12-02T11:31:47.523Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a826c0e0-ef3d-4155-b58c-7f8c63e7f1ca","timestamp":"2025-12-02T11:32:02.828Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=a826c0e0-ef3d-4155-b58c-7f8c63e7f1ca","timestamp":"2025-12-02T11:32:02.830Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=7490d3f9-b5a5-4a45-8a2e-c10caab95f12","timestamp":"2025-12-02T11:32:17.517Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=7490d3f9-b5a5-4a45-8a2e-c10caab95f12","timestamp":"2025-12-02T11:32:17.521Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=fa5ac41c-5a6f-4142-8e46-83f237ec0e5c","timestamp":"2025-12-02T11:33:18.825Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=fa5ac41c-5a6f-4142-8e46-83f237ec0e5c","timestamp":"2025-12-02T11:33:18.828Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=c9db2747-0477-408c-9b8d-f604e8746a16","timestamp":"2025-12-02T11:34:19.820Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=c9db2747-0477-408c-9b8d-f604e8746a16","timestamp":"2025-12-02T11:34:19.823Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ca72c03e-3554-4f64-87c2-656d037a87c7","timestamp":"2025-12-02T11:35:20.827Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 7ms user=26 reqId=ca72c03e-3554-4f64-87c2-656d037a87c7","timestamp":"2025-12-02T11:35:20.833Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=dc74a176-206e-463d-a933-a441fc02b835","timestamp":"2025-12-02T11:36:21.828Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=dc74a176-206e-463d-a933-a441fc02b835","timestamp":"2025-12-02T11:36:21.830Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=64be8af4-21f0-4113-972e-bb364f0a753e","timestamp":"2025-12-02T11:37:22.832Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=26 reqId=64be8af4-21f0-4113-972e-bb364f0a753e","timestamp":"2025-12-02T11:37:22.838Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=df9fcc85-3a9e-4f03-a1df-b64862daf6a2","timestamp":"2025-12-02T11:38:23.827Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=df9fcc85-3a9e-4f03-a1df-b64862daf6a2","timestamp":"2025-12-02T11:38:23.831Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ecdbd4db-63f9-4411-9ae0-410888eb7247","timestamp":"2025-12-02T11:39:24.822Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=ecdbd4db-63f9-4411-9ae0-410888eb7247","timestamp":"2025-12-02T11:39:24.824Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=0a46a07a-31c2-4930-a85a-e086a1a7e3ab","timestamp":"2025-12-02T11:40:25.825Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=0a46a07a-31c2-4930-a85a-e086a1a7e3ab","timestamp":"2025-12-02T11:40:25.829Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=eb5cccae-3f55-4505-991e-767535a0d8b3","timestamp":"2025-12-02T11:41:26.828Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=eb5cccae-3f55-4505-991e-767535a0d8b3","timestamp":"2025-12-02T11:41:26.834Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=79cff190-2c58-49e0-a313-9575b2396df0","timestamp":"2025-12-02T11:42:27.818Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=79cff190-2c58-49e0-a313-9575b2396df0","timestamp":"2025-12-02T11:42:27.822Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=79688ef8-090f-46a3-a7f7-0eddadccf36e","timestamp":"2025-12-02T11:43:27.826Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=79688ef8-090f-46a3-a7f7-0eddadccf36e","timestamp":"2025-12-02T11:43:27.831Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ab1a6235-d5a1-460f-8f93-f664066b7faa","timestamp":"2025-12-02T11:43:59.342Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=ab1a6235-d5a1-460f-8f93-f664066b7faa","timestamp":"2025-12-02T11:43:59.345Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=74f87712-6aff-4293-98a1-6622266656ee","timestamp":"2025-12-02T11:44:02.429Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=74f87712-6aff-4293-98a1-6622266656ee","timestamp":"2025-12-02T11:44:02.431Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=9d32d9c8-5e36-444c-8351-91cc0db02a63","timestamp":"2025-12-02T11:44:17.129Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=9d32d9c8-5e36-444c-8351-91cc0db02a63","timestamp":"2025-12-02T11:44:17.132Z"}
+{"level":"info","message":"→ POST /api/users/me/watchlist/20 user=26 reqId=cdecfbfe-a68d-4df0-9842-554509721457","timestamp":"2025-12-02T11:44:31.725Z"}
+{"level":"info","message":"← POST /api/users/me/watchlist/20 201 40ms user=26 reqId=cdecfbfe-a68d-4df0-9842-554509721457","timestamp":"2025-12-02T11:44:31.766Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=e3909c00-0622-41d7-8c3a-0f7d9da0b6d1","timestamp":"2025-12-02T11:44:32.111Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=e3909c00-0622-41d7-8c3a-0f7d9da0b6d1","timestamp":"2025-12-02T11:44:32.114Z"}
+{"level":"info","message":"→ DELETE /api/users/me/watchlist/20 user=26 reqId=9fa9c736-7557-48d5-b432-dbb140232c81","timestamp":"2025-12-02T11:44:33.486Z"}
+{"level":"info","message":"← DELETE /api/users/me/watchlist/20 200 7ms user=26 reqId=9fa9c736-7557-48d5-b432-dbb140232c81","timestamp":"2025-12-02T11:44:33.493Z"}
+{"level":"info","message":"→ GET /api/content?limit=100 user=- reqId=0a6eaeb9-0f03-465c-87d4-1118b7b4cbeb","timestamp":"2025-12-02T11:44:35.671Z"}
+{"level":"info","message":"← GET /api/content?limit=100 200 21ms user=- reqId=0a6eaeb9-0f03-465c-87d4-1118b7b4cbeb","timestamp":"2025-12-02T11:44:35.692Z"}
+{"level":"info","message":"→ GET /api/content?limit=100 user=- reqId=7b13827e-ee1f-459a-a815-b90e99c5309f","timestamp":"2025-12-02T11:44:36.004Z"}
+{"level":"info","message":"← GET /api/content?limit=100 200 2ms user=- reqId=7b13827e-ee1f-459a-a815-b90e99c5309f","timestamp":"2025-12-02T11:44:36.006Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=493562f0-6b6f-4b26-81f6-ef1fd67b4c77","timestamp":"2025-12-02T11:44:47.112Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=493562f0-6b6f-4b26-81f6-ef1fd67b4c77","timestamp":"2025-12-02T11:44:47.115Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=57a67c88-8f09-48d0-8b59-02bb583ab204","timestamp":"2025-12-02T11:45:02.417Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=57a67c88-8f09-48d0-8b59-02bb583ab204","timestamp":"2025-12-02T11:45:02.421Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=efde59d3-2b6e-44e2-843e-ed9f2c18cde4","timestamp":"2025-12-02T11:45:17.102Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=efde59d3-2b6e-44e2-843e-ed9f2c18cde4","timestamp":"2025-12-02T11:45:17.104Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a4d8440f-50da-46e4-bcb5-a493ae4d88d3","timestamp":"2025-12-02T11:45:32.419Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=a4d8440f-50da-46e4-bcb5-a493ae4d88d3","timestamp":"2025-12-02T11:45:32.422Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=58f370be-bfec-4d65-ae38-e4ba579bcae9","timestamp":"2025-12-02T11:45:47.108Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=58f370be-bfec-4d65-ae38-e4ba579bcae9","timestamp":"2025-12-02T11:45:47.110Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=f6b69873-1d45-4dcf-baaa-3c919502ebac","timestamp":"2025-12-02T11:46:02.417Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 14ms user=26 reqId=f6b69873-1d45-4dcf-baaa-3c919502ebac","timestamp":"2025-12-02T11:46:02.431Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ff20095d-8943-44f4-8f7e-6b11c40930cc","timestamp":"2025-12-02T11:46:17.105Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=ff20095d-8943-44f4-8f7e-6b11c40930cc","timestamp":"2025-12-02T11:46:17.108Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=57964219-03f1-4da4-a8d1-2168c5489c99","timestamp":"2025-12-02T11:46:32.421Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=57964219-03f1-4da4-a8d1-2168c5489c99","timestamp":"2025-12-02T11:46:32.423Z"}
+{"level":"info","message":"→ GET /api/content/13 user=- reqId=92a0eaee-60e5-44a3-b28d-455b673563bd","timestamp":"2025-12-02T11:46:46.175Z"}
+{"level":"info","message":"← GET /api/content/13 200 50ms user=- reqId=92a0eaee-60e5-44a3-b28d-455b673563bd","timestamp":"2025-12-02T11:46:46.225Z"}
+{"level":"info","message":"→ GET /api/content/13 user=- reqId=c9f9e7ff-3ba5-4a2c-8f57-fd3c8e35ec32","timestamp":"2025-12-02T11:46:46.538Z"}
+{"level":"info","message":"← GET /api/content/13 200 6ms user=- reqId=c9f9e7ff-3ba5-4a2c-8f57-fd3c8e35ec32","timestamp":"2025-12-02T11:46:46.543Z"}
+{"level":"info","message":"→ GET /api/content/13/emotional-cloud user=- reqId=07480f69-c9c4-4ca6-a44e-d6aea5748b6e","timestamp":"2025-12-02T11:46:46.895Z"}
+{"level":"info","message":"→ GET /api/users/me/watchlist user=26 reqId=b425d10c-cc17-4753-bb57-21577224fbb1","timestamp":"2025-12-02T11:46:46.901Z"}
+{"level":"info","message":"→ GET /api/content/13/perception-map user=- reqId=8ab5fbb9-e8cb-4549-afaf-3c94a11dcf44","timestamp":"2025-12-02T11:46:46.903Z"}
+{"level":"info","message":"→ GET /api/content/13/dynamics user=- reqId=2a431a94-3346-4fb7-8cc7-f0d82e80f0cb","timestamp":"2025-12-02T11:46:46.905Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/13 user=26 reqId=364a5fea-b3b8-4b4e-a3fd-9376751dea47","timestamp":"2025-12-02T11:46:46.910Z"}
+{"level":"info","message":"→ GET /api/reviews/content/13 user=- reqId=bf6d2d1f-42df-4a78-add3-c9e6c9c55f41","timestamp":"2025-12-02T11:46:46.913Z"}
+{"level":"info","message":"← GET /api/content/13/emotional-cloud 200 21ms user=- reqId=07480f69-c9c4-4ca6-a44e-d6aea5748b6e","timestamp":"2025-12-02T11:46:46.916Z"}
+{"level":"info","message":"← GET /api/content/13/perception-map 200 14ms user=- reqId=8ab5fbb9-e8cb-4549-afaf-3c94a11dcf44","timestamp":"2025-12-02T11:46:46.917Z"}
+{"level":"info","message":"← GET /api/users/me/watchlist 200 17ms user=26 reqId=b425d10c-cc17-4753-bb57-21577224fbb1","timestamp":"2025-12-02T11:46:46.919Z"}
+{"level":"info","message":"← GET /api/critics/personalized/13 200 11ms user=26 reqId=364a5fea-b3b8-4b4e-a3fd-9376751dea47","timestamp":"2025-12-02T11:46:46.921Z"}
+{"level":"info","message":"← GET /api/content/13/dynamics 200 18ms user=- reqId=2a431a94-3346-4fb7-8cc7-f0d82e80f0cb","timestamp":"2025-12-02T11:46:46.923Z"}
+{"level":"info","message":"← GET /api/reviews/content/13 200 13ms user=- reqId=bf6d2d1f-42df-4a78-add3-c9e6c9c55f41","timestamp":"2025-12-02T11:46:46.926Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=99bc0df2-f2ec-4f89-b1ba-d3e16eaa9fff","timestamp":"2025-12-02T11:46:47.337Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=99bc0df2-f2ec-4f89-b1ba-d3e16eaa9fff","timestamp":"2025-12-02T11:46:47.339Z"}
+{"level":"info","message":"→ GET /api/content?limit=100 user=- reqId=cf5f07db-d964-40b9-a466-052fc3d720de","timestamp":"2025-12-02T11:46:50.368Z"}
+{"level":"info","message":"← GET /api/content?limit=100 200 3ms user=- reqId=cf5f07db-d964-40b9-a466-052fc3d720de","timestamp":"2025-12-02T11:46:50.371Z"}
+{"level":"info","message":"→ GET /api/content?limit=100 user=- reqId=855a0424-57ed-4539-9484-e2bfe3a8f35e","timestamp":"2025-12-02T11:46:50.375Z"}
+{"level":"info","message":"← GET /api/content?limit=100 200 2ms user=- reqId=855a0424-57ed-4539-9484-e2bfe3a8f35e","timestamp":"2025-12-02T11:46:50.377Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=7b95d66e-8d18-45bb-b57d-504e5875ed9a","timestamp":"2025-12-02T11:47:02.422Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 12ms user=26 reqId=7b95d66e-8d18-45bb-b57d-504e5875ed9a","timestamp":"2025-12-02T11:47:02.434Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=17410783-37f5-41d1-9271-1ff0de7eb8d9","timestamp":"2025-12-02T11:47:17.117Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=17410783-37f5-41d1-9271-1ff0de7eb8d9","timestamp":"2025-12-02T11:47:17.120Z"}
+{"level":"info","message":"→ GET /api/content/autocomplete?q=elder+&limit=8 user=- reqId=ff0d39fa-2d31-48eb-9be2-3443af574550","timestamp":"2025-12-02T11:47:31.156Z"}
+{"level":"info","message":"← GET /api/content/autocomplete?q=elder+&limit=8 200 23ms user=- reqId=ff0d39fa-2d31-48eb-9be2-3443af574550","timestamp":"2025-12-02T11:47:31.179Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=e28e7b98-e022-4230-87ad-c1d570557e71","timestamp":"2025-12-02T11:47:32.116Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=e28e7b98-e022-4230-87ad-c1d570557e71","timestamp":"2025-12-02T11:47:32.119Z"}
+{"level":"info","message":"→ GET /api/content/autocomplete?q=elder&limit=8 user=- reqId=ac182d10-463d-42aa-ad14-f73f8d6d26cd","timestamp":"2025-12-02T11:47:33.330Z"}
+{"level":"info","message":"← GET /api/content/autocomplete?q=elder&limit=8 200 1ms user=- reqId=ac182d10-463d-42aa-ad14-f73f8d6d26cd","timestamp":"2025-12-02T11:47:33.332Z"}
+{"level":"info","message":"→ GET /api/content/autocomplete?q=el&limit=8 user=- reqId=a45fdfc4-d3e2-41b0-a781-3f6ced48daf3","timestamp":"2025-12-02T11:47:34.918Z"}
+{"level":"info","message":"← GET /api/content/autocomplete?q=el&limit=8 200 3ms user=- reqId=a45fdfc4-d3e2-41b0-a781-3f6ced48daf3","timestamp":"2025-12-02T11:47:34.920Z"}
+{"level":"info","message":"→ GET /api/content/autocomplete?q=el&limit=8 user=- reqId=3b329fb4-f4c7-4206-90aa-47473400dda1","timestamp":"2025-12-02T11:47:40.731Z"}
+{"level":"info","message":"← GET /api/content/autocomplete?q=el&limit=8 200 2ms user=- reqId=3b329fb4-f4c7-4206-90aa-47473400dda1","timestamp":"2025-12-02T11:47:40.733Z"}
+{"level":"info","message":"→ GET /api/content/13 user=- reqId=ae7323e2-23bb-4394-9ddf-bf4124aecd5f","timestamp":"2025-12-02T11:47:45.377Z"}
+{"level":"info","message":"← GET /api/content/13 200 8ms user=- reqId=ae7323e2-23bb-4394-9ddf-bf4124aecd5f","timestamp":"2025-12-02T11:47:45.384Z"}
+{"level":"info","message":"→ GET /api/content/13 user=- reqId=5d1c7c43-3be9-4672-8c8c-2cacd5b75f2d","timestamp":"2025-12-02T11:47:45.700Z"}
+{"level":"info","message":"← GET /api/content/13 200 8ms user=- reqId=5d1c7c43-3be9-4672-8c8c-2cacd5b75f2d","timestamp":"2025-12-02T11:47:45.709Z"}
+{"level":"info","message":"→ GET /api/content/13/emotional-cloud user=- reqId=fdd6ef4d-4dc2-4e7b-a670-9d5199b1ec03","timestamp":"2025-12-02T11:47:45.960Z"}
+{"level":"info","message":"← GET /api/content/13/emotional-cloud 200 1ms user=- reqId=fdd6ef4d-4dc2-4e7b-a670-9d5199b1ec03","timestamp":"2025-12-02T11:47:45.962Z"}
+{"level":"info","message":"→ GET /api/content/13/perception-map user=- reqId=b20c9040-9aa1-44d7-bfe5-d857bf74a302","timestamp":"2025-12-02T11:47:46.035Z"}
+{"level":"info","message":"→ GET /api/content/13/dynamics user=- reqId=24e6339b-a6f1-48dc-925c-4fbb5d2a6c40","timestamp":"2025-12-02T11:47:46.036Z"}
+{"level":"info","message":"→ GET /api/reviews/content/13 user=- reqId=67d6bd71-ef3e-401a-bff3-be884f1541c7","timestamp":"2025-12-02T11:47:46.037Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/13 user=26 reqId=ad6911d1-56e8-40ba-9568-229d3a8e8103","timestamp":"2025-12-02T11:47:46.039Z"}
+{"level":"info","message":"→ GET /api/users/me/watchlist user=26 reqId=34ad7657-b7f0-4a19-a3de-fddfad71eef0","timestamp":"2025-12-02T11:47:46.041Z"}
+{"level":"info","message":"← GET /api/content/13/perception-map 200 14ms user=- reqId=b20c9040-9aa1-44d7-bfe5-d857bf74a302","timestamp":"2025-12-02T11:47:46.048Z"}
+{"level":"info","message":"← GET /api/content/13/dynamics 200 14ms user=- reqId=24e6339b-a6f1-48dc-925c-4fbb5d2a6c40","timestamp":"2025-12-02T11:47:46.050Z"}
+{"level":"info","message":"← GET /api/users/me/watchlist 200 10ms user=26 reqId=34ad7657-b7f0-4a19-a3de-fddfad71eef0","timestamp":"2025-12-02T11:47:46.052Z"}
+{"level":"info","message":"← GET /api/reviews/content/13 200 17ms user=- reqId=67d6bd71-ef3e-401a-bff3-be884f1541c7","timestamp":"2025-12-02T11:47:46.053Z"}
+{"level":"info","message":"← GET /api/critics/personalized/13 200 15ms user=26 reqId=ad6911d1-56e8-40ba-9568-229d3a8e8103","timestamp":"2025-12-02T11:47:46.055Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=d6588301-6dd3-455d-81cd-41329637e2a9","timestamp":"2025-12-02T11:47:47.103Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=d6588301-6dd3-455d-81cd-41329637e2a9","timestamp":"2025-12-02T11:47:47.105Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=cfea032b-61a1-40f0-939f-250721f8e2e4","timestamp":"2025-12-02T11:48:02.108Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 10ms user=26 reqId=cfea032b-61a1-40f0-939f-250721f8e2e4","timestamp":"2025-12-02T11:48:02.118Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=839a45ca-f0fe-4780-b819-0d8df08f8ac6","timestamp":"2025-12-02T11:48:17.103Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=839a45ca-f0fe-4780-b819-0d8df08f8ac6","timestamp":"2025-12-02T11:48:17.105Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=4fd8c15d-6fb1-4574-89fe-6523f6e0ddbb","timestamp":"2025-12-02T11:48:32.100Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=4fd8c15d-6fb1-4574-89fe-6523f6e0ddbb","timestamp":"2025-12-02T11:48:32.104Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=ace6c2b7-4512-44e3-b319-e29cd90880ba","timestamp":"2025-12-02T11:48:47.103Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 10ms user=26 reqId=ace6c2b7-4512-44e3-b319-e29cd90880ba","timestamp":"2025-12-02T11:48:47.113Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=c0c851a6-6d13-4eec-863d-8590b80f8ba0","timestamp":"2025-12-02T11:49:02.107Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=c0c851a6-6d13-4eec-863d-8590b80f8ba0","timestamp":"2025-12-02T11:49:02.110Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=cf3e4471-be78-48b3-89e3-ee7e882d69af","timestamp":"2025-12-02T11:49:17.102Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=cf3e4471-be78-48b3-89e3-ee7e882d69af","timestamp":"2025-12-02T11:49:17.104Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=d424959e-997e-478a-b0f0-7a146f3be66e","timestamp":"2025-12-02T11:49:32.106Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=d424959e-997e-478a-b0f0-7a146f3be66e","timestamp":"2025-12-02T11:49:32.111Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=5eeb5ba0-d7c2-4135-a5a0-7f6b5359df3b","timestamp":"2025-12-02T11:49:47.103Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=5eeb5ba0-d7c2-4135-a5a0-7f6b5359df3b","timestamp":"2025-12-02T11:49:47.106Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=0110cdd2-9841-48eb-a395-a20467fc3d8a","timestamp":"2025-12-02T11:50:02.100Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=0110cdd2-9841-48eb-a395-a20467fc3d8a","timestamp":"2025-12-02T11:50:02.103Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=971c4c29-0cfc-4420-a113-764a973c1c9e","timestamp":"2025-12-02T11:50:17.100Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 8ms user=26 reqId=971c4c29-0cfc-4420-a113-764a973c1c9e","timestamp":"2025-12-02T11:50:17.109Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=912694c4-838f-4419-95aa-4b2fc10ee4d2","timestamp":"2025-12-02T11:50:32.102Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=912694c4-838f-4419-95aa-4b2fc10ee4d2","timestamp":"2025-12-02T11:50:32.105Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=b54c68ed-eadb-4432-b9cf-55e196c2dcc5","timestamp":"2025-12-02T11:50:47.100Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 -6ms user=26 reqId=b54c68ed-eadb-4432-b9cf-55e196c2dcc5","timestamp":"2025-12-02T11:50:47.101Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=00c75409-4b99-4402-bd99-fc19460a7bcb","timestamp":"2025-12-02T11:51:02.093Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=00c75409-4b99-4402-bd99-fc19460a7bcb","timestamp":"2025-12-02T11:51:02.096Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=7f6489d2-2899-497e-aefe-2a25e33cc3df","timestamp":"2025-12-02T11:51:17.093Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=7f6489d2-2899-497e-aefe-2a25e33cc3df","timestamp":"2025-12-02T11:51:17.095Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=c3066348-e5da-4989-8517-389c3273d70a","timestamp":"2025-12-02T11:51:32.093Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=c3066348-e5da-4989-8517-389c3273d70a","timestamp":"2025-12-02T11:51:32.096Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=9e373852-447c-4b9b-b14f-2e530cbd1bde","timestamp":"2025-12-02T11:51:47.094Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 13ms user=26 reqId=9e373852-447c-4b9b-b14f-2e530cbd1bde","timestamp":"2025-12-02T11:51:47.106Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=5aea1c99-7a4e-4386-890a-0cf2c488e710","timestamp":"2025-12-02T11:52:02.106Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=5aea1c99-7a4e-4386-890a-0cf2c488e710","timestamp":"2025-12-02T11:52:02.109Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=9d04997f-589b-4b03-83eb-998a9efaf4ac","timestamp":"2025-12-02T11:52:17.105Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 9ms user=26 reqId=9d04997f-589b-4b03-83eb-998a9efaf4ac","timestamp":"2025-12-02T11:52:17.114Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=3c6240e9-3c9b-407d-bde4-4164dbb2659a","timestamp":"2025-12-02T11:52:32.102Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 22ms user=26 reqId=3c6240e9-3c9b-407d-bde4-4164dbb2659a","timestamp":"2025-12-02T11:52:32.125Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=43c319df-79de-42ac-8645-6538d1324df3","timestamp":"2025-12-02T11:52:47.101Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=43c319df-79de-42ac-8645-6538d1324df3","timestamp":"2025-12-02T11:52:47.103Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=a5ecb25d-694c-4019-b24a-20908a4e014b","timestamp":"2025-12-02T11:53:02.101Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=a5ecb25d-694c-4019-b24a-20908a4e014b","timestamp":"2025-12-02T11:53:02.103Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=c16efefb-2b8e-400a-919b-ed78fce94a67","timestamp":"2025-12-02T11:53:17.099Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 10ms user=26 reqId=c16efefb-2b8e-400a-919b-ed78fce94a67","timestamp":"2025-12-02T11:53:17.108Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=9901404f-7a3f-4399-802e-3b82684a9402","timestamp":"2025-12-02T11:53:32.100Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=9901404f-7a3f-4399-802e-3b82684a9402","timestamp":"2025-12-02T11:53:32.102Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=1a96e749-0401-4596-9be3-8f67f4a8f67f","timestamp":"2025-12-02T11:53:47.097Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=1a96e749-0401-4596-9be3-8f67f4a8f67f","timestamp":"2025-12-02T11:53:47.099Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=c3203f84-b843-448a-b8df-4973b03aff70","timestamp":"2025-12-02T11:54:02.103Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=c3203f84-b843-448a-b8df-4973b03aff70","timestamp":"2025-12-02T11:54:02.107Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=dd023387-0b0a-41b3-add6-a432e342e3ca","timestamp":"2025-12-02T11:54:17.502Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=dd023387-0b0a-41b3-add6-a432e342e3ca","timestamp":"2025-12-02T11:54:17.504Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=f7320ef6-be9f-43e9-922b-5559d0120853","timestamp":"2025-12-02T11:54:32.505Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=26 reqId=f7320ef6-be9f-43e9-922b-5559d0120853","timestamp":"2025-12-02T11:54:32.509Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=7ba776cd-f994-4cbd-aaac-d40709b5a551","timestamp":"2025-12-02T11:54:47.502Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=26 reqId=7ba776cd-f994-4cbd-aaac-d40709b5a551","timestamp":"2025-12-02T11:54:47.505Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=af93cfe5-c874-431e-bdce-3348b7f71c65","timestamp":"2025-12-02T11:55:02.507Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=af93cfe5-c874-431e-bdce-3348b7f71c65","timestamp":"2025-12-02T11:55:02.510Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=8a24b8dc-46bd-4bea-93ee-17763ba142d0","timestamp":"2025-12-02T11:55:27.503Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=8a24b8dc-46bd-4bea-93ee-17763ba142d0","timestamp":"2025-12-02T11:55:27.507Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=3d3647ca-79ad-413f-9111-f827e509ef05","timestamp":"2025-12-02T11:56:27.491Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=3d3647ca-79ad-413f-9111-f827e509ef05","timestamp":"2025-12-02T11:56:27.495Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=df501a5a-c39f-4a46-8a66-141d8bd3f3f7","timestamp":"2025-12-02T11:57:27.517Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=df501a5a-c39f-4a46-8a66-141d8bd3f3f7","timestamp":"2025-12-02T11:57:27.519Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=1c309f55-b231-45cd-ae9a-be4aa2fd8165","timestamp":"2025-12-02T11:58:27.506Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=26 reqId=1c309f55-b231-45cd-ae9a-be4aa2fd8165","timestamp":"2025-12-02T11:58:27.509Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=26 reqId=3212befa-982e-4f79-b2a4-ed295a352bc6","timestamp":"2025-12-02T11:58:51.083Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=26 reqId=3212befa-982e-4f79-b2a4-ed295a352bc6","timestamp":"2025-12-02T11:58:51.088Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=ffadbf37-5b9e-4bdd-b937-3c529050bff7","timestamp":"2025-12-02T11:58:57.213Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 46ms user=- reqId=ffadbf37-5b9e-4bdd-b937-3c529050bff7","timestamp":"2025-12-02T11:58:57.258Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=b7af95be-685d-4f07-b52e-091e181d4c91","timestamp":"2025-12-02T11:58:57.517Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=d757c9ca-17b7-48ce-91c4-878d969cc3f4","timestamp":"2025-12-02T11:58:57.519Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=67c34ebf-5cb4-4a1b-af29-11bcecfe0547","timestamp":"2025-12-02T11:58:57.520Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=77c96d40-e784-4c03-b954-b0c87f18cffa","timestamp":"2025-12-02T11:58:57.521Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 12ms user=- reqId=77c96d40-e784-4c03-b954-b0c87f18cffa","timestamp":"2025-12-02T11:58:57.532Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 33ms user=- reqId=b7af95be-685d-4f07-b52e-091e181d4c91","timestamp":"2025-12-02T11:58:57.551Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 32ms user=- reqId=67c34ebf-5cb4-4a1b-af29-11bcecfe0547","timestamp":"2025-12-02T11:58:57.552Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 35ms user=- reqId=d757c9ca-17b7-48ce-91c4-878d969cc3f4","timestamp":"2025-12-02T11:58:57.554Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=6a569f06-57ad-4ed0-a32d-92f2f9baa574","timestamp":"2025-12-02T11:58:57.570Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 4ms user=- reqId=6a569f06-57ad-4ed0-a32d-92f2f9baa574","timestamp":"2025-12-02T11:58:57.574Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=2398cb83-846c-46f8-9dee-6fba1942e451","timestamp":"2025-12-02T11:58:57.841Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 3ms user=- reqId=2398cb83-846c-46f8-9dee-6fba1942e451","timestamp":"2025-12-02T11:58:57.843Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=ae5054d8-0a7a-4c5f-ad4e-24402fe7855a","timestamp":"2025-12-02T11:58:57.858Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=f74ad2db-0731-4bfd-bba9-8dd3c614dcf3","timestamp":"2025-12-02T11:58:57.859Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 5ms user=- reqId=ae5054d8-0a7a-4c5f-ad4e-24402fe7855a","timestamp":"2025-12-02T11:58:57.863Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 5ms user=- reqId=f74ad2db-0731-4bfd-bba9-8dd3c614dcf3","timestamp":"2025-12-02T11:58:57.864Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=3d195f5e-7b30-4d61-875b-95c82bdd5b6a","timestamp":"2025-12-02T11:58:57.867Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 4ms user=- reqId=3d195f5e-7b30-4d61-875b-95c82bdd5b6a","timestamp":"2025-12-02T11:58:57.871Z"}
+{"level":"info","message":"→ POST /api/auth/login user=- reqId=bd07c52f-1a4c-485c-aa7f-de5cd1428171","timestamp":"2025-12-02T11:59:23.752Z"}
+{"level":"info","message":"← POST /api/auth/login 200 115ms user=- reqId=bd07c52f-1a4c-485c-aa7f-de5cd1428171","timestamp":"2025-12-02T11:59:23.866Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=08f20747-1723-4057-a7d5-e3928204356d","timestamp":"2025-12-02T11:59:23.993Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 4ms user=- reqId=08f20747-1723-4057-a7d5-e3928204356d","timestamp":"2025-12-02T11:59:23.996Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=bbcc5596-5d6c-41da-9005-fc1dc2257804","timestamp":"2025-12-02T11:59:24.230Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=19879b27-8908-4370-bf32-7abfc361a88e","timestamp":"2025-12-02T11:59:24.231Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=7bfaa9bb-dbf1-459d-baf3-08ebdabe455a","timestamp":"2025-12-02T11:59:24.232Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=a79251e8-e59d-47c8-b35f-3d4d7db8b868","timestamp":"2025-12-02T11:59:24.232Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=6f33dac8-8704-4f60-886f-cd118e6f525e msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-12-02T11:59:24.241Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 12ms user=- reqId=a79251e8-e59d-47c8-b35f-3d4d7db8b868","timestamp":"2025-12-02T11:59:24.244Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 16ms user=- reqId=bbcc5596-5d6c-41da-9005-fc1dc2257804","timestamp":"2025-12-02T11:59:24.246Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 16ms user=- reqId=19879b27-8908-4370-bf32-7abfc361a88e","timestamp":"2025-12-02T11:59:24.247Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 17ms user=- reqId=7bfaa9bb-dbf1-459d-baf3-08ebdabe455a","timestamp":"2025-12-02T11:59:24.248Z"}
+{"level":"info","message":"→ GET /api/auth/validate user=13 reqId=1cd2aff9-f648-44dd-836a-cdcde40560d0","timestamp":"2025-12-02T11:59:24.307Z"}
+{"level":"info","message":"← GET /api/auth/validate 200 4ms user=13 reqId=1cd2aff9-f648-44dd-836a-cdcde40560d0","timestamp":"2025-12-02T11:59:24.311Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=ac2fca61-f575-46a9-8fc5-2921c81034d2","timestamp":"2025-12-02T11:59:24.562Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=2758dabe-705c-455b-9dcb-3dbdd18971ae","timestamp":"2025-12-02T11:59:24.564Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=e743c6bd-13df-48cf-8cf8-7264a0ddfd19","timestamp":"2025-12-02T11:59:24.565Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=8b036917-f05c-48fa-92b1-a391b5dba0f2","timestamp":"2025-12-02T11:59:24.566Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=fac51310-2d60-4fc8-be98-1f6f77101f57","timestamp":"2025-12-02T11:59:24.567Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 7ms user=- reqId=ac2fca61-f575-46a9-8fc5-2921c81034d2","timestamp":"2025-12-02T11:59:24.569Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 8ms user=- reqId=2758dabe-705c-455b-9dcb-3dbdd18971ae","timestamp":"2025-12-02T11:59:24.571Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 9ms user=- reqId=e743c6bd-13df-48cf-8cf8-7264a0ddfd19","timestamp":"2025-12-02T11:59:24.574Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 12ms user=- reqId=8b036917-f05c-48fa-92b1-a391b5dba0f2","timestamp":"2025-12-02T11:59:24.577Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 12ms user=- reqId=fac51310-2d60-4fc8-be98-1f6f77101f57","timestamp":"2025-12-02T11:59:24.578Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=e13b96cc-f8ed-4b72-9979-07ce16901035","timestamp":"2025-12-02T11:59:24.627Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=e13b96cc-f8ed-4b72-9979-07ce16901035","timestamp":"2025-12-02T11:59:24.630Z"}
+{"level":"info","message":"→ GET /api/reviews/content/20 user=- reqId=8b552037-d620-4093-85b2-f70528f29fd9","timestamp":"2025-12-02T11:59:31.192Z"}
+{"level":"info","message":"→ GET /api/users/me/watchlist user=13 reqId=3261936d-9e99-49ae-b27e-2fb77a6e9afe","timestamp":"2025-12-02T11:59:31.194Z"}
+{"level":"info","message":"→ GET /api/content/20 user=- reqId=c05ee895-ab40-49dc-b356-b78e5f627e79","timestamp":"2025-12-02T11:59:31.195Z"}
+{"level":"info","message":"← GET /api/reviews/content/20 200 4ms user=- reqId=8b552037-d620-4093-85b2-f70528f29fd9","timestamp":"2025-12-02T11:59:31.197Z"}
+{"level":"info","message":"← GET /api/users/me/watchlist 200 7ms user=13 reqId=3261936d-9e99-49ae-b27e-2fb77a6e9afe","timestamp":"2025-12-02T11:59:31.201Z"}
+{"level":"info","message":"← GET /api/content/20 200 14ms user=- reqId=c05ee895-ab40-49dc-b356-b78e5f627e79","timestamp":"2025-12-02T11:59:31.209Z"}
+{"level":"info","message":"→ GET /api/reviews/content/20 user=- reqId=1f028420-9074-457a-8771-e03d5cdc0932","timestamp":"2025-12-02T11:59:31.459Z"}
+{"level":"info","message":"← GET /api/reviews/content/20 200 4ms user=- reqId=1f028420-9074-457a-8771-e03d5cdc0932","timestamp":"2025-12-02T11:59:31.462Z"}
+{"level":"info","message":"→ GET /api/users/me/watchlist user=13 reqId=37d3e462-6992-43d1-9099-4badcc76d776","timestamp":"2025-12-02T11:59:31.509Z"}
+{"level":"info","message":"→ GET /api/content/20 user=- reqId=587f411d-7781-4ed0-901e-a5b42c402e65","timestamp":"2025-12-02T11:59:31.510Z"}
+{"level":"info","message":"← GET /api/users/me/watchlist 200 3ms user=13 reqId=37d3e462-6992-43d1-9099-4badcc76d776","timestamp":"2025-12-02T11:59:31.512Z"}
+{"level":"info","message":"→ GET /api/expectations/20 user=- reqId=4a59cc38-ac53-41a8-a87b-9997319849dc","timestamp":"2025-12-02T11:59:31.518Z"}
+{"level":"info","message":"← GET /api/content/20 200 9ms user=- reqId=587f411d-7781-4ed0-901e-a5b42c402e65","timestamp":"2025-12-02T11:59:31.520Z"}
+{"level":"info","message":"← GET /api/expectations/20 200 5ms user=- reqId=4a59cc38-ac53-41a8-a87b-9997319849dc","timestamp":"2025-12-02T11:59:31.522Z"}
+{"level":"info","message":"→ GET /api/expectations/20 user=- reqId=c6f18092-9a75-4963-b567-3432fa28c828","timestamp":"2025-12-02T11:59:31.526Z"}
+{"level":"info","message":"← GET /api/expectations/20 200 2ms user=- reqId=c6f18092-9a75-4963-b567-3432fa28c828","timestamp":"2025-12-02T11:59:31.528Z"}
+{"level":"info","message":"→ GET /api/expectations/20/me user=13 reqId=6590f6b7-5ae9-45e6-8b3f-eb50c0155eb2","timestamp":"2025-12-02T11:59:31.841Z"}
+{"level":"info","message":"← GET /api/expectations/20/me 200 9ms user=13 reqId=6590f6b7-5ae9-45e6-8b3f-eb50c0155eb2","timestamp":"2025-12-02T11:59:31.850Z"}
+{"level":"info","message":"→ GET /api/expectations/20/me user=13 reqId=2c3d1329-26f6-4cfb-aacf-07e46615b3b0","timestamp":"2025-12-02T11:59:32.161Z"}
+{"level":"info","message":"← GET /api/expectations/20/me 200 4ms user=13 reqId=2c3d1329-26f6-4cfb-aacf-07e46615b3b0","timestamp":"2025-12-02T11:59:32.165Z"}
+{"level":"info","message":"→ GET /api/admin/stats user=13 reqId=90f540c6-1344-4764-836f-59e46a563b43","timestamp":"2025-12-02T11:59:32.831Z"}
+{"level":"info","message":"→ GET /api/admin/users user=13 reqId=e16f4973-34fb-4cce-aa92-28d2bdd45d36","timestamp":"2025-12-02T11:59:32.837Z"}
+{"level":"info","message":"← GET /api/admin/stats 200 10ms user=13 reqId=90f540c6-1344-4764-836f-59e46a563b43","timestamp":"2025-12-02T11:59:32.841Z"}
+{"level":"info","message":"← GET /api/admin/users 200 6ms user=13 reqId=e16f4973-34fb-4cce-aa92-28d2bdd45d36","timestamp":"2025-12-02T11:59:32.843Z"}
+{"level":"info","message":"→ GET /api/admin/stats user=13 reqId=bbe2bfc5-280a-4596-9d24-1197e964e235","timestamp":"2025-12-02T11:59:33.076Z"}
+{"level":"info","message":"← GET /api/admin/stats 200 2ms user=13 reqId=bbe2bfc5-280a-4596-9d24-1197e964e235","timestamp":"2025-12-02T11:59:33.079Z"}
+{"level":"info","message":"→ GET /api/admin/users user=13 reqId=abd6d384-f5f0-4e33-b1d2-7f620e0bd5a0","timestamp":"2025-12-02T11:59:33.161Z"}
+{"level":"info","message":"← GET /api/admin/users 200 2ms user=13 reqId=abd6d384-f5f0-4e33-b1d2-7f620e0bd5a0","timestamp":"2025-12-02T11:59:33.162Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=039a6883-f22c-43dc-bb10-6b4564be9753","timestamp":"2025-12-02T11:59:39.335Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 10ms user=13 reqId=039a6883-f22c-43dc-bb10-6b4564be9753","timestamp":"2025-12-02T11:59:39.346Z"}
+{"level":"info","message":"→ GET /api/content user=- reqId=124f2c96-50c8-4e5e-8413-9d9389b5932a","timestamp":"2025-12-02T11:59:51.745Z"}
+{"level":"info","message":"← GET /api/content 200 3ms user=- reqId=124f2c96-50c8-4e5e-8413-9d9389b5932a","timestamp":"2025-12-02T11:59:51.748Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=cc2ff55f-3724-4407-a3c6-a3eca6646bca","timestamp":"2025-12-02T11:59:54.328Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=cc2ff55f-3724-4407-a3c6-a3eca6646bca","timestamp":"2025-12-02T11:59:54.330Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/all user=13 reqId=35fd39a2-343f-4466-97aa-2324c94b1758","timestamp":"2025-12-02T12:00:05.063Z"}
+{"level":"info","message":"→ GET /api/content user=- reqId=bd72cb2e-b1b7-429d-82dc-e18cf47fb8c6","timestamp":"2025-12-02T12:00:05.065Z"}
+{"level":"info","message":"← GET /api/content 200 2ms user=- reqId=bd72cb2e-b1b7-429d-82dc-e18cf47fb8c6","timestamp":"2025-12-02T12:00:05.067Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/all 200 5ms user=13 reqId=35fd39a2-343f-4466-97aa-2324c94b1758","timestamp":"2025-12-02T12:00:05.068Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=2b49bd2b-aa2e-4e0f-9bd3-7dab6827a8d8","timestamp":"2025-12-02T12:00:09.326Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=13 reqId=2b49bd2b-aa2e-4e0f-9bd3-7dab6827a8d8","timestamp":"2025-12-02T12:00:09.329Z"}
+{"level":"info","message":"→ PUT /api/content/hero-carousel/9 user=13 reqId=3d569ab3-8f61-4696-9c5e-966bad127940","timestamp":"2025-12-02T12:00:13.189Z"}
+{"level":"info","message":"← PUT /api/content/hero-carousel/9 200 25ms user=13 reqId=3d569ab3-8f61-4696-9c5e-966bad127940","timestamp":"2025-12-02T12:00:13.213Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/all user=13 reqId=2d5a708f-f4ed-4381-9384-cf931dd73eec","timestamp":"2025-12-02T12:00:13.437Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/all 200 3ms user=13 reqId=2d5a708f-f4ed-4381-9384-cf931dd73eec","timestamp":"2025-12-02T12:00:13.440Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/all user=13 reqId=71abcd9a-2172-4efe-8798-49077db543b6","timestamp":"2025-12-02T12:00:16.342Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/all 200 2ms user=13 reqId=71abcd9a-2172-4efe-8798-49077db543b6","timestamp":"2025-12-02T12:00:16.344Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=bd6e6b3c-2d54-406a-ad25-9d83c9c5fbba","timestamp":"2025-12-02T12:00:24.638Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=bd6e6b3c-2d54-406a-ad25-9d83c9c5fbba","timestamp":"2025-12-02T12:00:24.640Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=1822e073-dd5d-4b72-a781-f304d478bf1d","timestamp":"2025-12-02T12:00:39.335Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=13 reqId=1822e073-dd5d-4b72-a781-f304d478bf1d","timestamp":"2025-12-02T12:00:39.337Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=c676c9f0-4514-46b0-a89f-8c58c1a760ce","timestamp":"2025-12-02T12:00:54.642Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=c676c9f0-4514-46b0-a89f-8c58c1a760ce","timestamp":"2025-12-02T12:00:54.646Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=880c5a07-3ca3-41ba-acdd-8c3d39160194","timestamp":"2025-12-02T12:01:03.016Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 4ms user=- reqId=880c5a07-3ca3-41ba-acdd-8c3d39160194","timestamp":"2025-12-02T12:01:03.019Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=70b20b50-f59e-44d2-8af7-04bf4998d3b4","timestamp":"2025-12-02T12:01:03.320Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=5e605700-1419-4253-8623-64406515c678","timestamp":"2025-12-02T12:01:03.321Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=e892c922-ace7-4fd9-8a97-ec190b41034a","timestamp":"2025-12-02T12:01:03.321Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=97d8fd3a-19ef-4763-aa32-ad4dc14f2703","timestamp":"2025-12-02T12:01:03.322Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 7ms user=- reqId=70b20b50-f59e-44d2-8af7-04bf4998d3b4","timestamp":"2025-12-02T12:01:03.326Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 6ms user=- reqId=5e605700-1419-4253-8623-64406515c678","timestamp":"2025-12-02T12:01:03.328Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 8ms user=- reqId=e892c922-ace7-4fd9-8a97-ec190b41034a","timestamp":"2025-12-02T12:01:03.329Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 8ms user=- reqId=97d8fd3a-19ef-4763-aa32-ad4dc14f2703","timestamp":"2025-12-02T12:01:03.331Z"}
+{"level":"info","message":"→ GET /api/content/hero-carousel/active?sort=latest user=- reqId=42567bbd-1493-4153-91f5-c6969aea5edb","timestamp":"2025-12-02T12:01:03.334Z"}
+{"level":"info","message":"← GET /api/content/hero-carousel/active?sort=latest 200 4ms user=- reqId=42567bbd-1493-4153-91f5-c6969aea5edb","timestamp":"2025-12-02T12:01:03.338Z"}
+{"level":"info","message":"→ GET /api/content?type=MOVIE&limit=12 user=- reqId=55a346cb-5f62-407b-bc5f-2e0d173ed9b5","timestamp":"2025-12-02T12:01:03.633Z"}
+{"level":"info","message":"→ GET /api/content?type=TV_SERIES&limit=6 user=- reqId=3c1f12c2-5536-4430-ba0a-22eb0eea954c","timestamp":"2025-12-02T12:01:03.634Z"}
+{"level":"info","message":"← GET /api/content?type=TV_SERIES&limit=6 200 10ms user=- reqId=3c1f12c2-5536-4430-ba0a-22eb0eea954c","timestamp":"2025-12-02T12:01:03.644Z"}
+{"level":"info","message":"← GET /api/content?type=MOVIE&limit=12 200 12ms user=- reqId=55a346cb-5f62-407b-bc5f-2e0d173ed9b5","timestamp":"2025-12-02T12:01:03.646Z"}
+{"level":"info","message":"→ GET /api/content?type=GAME&limit=6 user=- reqId=8ebb05d6-63d6-494e-95ca-15fc849a71eb","timestamp":"2025-12-02T12:01:03.649Z"}
+{"level":"info","message":"→ GET /api/content/coming-soon/active user=- reqId=9f9cea42-5adf-4cd4-9806-09979f9d6af4","timestamp":"2025-12-02T12:01:03.650Z"}
+{"level":"info","message":"← GET /api/content/coming-soon/active 200 2ms user=- reqId=9f9cea42-5adf-4cd4-9806-09979f9d6af4","timestamp":"2025-12-02T12:01:03.652Z"}
+{"level":"info","message":"← GET /api/content?type=GAME&limit=6 200 5ms user=- reqId=8ebb05d6-63d6-494e-95ca-15fc849a71eb","timestamp":"2025-12-02T12:01:03.654Z"}
+{"level":"info","message":"→ GET /api/content/5 user=- reqId=f11b3eeb-4f20-4a78-a64b-008945247e58","timestamp":"2025-12-02T12:01:08.203Z"}
+{"level":"info","message":"← GET /api/content/5 200 6ms user=- reqId=f11b3eeb-4f20-4a78-a64b-008945247e58","timestamp":"2025-12-02T12:01:08.209Z"}
+{"level":"info","message":"→ GET /api/content/5 user=- reqId=6ddd5493-98dd-4739-9315-fd79e700d838","timestamp":"2025-12-02T12:01:08.453Z"}
+{"level":"info","message":"← GET /api/content/5 200 4ms user=- reqId=6ddd5493-98dd-4739-9315-fd79e700d838","timestamp":"2025-12-02T12:01:08.458Z"}
+{"level":"info","message":"→ GET /api/content/5/emotional-cloud user=- reqId=05245f25-64f0-414d-a519-6c93e7ca4260","timestamp":"2025-12-02T12:01:08.515Z"}
+{"level":"info","message":"← GET /api/content/5/emotional-cloud 200 3ms user=- reqId=05245f25-64f0-414d-a519-6c93e7ca4260","timestamp":"2025-12-02T12:01:08.517Z"}
+{"level":"info","message":"→ GET /api/content/5/perception-map user=- reqId=d38f8507-5fba-4b40-b6b4-01d7e26c770f","timestamp":"2025-12-02T12:01:08.797Z"}
+{"level":"info","message":"→ GET /api/content/5/dynamics user=- reqId=32f7b9bb-0f49-41da-b20c-e85618222c7f","timestamp":"2025-12-02T12:01:08.799Z"}
+{"level":"info","message":"→ GET /api/reviews/content/5 user=- reqId=a5de6c34-8db8-4c0b-9a68-cff36d06c52c","timestamp":"2025-12-02T12:01:08.800Z"}
+{"level":"info","message":"→ GET /api/critics/personalized/5 user=13 reqId=512210f1-ca8a-4fd6-a585-e54fc1aafac2","timestamp":"2025-12-02T12:01:08.802Z"}
+{"level":"info","message":"→ GET /api/users/me/watchlist user=13 reqId=dbe4a443-9f8b-4ebf-ab66-0f4f163bc705","timestamp":"2025-12-02T12:01:08.804Z"}
+{"level":"info","message":"← GET /api/content/5/perception-map 200 7ms user=- reqId=d38f8507-5fba-4b40-b6b4-01d7e26c770f","timestamp":"2025-12-02T12:01:08.804Z"}
+{"level":"info","message":"← GET /api/content/5/dynamics 200 7ms user=- reqId=32f7b9bb-0f49-41da-b20c-e85618222c7f","timestamp":"2025-12-02T12:01:08.805Z"}
+{"level":"info","message":"← GET /api/reviews/content/5 200 7ms user=- reqId=a5de6c34-8db8-4c0b-9a68-cff36d06c52c","timestamp":"2025-12-02T12:01:08.806Z"}
+{"level":"info","message":"← GET /api/critics/personalized/5 200 7ms user=13 reqId=512210f1-ca8a-4fd6-a585-e54fc1aafac2","timestamp":"2025-12-02T12:01:08.808Z"}
+{"level":"info","message":"← GET /api/users/me/watchlist 200 6ms user=13 reqId=dbe4a443-9f8b-4ebf-ab66-0f4f163bc705","timestamp":"2025-12-02T12:01:08.809Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=ed4429ea-f049-40aa-aad6-1da61760b73e","timestamp":"2025-12-02T12:01:09.623Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 5ms user=13 reqId=ed4429ea-f049-40aa-aad6-1da61760b73e","timestamp":"2025-12-02T12:01:09.627Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=c1cc1d85-a5e1-4032-a2ab-91bc0e040514","timestamp":"2025-12-02T12:01:24.318Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=c1cc1d85-a5e1-4032-a2ab-91bc0e040514","timestamp":"2025-12-02T12:01:24.322Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=a14aff10-26d3-452e-91a4-eb3c759327a6","timestamp":"2025-12-02T12:01:39.629Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=a14aff10-26d3-452e-91a4-eb3c759327a6","timestamp":"2025-12-02T12:01:39.632Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=71630f83-35f3-4836-bbfa-edd740f6ec82","timestamp":"2025-12-02T12:01:54.509Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=71630f83-35f3-4836-bbfa-edd740f6ec82","timestamp":"2025-12-02T12:01:54.511Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=346aefd0-4b27-439a-9f9a-19173ab19909","timestamp":"2025-12-02T12:02:09.818Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=346aefd0-4b27-439a-9f9a-19173ab19909","timestamp":"2025-12-02T12:02:09.820Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=643114d9-283c-4974-aa06-efb7801bcf8f","timestamp":"2025-12-02T12:02:24.512Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=13 reqId=643114d9-283c-4974-aa06-efb7801bcf8f","timestamp":"2025-12-02T12:02:24.515Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=4f07cfac-2da5-42db-9d13-dacdfe6816c1","timestamp":"2025-12-02T12:02:39.825Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=4f07cfac-2da5-42db-9d13-dacdfe6816c1","timestamp":"2025-12-02T12:02:39.828Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=71089f37-33da-4895-ac5e-b0d42f77c29a","timestamp":"2025-12-02T12:03:27.521Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=71089f37-33da-4895-ac5e-b0d42f77c29a","timestamp":"2025-12-02T12:03:27.523Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=47fc20e2-75db-42cb-aa5a-3d7e5abdc4a6","timestamp":"2025-12-02T12:04:27.830Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 12ms user=13 reqId=47fc20e2-75db-42cb-aa5a-3d7e5abdc4a6","timestamp":"2025-12-02T12:04:27.842Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=e71772ee-3099-4233-9fca-14982f24217f","timestamp":"2025-12-02T12:05:27.509Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 71ms user=13 reqId=e71772ee-3099-4233-9fca-14982f24217f","timestamp":"2025-12-02T12:05:27.579Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=2de984e8-5775-4e7d-a3f5-605eae91a606","timestamp":"2025-12-02T12:06:27.823Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 6ms user=13 reqId=2de984e8-5775-4e7d-a3f5-605eae91a606","timestamp":"2025-12-02T12:06:27.829Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=3e95cb49-4225-4ba9-a9f6-3caac388a3fb","timestamp":"2025-12-02T12:07:27.517Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=13 reqId=3e95cb49-4225-4ba9-a9f6-3caac388a3fb","timestamp":"2025-12-02T12:07:27.520Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=4dd66eaf-aaf8-476a-a311-5967338484c4","timestamp":"2025-12-02T12:08:27.825Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=4dd66eaf-aaf8-476a-a311-5967338484c4","timestamp":"2025-12-02T12:08:27.828Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=b11ddba6-fcf5-4980-b751-4a54e0fede4d","timestamp":"2025-12-02T12:09:27.523Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=b11ddba6-fcf5-4980-b751-4a54e0fede4d","timestamp":"2025-12-02T12:09:27.526Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=89a2ae5c-0ec0-4db7-81d4-617c9dbdddb1","timestamp":"2025-12-02T12:10:27.827Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=89a2ae5c-0ec0-4db7-81d4-617c9dbdddb1","timestamp":"2025-12-02T12:10:27.832Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=78c54969-28e5-4104-878a-134e38c35f4b","timestamp":"2025-12-02T12:11:27.510Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=78c54969-28e5-4104-878a-134e38c35f4b","timestamp":"2025-12-02T12:11:27.514Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=f75ecd3d-18b8-4666-9446-876967f59334","timestamp":"2025-12-02T12:12:27.831Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 3ms user=13 reqId=f75ecd3d-18b8-4666-9446-876967f59334","timestamp":"2025-12-02T12:12:27.833Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=7704de85-df11-4a97-9692-285e265567e8","timestamp":"2025-12-02T12:13:27.517Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 4ms user=13 reqId=7704de85-df11-4a97-9692-285e265567e8","timestamp":"2025-12-02T12:13:27.520Z"}
+{"level":"info","message":"→ GET /api/users/me/achievements user=13 reqId=6b46f1b5-a26e-4498-9bd1-af8d3b075ac3","timestamp":"2025-12-02T12:14:27.818Z"}
+{"level":"info","message":"← GET /api/users/me/achievements 200 2ms user=13 reqId=6b46f1b5-a26e-4498-9bd1-af8d3b075ac3","timestamp":"2025-12-02T12:14:27.820Z"}

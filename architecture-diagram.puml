@@ -1,0 +1,30 @@
+@startuml CinemaHub Architecture
+
+skinparam backgroundColor white
+skinparam defaultFontSize 11
+
+title Архитектура системы CinemaHub
+
+actor "Пользователь" as User
+
+rectangle "Frontend\n(React + Vite + TailwindCSS)" as Frontend #E3F2FD
+
+rectangle "Backend API\n(NestJS + TypeORM)" as Backend #E8F5E9
+
+database "MySQL 8.0\n(users, movies, reviews)" as MySQL #FFF3E0
+
+queue "Apache Kafka\n(events)" as Kafka #FFE0B2
+
+rectangle "PySpark\n(ETL)" as PySpark #FFCCBC
+
+database "ClickHouse\n(analytics)" as ClickHouse #FCE4EC
+
+User --> Frontend : HTTP
+Frontend --> Backend : REST API
+Backend --> MySQL : CRUD
+Backend --> Kafka : события
+Kafka --> PySpark : consume
+PySpark --> ClickHouse : load
+Backend --> ClickHouse : аналитика
+
+@enduml

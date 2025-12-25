@@ -1,0 +1,55 @@
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T09:24:50.045Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T09:46:49.810Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T09:49:07.585Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=dd226b41-4f0e-4335-a2ab-fd257b973736 msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-12-08T09:50:59.026Z"}
+{"level":"error","message":"getPersonalizedRecommendations error: content.avgRating.toFixed is not a function","timestamp":"2025-12-08T09:51:54.089Z"}
+{"level":"error","message":"getPersonalizedRecommendations error: content.avgRating.toFixed is not a function","timestamp":"2025-12-08T09:51:54.191Z"}
+{"level":"error","message":"getPersonalizedRecommendations error: content.avgRating.toFixed is not a function","timestamp":"2025-12-08T09:58:46.975Z"}
+{"level":"error","message":"getPersonalizedRecommendations error: content.avgRating.toFixed is not a function","timestamp":"2025-12-08T09:58:47.296Z"}
+{"level":"warn","message":"add_review_viewer failed, using fallback insert. code=ER_SP_DOES_NOT_EXIST errno=1305 msg=PROCEDURE warehouse.add_review_viewer does not exist","timestamp":"2025-12-08T10:36:33.962Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T13:25:54.220Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T13:31:17.113Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T13:31:35.743Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T13:32:51.767Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T13:33:23.931Z"}
+{"level":"error","message":"Failed to connect to Kafka: Connection error: ","timestamp":"2025-12-08T14:55:47.980Z"}
+{"level":"error","message":"Failed to initialize ClickHouse schema: ","timestamp":"2025-12-08T14:55:48.015Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T14:55:49.302Z"}
+{"level":"error","message":"Failed to connect to Kafka: Connection error: ","timestamp":"2025-12-08T15:03:07.455Z"}
+{"level":"error","message":"Failed to initialize ClickHouse schema: ","timestamp":"2025-12-08T15:03:07.486Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T15:03:08.568Z"}
+{"level":"error","message":"Failed to connect to Kafka: Connection error: ","timestamp":"2025-12-08T15:38:11.660Z"}
+{"level":"error","message":"Failed to initialize ClickHouse schema: ","timestamp":"2025-12-08T15:38:11.722Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T15:38:13.098Z"}
+{"level":"error","message":"× GET /api/recommendations 200 219ms user=13 reqId=724fe839-beb2-4bd7-b678-5e61c68de9aa msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:44:37.479Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=724fe839-beb2-4bd7-b678-5e61c68de9aa msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:44:37.485Z"}
+{"level":"error","message":"× GET /api/recommendations 200 20ms user=13 reqId=c940beb8-ccc7-45f1-a133-e4cec8ed140a msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:44:37.928Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=c940beb8-ccc7-45f1-a133-e4cec8ed140a msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:44:37.929Z"}
+{"level":"error","message":"× GET /api/recommendations 200 23ms user=13 reqId=64132bec-204b-44db-b040-1d098383ed67 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:46:18.690Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=64132bec-204b-44db-b040-1d098383ed67 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:46:18.691Z"}
+{"level":"error","message":"× GET /api/recommendations 200 12ms user=13 reqId=973e851a-8a5e-40b6-8394-d5a97e4bad64 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:46:19.038Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=973e851a-8a5e-40b6-8394-d5a97e4bad64 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:46:19.039Z"}
+{"level":"error","message":"Failed to connect to Kafka: Connection error: ","timestamp":"2025-12-08T15:52:01.994Z"}
+{"level":"error","message":"Failed to initialize ClickHouse schema: ","timestamp":"2025-12-08T15:52:02.065Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T15:52:03.464Z"}
+{"level":"error","message":"× GET /api/recommendations 200 60ms user=13 reqId=b76d650f-d787-4c1a-9d15-7e7c8e12abe4 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:55:35.577Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=b76d650f-d787-4c1a-9d15-7e7c8e12abe4 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:55:35.582Z"}
+{"level":"error","message":"× GET /api/recommendations 200 12ms user=13 reqId=4ce4f63f-18b8-426f-b489-cf146d0e8e8d msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:55:35.924Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=4ce4f63f-18b8-426f-b489-cf146d0e8e8d msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:55:35.925Z"}
+{"level":"error","message":"× GET /api/recommendations 200 30ms user=13 reqId=84cf4794-1a92-42c4-a00c-9adaab451ac2 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:56:35.802Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=84cf4794-1a92-42c4-a00c-9adaab451ac2 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:56:35.803Z"}
+{"level":"error","message":"× GET /api/recommendations 200 12ms user=13 reqId=6d50f0d0-382b-44e5-bf1a-cc94ec6440a7 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:56:36.145Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=6d50f0d0-382b-44e5-bf1a-cc94ec6440a7 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T15:56:36.146Z"}
+{"level":"error","message":"× GET /api/recommendations 200 250ms user=13 reqId=4b3a5b94-9c27-4b7e-89d5-f55f405ffdd6 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T16:04:27.142Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=4b3a5b94-9c27-4b7e-89d5-f55f405ffdd6 msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T16:04:27.145Z"}
+{"level":"error","message":"× GET /api/recommendations 200 18ms user=13 reqId=93c724f7-a330-4aee-b52b-4f2ef37fc4bc msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T16:04:27.492Z"}
+{"level":"error","message":"× GET /api/recommendations 500 user=13 reqId=93c724f7-a330-4aee-b52b-4f2ef37fc4bc msg=Unknown column 'Recommendation.id' in 'field list'","timestamp":"2025-12-08T16:04:27.493Z"}
+{"level":"error","message":"Failed to connect to Kafka: Connection error: ","timestamp":"2025-12-08T16:24:48.880Z"}
+{"level":"error","message":"Failed to initialize ClickHouse schema: ","timestamp":"2025-12-08T16:24:48.966Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T16:24:52.999Z"}
+{"level":"error","message":"Failed to connect to Kafka: Connection error: ","timestamp":"2025-12-08T16:43:45.294Z"}
+{"level":"error","message":"Failed to initialize ClickHouse schema: ","timestamp":"2025-12-08T16:43:45.375Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T16:43:46.996Z"}
+{"level":"error","message":"Failed to connect to Kafka: Connection error: ","timestamp":"2025-12-08T16:58:53.527Z"}
+{"level":"error","message":"Failed to initialize ClickHouse schema: ","timestamp":"2025-12-08T16:58:53.607Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-08T16:58:55.045Z"}

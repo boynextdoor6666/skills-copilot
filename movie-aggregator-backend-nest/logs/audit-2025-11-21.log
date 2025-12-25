@@ -1,0 +1,58 @@
+{"level":"info","message":"UsersController {/api/users}:","timestamp":"2025-11-21T09:24:42.860Z"}
+{"level":"info","message":"Mapped {/api/users/me, GET} route","timestamp":"2025-11-21T09:24:42.863Z"}
+{"level":"info","message":"Mapped {/api/users/me, PATCH} route","timestamp":"2025-11-21T09:24:42.863Z"}
+{"level":"info","message":"Mapped {/api/users/me/password, PATCH} route","timestamp":"2025-11-21T09:24:42.864Z"}
+{"level":"info","message":"Mapped {/api/users/by-username/:username, GET} route","timestamp":"2025-11-21T09:24:42.865Z"}
+{"level":"info","message":"Mapped {/api/users/me/level, GET} route","timestamp":"2025-11-21T09:24:42.865Z"}
+{"level":"info","message":"Mapped {/api/users/me/achievements, GET} route","timestamp":"2025-11-21T09:24:42.866Z"}
+{"level":"info","message":"Mapped {/api/users/leaderboard, GET} route","timestamp":"2025-11-21T09:24:42.866Z"}
+{"level":"info","message":"Mapped {/api/users/me/taste-profile, GET} route","timestamp":"2025-11-21T09:24:42.866Z"}
+{"level":"info","message":"Mapped {/api/users/me/recommendations, GET} route","timestamp":"2025-11-21T09:24:42.867Z"}
+{"level":"info","message":"AuthController {/api/auth}:","timestamp":"2025-11-21T09:24:42.867Z"}
+{"level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2025-11-21T09:24:42.868Z"}
+{"level":"info","message":"Mapped {/api/auth/register, POST} route","timestamp":"2025-11-21T09:24:42.868Z"}
+{"level":"info","message":"Mapped {/api/auth/validate, GET} route","timestamp":"2025-11-21T09:24:42.869Z"}
+{"level":"info","message":"AdminController {/api/admin}:","timestamp":"2025-11-21T09:24:42.869Z"}
+{"level":"info","message":"Mapped {/api/admin/stats, GET} route","timestamp":"2025-11-21T09:24:42.869Z"}
+{"level":"info","message":"Mapped {/api/admin/users, GET} route","timestamp":"2025-11-21T09:24:42.869Z"}
+{"level":"info","message":"Mapped {/api/admin/users/top, GET} route","timestamp":"2025-11-21T09:24:42.870Z"}
+{"level":"info","message":"Mapped {/api/admin/users/:id/status, PATCH} route","timestamp":"2025-11-21T09:24:42.870Z"}
+{"level":"info","message":"Mapped {/api/admin/users/:id/role, PATCH} route","timestamp":"2025-11-21T09:24:42.871Z"}
+{"level":"info","message":"Mapped {/api/admin/users/:id, DELETE} route","timestamp":"2025-11-21T09:24:42.871Z"}
+{"level":"info","message":"ContentController {/api/content}:","timestamp":"2025-11-21T09:24:42.871Z"}
+{"level":"info","message":"Mapped {/api/content/search, GET} route","timestamp":"2025-11-21T09:24:42.872Z"}
+{"level":"info","message":"Mapped {/api/content/autocomplete, GET} route","timestamp":"2025-11-21T09:24:42.872Z"}
+{"level":"info","message":"Mapped {/api/content, GET} route","timestamp":"2025-11-21T09:24:42.872Z"}
+{"level":"info","message":"Mapped {/api/content/stats, GET} route","timestamp":"2025-11-21T09:24:42.872Z"}
+{"level":"info","message":"Mapped {/api/content/:id/emotional-cloud, GET} route","timestamp":"2025-11-21T09:24:42.873Z"}
+{"level":"info","message":"Mapped {/api/content/:id/perception-map, GET} route","timestamp":"2025-11-21T09:24:42.873Z"}
+{"level":"info","message":"Mapped {/api/content/:id/dynamics, GET} route","timestamp":"2025-11-21T09:24:42.873Z"}
+{"level":"info","message":"Mapped {/api/content/:id, GET} route","timestamp":"2025-11-21T09:24:42.874Z"}
+{"level":"info","message":"Mapped {/api/content, POST} route","timestamp":"2025-11-21T09:24:42.874Z"}
+{"level":"info","message":"Mapped {/api/content/:id, PUT} route","timestamp":"2025-11-21T09:24:42.874Z"}
+{"level":"info","message":"Mapped {/api/content/:id, DELETE} route","timestamp":"2025-11-21T09:24:42.875Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/active, GET} route","timestamp":"2025-11-21T09:24:42.875Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/all, GET} route","timestamp":"2025-11-21T09:24:42.876Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel, POST} route","timestamp":"2025-11-21T09:24:42.876Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/:id, PUT} route","timestamp":"2025-11-21T09:24:42.876Z"}
+{"level":"info","message":"Mapped {/api/content/hero-carousel/:id, DELETE} route","timestamp":"2025-11-21T09:24:42.877Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/active, GET} route","timestamp":"2025-11-21T09:24:42.877Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/all, GET} route","timestamp":"2025-11-21T09:24:42.877Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon, POST} route","timestamp":"2025-11-21T09:24:42.877Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/:id, PUT} route","timestamp":"2025-11-21T09:24:42.878Z"}
+{"level":"info","message":"Mapped {/api/content/coming-soon/:id, DELETE} route","timestamp":"2025-11-21T09:24:42.878Z"}
+{"level":"info","message":"ReviewsController {/api/reviews}:","timestamp":"2025-11-21T09:24:42.878Z"}
+{"level":"info","message":"Mapped {/api/reviews, POST} route","timestamp":"2025-11-21T09:24:42.879Z"}
+{"level":"info","message":"Mapped {/api/reviews/pro, POST} route","timestamp":"2025-11-21T09:24:42.879Z"}
+{"level":"info","message":"Mapped {/api/reviews/:id, DELETE} route","timestamp":"2025-11-21T09:24:42.879Z"}
+{"level":"info","message":"Mapped {/api/reviews/content/:contentId, GET} route","timestamp":"2025-11-21T09:24:42.879Z"}
+{"level":"info","message":"Mapped {/api/reviews/user/:userId, GET} route","timestamp":"2025-11-21T09:24:42.880Z"}
+{"level":"info","message":"Mapped {/api/reviews/my, GET} route","timestamp":"2025-11-21T09:24:42.880Z"}
+{"level":"info","message":"CriticsController {/api/critics}:","timestamp":"2025-11-21T09:24:42.880Z"}
+{"level":"info","message":"Mapped {/api/critics, GET} route","timestamp":"2025-11-21T09:24:42.880Z"}
+{"level":"info","message":"Mapped {/api/critics/followed, GET} route","timestamp":"2025-11-21T09:24:42.881Z"}
+{"level":"info","message":"Mapped {/api/critics/:id/follow, POST} route","timestamp":"2025-11-21T09:24:42.881Z"}
+{"level":"info","message":"Mapped {/api/critics/:id/follow, DELETE} route","timestamp":"2025-11-21T09:24:42.881Z"}
+{"level":"info","message":"Mapped {/api/critics/personalized, GET} route","timestamp":"2025-11-21T09:24:42.882Z"}
+{"level":"info","message":"Mapped {/api/critics/personalized/:contentId, GET} route","timestamp":"2025-11-21T09:24:42.882Z"}
+{"level":"info","message":"Nest application successfully started","timestamp":"2025-11-21T09:24:42.981Z"}

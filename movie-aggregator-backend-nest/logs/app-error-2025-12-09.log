@@ -1,0 +1,11 @@
+{"level":"error","message":"Failed to connect to Kafka: Connection error: ","timestamp":"2025-12-09T09:59:48.083Z"}
+{"level":"error","message":"Failed to initialize ClickHouse schema: ","timestamp":"2025-12-09T09:59:48.270Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: Error: getaddrinfo ENOTFOUND id.twitch.tv","timestamp":"2025-12-09T09:59:50.579Z"}
+{"level":"error","message":"Failed to connect to Kafka: Connection error: ","timestamp":"2025-12-09T10:03:28.667Z"}
+{"level":"error","message":"Failed to initialize ClickHouse schema: ","timestamp":"2025-12-09T10:03:28.732Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-09T10:03:31.328Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-09T10:07:19.938Z"}
+{"level":"error","message":"Failed to obtain IGDB access token: AxiosError: Request failed with status code 400","timestamp":"2025-12-09T10:21:06.907Z"}
+{"level":"error","message":"× POST /api/auth/login 200 41ms user=- reqId=bfed27a1-39c4-40e7-b91f-891405296f81 msg=User not found","timestamp":"2025-12-09T11:17:57.288Z"}
+{"level":"error","message":"× POST /api/auth/login 401 user=- reqId=bfed27a1-39c4-40e7-b91f-891405296f81 msg={\"message\":\"User not found\",\"error\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-12-09T11:17:57.290Z"}
+{"level":"error","message":"× GET /api/users/me/achievements 401 user=- reqId=99925b30-add4-477e-b3c8-8f7f102d6afe msg={\"message\":\"Unauthorized\",\"statusCode\":401}","timestamp":"2025-12-09T11:21:39.612Z"}

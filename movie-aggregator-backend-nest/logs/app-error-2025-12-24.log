@@ -1,0 +1,4 @@
+{"level":"warn","message":"add_review_viewer failed, using fallback insert. code=ER_NO_DEFAULT_FOR_FIELD errno=1364 msg=Field 'movie_id' doesn't have a default value","timestamp":"2025-12-24T06:03:51.872Z"}
+{"level":"error","message":"addViewerReview insert failed code=ER_SP_NO_RETSET errno=1415 msg=Not allowed to return a result set from a trigger","timestamp":"2025-12-24T06:03:52.059Z"}
+{"level":"error","message":"× POST /api/reviews 201 407ms user=13 reqId=f8250888-5fa0-4ad2-bc65-75295b348dc4 msg=Not allowed to return a result set from a trigger","timestamp":"2025-12-24T06:03:52.062Z"}
+{"level":"error","message":"× POST /api/reviews 500 user=13 reqId=f8250888-5fa0-4ad2-bc65-75295b348dc4 msg={\"message\":\"Not allowed to return a result set from a trigger\",\"error\":\"Internal Server Error\",\"statusCode\":500}","timestamp":"2025-12-24T06:03:52.064Z"}
